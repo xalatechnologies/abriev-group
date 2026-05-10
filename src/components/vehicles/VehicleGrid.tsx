@@ -8,6 +8,8 @@ type VehicleGridProps = {
   priorityCount?: number;
   tone?: "light" | "container";
   className?: string;
+  emptyTitle?: string;
+  emptyDescription?: string;
 };
 
 const colMap = {
@@ -22,16 +24,14 @@ export function VehicleGrid({
   priorityCount = 0,
   tone = "light",
   className,
+  emptyTitle = "No vehicles match your filters.",
+  emptyDescription = "Try adjusting the filters, or clear them to see the full catalog.",
 }: VehicleGridProps) {
   if (vehicles.length === 0) {
     return (
       <div className="rounded-xl border border-card-border bg-surface-container-lowest px-8 py-16 text-center">
-        <p className="font-headline-md text-headline-md text-on-background">
-          No vehicles match your filters.
-        </p>
-        <p className="mt-2 font-body-md text-body-md text-on-surface-variant">
-          Try adjusting the filters, or clear them to see the full catalog.
-        </p>
+        <p className="font-headline-md text-headline-md text-on-background">{emptyTitle}</p>
+        <p className="mt-2 font-body-md text-body-md text-on-surface-variant">{emptyDescription}</p>
       </div>
     );
   }

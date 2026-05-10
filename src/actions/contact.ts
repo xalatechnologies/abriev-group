@@ -1,17 +1,7 @@
 "use server";
 
 import { z } from "zod";
-
-const contactSchema = z.object({
-  name: z.string().trim().min(2, "Add your full name.").max(120),
-  email: z.string().trim().email("Use a valid email address."),
-  phone: z.string().trim().max(48).optional(),
-  message: z
-    .string()
-    .trim()
-    .min(15, "Share a short note (15+ characters) so we can help.")
-    .max(4000),
-});
+import { getTranslations } from "next-intl/server";
 
 export type ContactActionState =
   | null
@@ -26,10 +16,23 @@ export async function submitContactForm(
   _prev: ContactActionState,
   formData: FormData,
 ): Promise<ContactActionState> {
+  const ta = await getTranslations("ContactAction");
+
   const botGuard = String(formData.get("botcheck") ?? "").trim();
   if (botGuard) {
-    return { status: "success", message: "Thank you — we will reply shortly." };
+    return { status: "success", message: ta("successBot") };
   }
+
+  const contactSchema = z.object({
+    name: z.string().trim().min(2, ta("nameError")).max(120),
+    email: z.string().trim().email(ta("emailError")),
+    phone: z.string().trim().max(48).optional(),
+    message: z
+      .string()
+      .trim()
+      .min(15, ta("messageShort"))
+      .max(4000),
+  });
 
   const raw = {
     name: String(formData.get("name") ?? ""),
@@ -56,7 +59,6 @@ export async function submitContactForm(
 
   return {
     status: "success",
-    message:
-      "Thank you — our concierge acknowledged your enquiry. Expect a concise reply within one business day.",
+    message: ta("success"),
   };
 }

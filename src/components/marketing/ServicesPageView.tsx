@@ -1,11 +1,35 @@
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
-import { SERVICE_OFFERINGS, servicesPageHero } from "@/content/servicesOfferings";
+import { getTranslations } from "next-intl/server";
+
+import {
+  SERVICE_OFFERING_IDS,
+  SERVICE_OFFERING_MEDIA,
+} from "@/content/serviceOfferingDefinitions";
 import { FinalCTA } from "@/components/marketing/FinalCTA";
 import { Container } from "@/components/ui/Container";
 import { cn } from "@/lib/utils/cn";
 
-export function ServicesPageView() {
+export async function ServicesPageView() {
+  const t = await getTranslations("ServicesPage");
+  const offerings = SERVICE_OFFERING_IDS.map((id) => {
+    const paragraphsRaw = t.raw(`offerings.${id}.paragraphs`);
+    const bulletsRaw = t.raw(`offerings.${id}.bullets`);
+    return {
+      anchorId: id,
+      title: t(`offerings.${id}.title`),
+      eyebrow: t(`offerings.${id}.eyebrow`),
+      detail: {
+        paragraphs: Array.isArray(paragraphsRaw) ? (paragraphsRaw as string[]) : [],
+        bullets: Array.isArray(bulletsRaw) ? (bulletsRaw as string[]) : [],
+      },
+      image: {
+        src: SERVICE_OFFERING_MEDIA[id].imageSrc,
+        alt: t(`offerings.${id}.imageAlt`),
+      },
+    };
+  });
+
   return (
     <div className="font-primary">
       <header className="bg-surface font-primary">
@@ -13,13 +37,13 @@ export function ServicesPageView() {
           <div className="relative flex flex-col pt-20 md:pt-24 lg:pt-28">
             <div className="flex max-w-5xl flex-col gap-5 pb-8 md:gap-6 md:pb-10 lg:pb-12">
               <span className="font-label-caps text-label-caps uppercase tracking-[0.12em] text-on-surface-variant">
-                {servicesPageHero.eyebrow}
+                {t("heroEyebrow")}
               </span>
               <h1 className="font-display-lg text-display-lg text-balance text-on-background">
-                {servicesPageHero.title}
+                {t("heroTitle")}
               </h1>
               <p className="max-w-4xl font-body-lg text-body-lg leading-relaxed text-on-surface-variant text-pretty">
-                {servicesPageHero.description}
+                {t("heroDescription")}
               </p>
             </div>
           </div>
@@ -28,19 +52,19 @@ export function ServicesPageView() {
 
       <section
         className="section-y border-t border-outline-variant bg-surface"
-        aria-label="Explore services"
+        aria-label={t("exploreSectionAria")}
       >
         <Container>
-          <nav aria-label="Jump to services">
+          <nav aria-label={t("jumpNavAria")}>
             <div className="rounded-xl border border-card-border bg-surface-container-lowest p-1.5 shadow-sm md:p-2">
               <div className="mb-2 flex flex-wrap items-center gap-2 px-0.5 md:mb-2.5 md:px-1">
                 <span className="font-label-caps text-xs font-bold uppercase tracking-[0.14em] text-on-surface-variant">
-                  Explore
+                  {t("exploreLabel")}
                 </span>
                 <span aria-hidden className="hidden h-px w-12 bg-brand-primary/45 sm:inline" />
               </div>
               <ul role="list" className="m-0 grid list-none grid-cols-2 gap-1.5 p-0 sm:grid-cols-4 sm:gap-2">
-                {SERVICE_OFFERINGS.map((s) => (
+                {offerings.map((s) => (
                   <li key={s.anchorId} className="min-w-0">
                     <a
                       href={`#${s.anchorId}`}
@@ -67,7 +91,7 @@ export function ServicesPageView() {
           </nav>
         </Container>
       </section>
-      {SERVICE_OFFERINGS.map((service, index) => {
+      {offerings.map((service, index) => {
         const headingId = `${service.anchorId}-heading`;
         return (
           <section
@@ -124,7 +148,7 @@ export function ServicesPageView() {
                   </div>
                   <div className="border-t border-card-divider pt-8 transition-colors duration-300">
                     <p className="font-label-caps text-xs font-bold uppercase tracking-[0.14em] text-on-surface-variant">
-                      Highlights
+                      {t("highlightsLabel")}
                     </p>
                     <ul role="list" className="mt-5 flex flex-col gap-4">
                       {service.detail.bullets.map((item) => (

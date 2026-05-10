@@ -2,6 +2,7 @@
 
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import { useSearchParams } from "next/navigation";
 import type { Vehicle, VehicleCategory } from "@/types/vehicle";
 import { VehicleGrid } from "@/components/vehicles/VehicleGrid";
@@ -95,6 +96,8 @@ function VehicleCatalogInner({
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const skipPaginationReset = useRef(true);
+  const tCatalog = useTranslations("Catalog");
+  const tGrid = useTranslations("VehicleGrid");
 
   const [filters, setFilters] = useState<VehicleFilters>({
     ...emptyFilters,
@@ -213,7 +216,7 @@ function VehicleCatalogInner({
           <div className="sticky top-[calc(72px+10rem)] flex flex-col gap-3 lg:top-[calc(72px+5.5rem)]">
             <div className="flex items-center justify-between gap-4">
               <span className="font-label-caps text-sm font-bold uppercase tracking-[0.12em] text-on-background">
-                Filter inventory
+                {tCatalog("filterInventoryHeading")}
               </span>
               {activeCount > 0 ? (
                 <button
@@ -223,7 +226,7 @@ function VehicleCatalogInner({
                   }
                   className="font-label-caps text-sm font-bold uppercase tracking-wide text-on-surface-variant underline-offset-4 transition-colors hover:text-on-background hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
                 >
-                  Reset all ({activeCount})
+                  {tCatalog("resetAllCount", { count: activeCount })}
                 </button>
               ) : null}
             </div>
@@ -252,6 +255,8 @@ function VehicleCatalogInner({
             vehicles={pageResults}
             columns={3}
             priorityCount={Math.min(3, pageResults.length)}
+            emptyTitle={tGrid("emptyTitle")}
+            emptyDescription={tGrid("emptyDescription")}
           />
           <CatalogPagination
             pathname={pathname}
@@ -301,6 +306,7 @@ function CatalogPagination({
   rangeStart,
   rangeEnd,
 }: CatalogPaginationProps) {
+  const t = useTranslations("Catalog");
   if (totalResults === 0) return null;
 
   const buildHref = (p: number) => {
@@ -316,25 +322,22 @@ function CatalogPagination({
 
   return (
     <nav
-      aria-label="Results pagination"
+      aria-label={t("paginationAria")}
       className="mt-10 flex flex-col items-stretch gap-4 border-t border-outline-variant pt-10 sm:flex-row sm:items-center sm:justify-between"
     >
       <p className="text-center font-body-md text-sm text-text-muted sm:text-left">
         {totalPages > 1 ? (
-          <>
-            Showing{" "}
-            <span className="font-semibold tabular-nums text-text-strong">
-              {rangeStart}–{rangeEnd}
-            </span>{" "}
-            of <span className="font-semibold tabular-nums text-text-strong">{totalResults}</span>
-            <span className="text-text-muted"> · </span>
-            Page {currentPage} of {totalPages}
-          </>
+          t("paginationDetailed", {
+            start: rangeStart,
+            end: rangeEnd,
+            total: totalResults,
+            current: currentPage,
+            pages: totalPages,
+          })
+        ) : totalResults === 1 ? (
+          t("paginationSimpleOne", { count: totalResults })
         ) : (
-          <>
-            <span className="font-semibold tabular-nums text-text-strong">{totalResults}</span>{" "}
-            {totalResults === 1 ? "vehicle" : "vehicles"}
-          </>
+          t("paginationSimpleMany", { count: totalResults })
         )}
       </p>
 
@@ -342,7 +345,7 @@ function CatalogPagination({
         <div className="flex items-center justify-center gap-3 sm:justify-end">
           {currentPage > 1 ? (
             <Link href={buildHref(currentPage - 1)} className={linkBase} scroll>
-              Previous
+              {t("previous")}
             </Link>
           ) : (
             <span
@@ -352,12 +355,12 @@ function CatalogPagination({
               )}
               aria-disabled="true"
             >
-              Previous
+              {t("previous")}
             </span>
           )}
           {currentPage < totalPages ? (
             <Link href={buildHref(currentPage + 1)} className={linkBase} scroll>
-              Next
+              {t("next")}
             </Link>
           ) : (
             <span
@@ -367,7 +370,7 @@ function CatalogPagination({
               )}
               aria-disabled="true"
             >
-              Next
+              {t("next")}
             </span>
           )}
         </div>

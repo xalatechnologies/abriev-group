@@ -1,7 +1,9 @@
 {
   "PolicyPages": {
     "shell": {
-      "documentAriaLabel": "የፖሊሲ ሰነድ"
+      "documentAriaLabel": "የፖሊሲ ሰነድ",
+      "tocHeading": "በዚህ ገጽ ላይ",
+      "tocAriaLabel": "ለዚህ ፖሊሲ የክፍል አገናኞች"
     },
     "carInsuranceAssistance": {
       "metaTitle": "የመኪና ኢንሹራንስ ድጋፍ",
@@ -9,7 +11,8 @@
       "eyebrow": "ድጋፍ",
       "title": "የመኪና ኢንሹራንስ ድጋፍ።",
       "intro": "አብሬቭ የተመረጠ የመኪና ገበያ ነው። እኛ ኢንሹራንስ አንሰጥም እና የእርስዎ የኢንሹራንስ ኩባንያ አይደሉም። ይህ ገጽ በእኛ ቡድን እና አጋሮች የሽፋን፣ ሰነዶች፣ እና በዚህ ቦታ የሚያገኟቸው መኪናዎች ጋር ተዛማጅ ጉዳዮች እንዴት እንደሚረዱዎት ያብራራል።",
-      "lastUpdated": "የመጨረሻ ዝመና፦ ሜይ 2026",
+      "lastUpdatedIso": "2026-05-10",
+      "lastUpdated": "የመጨረሻ ዝመና፦ 10 ሜይ 2026",
       "contactLead": "ለተወሰነ ማስታወቂያ፣ የዋጋ ግምት ወይም ይከሻ እገዛ የሚፈልጉ ከሆነ በ{email} ያግኙን እና የመኪናውን ወይም የቦታ ማስያዝ ማመልከቻ ያጣቅሱ።",
       "contactCta": "እውቂያ",
       "sections": [
@@ -51,6 +54,13 @@
           "paragraphs": [
             "ለመርዳት የሚያጋሩንን እውቂያ እና የመኪና ማንቂያዎች ልክ እንደምንሰራ ወሂብ ልንከናወን እንችላለን። የግል ውሂብ እንዴት እንደምንከናወን የግላዊነት ፖሊሲያችንን ይመልከቱ።"
           ]
+        },
+        {
+          "heading": "የቁጥጥር ሁኔታ እና የሙያ ምክር",
+          "paragraphs": [
+            "አብሬቭ በሁሉም አገሮች ተፈቋሚ የኢንሹራንስ አቅራቢ፣ ብሮከር ወይም ወኪል አይደለም። በዚህ ገጽ ላይ ያለው መረጃ አጠቃላይ ሲሆን ግዢ፣ ፖሊሲ ወይም ይከሻ እንደተፈለገ በተባበረ ሙያዊ ምክር ሊተካ አይችልም።",
+            "ስለ ሽፋን፣ ግዴታ ወሰኖች ወይም በክልል ወሰን ምዝገባ አስቸኳይነት ካልተረጋገጠ ብቁ ብሮከር ወይም የህግ አማካሪ ከመተማመንዎ በፊት ይመክሩ።"
+          ]
         }
       ]
     },
@@ -60,7 +70,8 @@
       "eyebrow": "ተንቀሳቃሽነት",
       "title": "የጊዜያዊ የመኪና መተካ።",
       "intro": "መኪናዎ ስለ ጥገና፣ አገልግሎት ወይም ስለሚሸፈንበት ክስተት ባይገኝ ከሆነ፣ በፖሊሲዎ፣ በነጋዴ ፕሮግራም እና በአቅርቦት ተገኝነት ላይ በመመስረት ለጊዜው ተተካ ልትሆኑ ይችላሉ። አብሬቭ በአውታረ መረባችን ሲቀርቡ እነዚህ ስምምነቶችን ማቀናበር እና ሰነዶችን ማዘጋጀት ይረዳል።",
-      "lastUpdated": "የመጨረሻ ዝመና፦ ሜይ 2026",
+      "lastUpdatedIso": "2026-05-10",
+      "lastUpdated": "የመጨረሻ ዝመና፦ 10 ሜይ 2026",
       "contactLead": "ሁኔታዎን፣ የፖሊሲ ማመልከቻ (ካለ) እና የሚወዱትን ቀናት በ{email} ያስታውቁን። የኮንስየር ቡድናችን ከ{brand} አውታረ መረብ የሚገኙ አማራጮችን ያካፍላል።",
       "contactCta": "እውቂያ",
       "sections": [
@@ -98,6 +109,13 @@
           ]
         },
         {
+          "heading": "መታወቂያ እና በክልል ውዝውዝ አጠቃቀም",
+          "paragraphs": [
+            "አጋሩ እና የአካባቢው ህግ በሚቀበሉት መለያ እና የመንጃ ማስረጃ ያሳያሉ። በክልል ማቋረጥ አጠቃቀም በሚመልከት እገዳ አለው ወይም ተጨማሪ የኢንሹራንስ ማሟያ ሊያስፈልግ ይችላል።",
+            "አብሬቭ በአንድ ሀገር የተያዘች መተካ በሌላ ልትመራ እንደሆነ አይዋስትናም፤ አካል ስምምነት ውስጥ የግዛት ገደቦችን ያረጋግጡ።"
+          ]
+        },
+        {
           "heading": "ገደቦች",
           "paragraphs": [
             "በከፍተኛ ወቅቶች፣ አቅርቦት እጥረት ወይም ርቀት ቦታዎች ተገኝነትን ሊገድቡ ይችላሉ። በተቻለ መጠን የተለየ ክፍል፣ የተለየ የማንሻ ቦታ ወይም የተለየ ቀናት እንጥራለን።",
@@ -112,7 +130,8 @@
       "eyebrow": "ህጋዊ",
       "title": "የመመለስ ፖሊሲ።",
       "intro": "ይህ ፖሊሲ ከአብሬቭ ወይም በተከፈተ የክፍያ ፍሰቶቻችን የሚከፍሉትን ክፍያዎች ለመመለስ እና ለመሰረዝ እንዴት እንደሚሰሩ ያብራራል። በሶስተኛ ወገን ነጋዴዎች፣ ኢንሹራንስ ወይም ተቋራጮች ቀጥታ የሚፈጸሙ አገልግሎቶች የእነርሱን የግል ኮንትራቶች ይከተላሉ።",
-      "lastUpdated": "የመጨረሻ ዝመና፦ ሜይ 2026",
+      "lastUpdatedIso": "2026-05-10",
+      "lastUpdated": "የመጨረሻ ዝመና፦ 10 ሜይ 2026",
       "contactLead": "የመመለስ ጥያቄዎች ላይ በ{email} ይጻፉልን፣ የትዕዛዝዎ ወይም የቦታ ማስያዝ መለያ፣ የተጠቀሙት የክፍያ ዘዴ እና ችግሩ አጭር መግለጫ ያካትቱ። በአብዛኛው በአምስት የስራ ቀናት ውስጥ እንመልሳለን።",
       "contactCta": "እውቂያ",
       "sections": [
@@ -152,6 +171,13 @@
           ]
         },
         {
+          "heading": "የመገበሪያ አካላት እና አማራጭ ክርክር መፍትሄ",
+          "paragraphs": [
+            "መመለስ ጥያቄን ተፈጻሚ የሸማቾች ህግ ጋር ካልከናወን እንደሰራን ካመኑ፣ ለብሔራዊ የሸማቾች ጥበቃ አካል ሊያሳድጉ ይችላሉ ወይም ሲገኝ ወደ የተፀድቀ አማራጭ የክርክር መፍትሄ (ADR) አቅራቢ ሊያቀርቡ ይችላሉ።",
+            "በዚህ ፖሊሲ ምንም ነገር በሚስማማ ፍርድ ቤት ጉዳይ ላይ የማይወድቅ መብት አይገድብም።"
+          ]
+        },
+        {
           "heading": "ምንዛሬ እና ማስከናወን",
           "paragraphs": [
             "መመለሶች ወደ መጀመሪያው የክፍያ መንገድ ይላካሉ። የካርድ ስርዓቶች ወይም ባንኮች የራሳቸውን የመዝጊያ ጊዜ ሊጨምሩ ይችላሉ።",
@@ -166,7 +192,8 @@
       "eyebrow": "ህጋዊ",
       "title": "የአገልግሎት ውል።",
       "intro": "ወደ አብሬቭ እንኳን ደህና መጡ። ድረ ገጻችንን፣ መተግበሪያዎቻችንን ወይም አገልግሎቶቻችንን በመድረስ፣ እነዚህን የአገልግሎት ውሎች እና የሚጠቁሟቸውን ሰነዶች (ከግላዊነት ፖሊሲያችን ጋር) ተቀብለዋል። ካልተስማሙ እባክዎ አገልግሎቱን ከመጠቀም ይቆጠቡ።",
-      "lastUpdated": "የመጨረሻ ዝመና፦ ሜይ 2026",
+      "lastUpdatedIso": "2026-05-10",
+      "lastUpdated": "የመጨረሻ ዝመና፦ 10 ሜይ 2026",
       "contactLead": "ስለ እነዚህ ውሎች ጥያቄ አለዎት? በርዕሱ \"ውል\" በማስገባት ወደ {email} ይጻፉ። \"{brand}\"፣ \"እንሱ\" ወይም \"እኛ\" የሚሉ ማጣቀሻዎች በክልልዎ ለአገልግሎቶቹ የተጠቃሚውን አብሬቭ አካል ማለት ነው።",
       "contactCta": "እውቂያ",
       "sections": [
@@ -244,6 +271,19 @@
           ]
         },
         {
+          "heading": "የኤሌክትሮኒክ ግንኙነት እና ቋንቋ",
+          "paragraphs": [
+            "የሚፈቀደው እንደሆነ፣ ማስታወቂያዎች፣ የክፍያ ደረሰኞች እና በውል የተያዩ መልዕክቶች በኤሌክትሮኒክ እንዲደርሱዎት ተስማምተዋል፤ ከመለያዎ ኢሜይል ጭምር።",
+            "ይህ ውል በእንግሊዝኛ ስሪት ይተረጉማል። የአማርክ ያሉ ትርጉሞች ለስላት ብቻ ናቸው፤ ከ እንግሊዝ ጋር ቢጋጭም እንግሊዝ ይቀድማል እንዲሁም ግዴታ የሆነ የአካባቢ ህግ እንዲሆን ከጠየቀ በስተቀር።"
+          ]
+        },
+        {
+          "heading": "ከቁጥጥር በላይ ክስተቶች (Force majeure)",
+          "paragraphs": [
+            "Neither party is liable for delay or failure caused by events beyond reasonable control, including natural disasters, war, terrorism or civil unrest, labour disputes, widespread internet or power failures, epidemic controls, or government orders. Obligations are suspended for the duration of the event."
+          ]
+        },
+        {
           "heading": "ለውጦች",
           "paragraphs": [
             "አዲስ ባህሪያት ወይም ህጋዊ መስፈርቶች ለማንፀባረቅ እነዚህን ውሎች ልናዘምን እንችላለን። ከቁም የሆኑ ለውጦች በሚያስፈልገው ማስታወቂያ ይገለጻሉ። ከተፈጸመው ቀን በኋላ ያለማቋረጥ መጠቀም ተቀባይነት ነው።",
@@ -258,7 +298,8 @@
       "eyebrow": "ህጋዊ",
       "title": "የግላዊነት ፖሊሲ።",
       "intro": "አብሬቭ በታመንነት ዙሪያ ተገንብቷል። ይህ ፖሊሲ የምንከናወነውን የግል ውሂብ፣ ለምን እንደምንከናወን፣ ለምን ያህል ጊዜ እንደምንጠብቅ እና ከምርጫዎችዎ ጋር ያብራራል። \"ኮንትሮላር\" ያሉት ቁልፍ ቃላት በክልልዎ ተፈጻሚ የግላዊነት ህግ ይከተላሉ።",
-      "lastUpdated": "የመጨረሻ ዝመና፦ ሜይ 2026",
+      "lastUpdatedIso": "2026-05-10",
+      "lastUpdated": "የመጨረሻ ዝመና፦ 10 ሜይ 2026",
       "contactLead": "የውሂብ ጥበቃ ጥያቄዎች፦ {email}። ጥያቄዎን በትክክል ለማስተናገድ ሀገርዎን ወይም ክልልዎን ያካትቱ። የአብሬቭ አገልግሎቶች የውሂብ ኮንትሮላር በኮንትራትዎ ወይም በክልል ማስታወቂያዎ በሚገለጸው አካል ነው።",
       "contactCta": "እውቂያ",
       "sections": [
@@ -331,6 +372,20 @@
           "heading": "ኩኪዎች",
           "paragraphs": [
             "የተፈጻሚነት ኩኪዎች ለመግባት እና ምርጫዎችን ለመስታወስ እንጠቀማለን። በሚያስፈልግበት ስምምነት፣ አጠቃቀም ለመረዳት የትንታኔ ኩኪዎችን እንጠቀማለን። የአሳሽ ቅንብሮችና የኩኪ ባነር ምርጫዎችዎን ያስተካክሉ።"
+          ]
+        },
+        {
+          "heading": "ስለራስ-ሰር ውሳኔዎች (Automated decision-making)",
+          "paragraphs": [
+            "We do not rely solely on automated processing to make decisions that produce legal or similarly significant effects concerning you without meaningful human oversight, unless required or permitted by law with appropriate safeguards."
+          ]
+        },
+        {
+          "heading": "በክልል የሚመለከቱ ጉዳዮች (Regional disclosures)",
+          "paragraphs": [
+            "European Economic Area, United Kingdom, and Switzerland: you may lodge a complaint with your local data protection supervisory authority. We honour applicable GDPR / UK GDPR rights as described above.",
+            "United States — California and similar states: depending on residency you may request to know categories of personal information collected, to delete or correct information subject to exceptions, and—where applicable—to opt out of certain sales or sharing. We do not sell personal information for money within the meaning of the CCPA/CPRA.",
+            "Other jurisdictions may confer additional statutory rights; include your region when you contact us so we can respond appropriately."
           ]
         },
         {

@@ -11,10 +11,6 @@ export const SERVICE_OFFERING_IDS = [
 
 export type ServiceOfferingId = (typeof SERVICE_OFFERING_IDS)[number];
 
-export const SERVICES_PAGE_HERO_IMAGE = {
-  src: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=2400&q=85&auto=format&fit=crop",
-} as const;
-
 export const SERVICE_OFFERING_MEDIA: Record<ServiceOfferingId, { imageSrc: string }> = {
   "vehicle-sales": {
     imageSrc:
@@ -29,7 +25,6 @@ export const SERVICE_OFFERING_MEDIA: Record<ServiceOfferingId, { imageSrc: strin
       "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1600&q=85&auto=format&fit=crop",
   },
   "import-export": {
-    imageSrc:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=85&auto=format&fit=crop",
+    imageSrc: "/images/services/import-export.jpg",
   },
 };

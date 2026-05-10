@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { stubPageMeta, StubPage } from "@/components/marketing";
+
+import { LegalPolicyPageView, legalPolicyPageMeta } from "@/components/marketing";
 
 export async function generateMetadata(): Promise<Metadata> {
-  return stubPageMeta("carInsuranceAssistance");
+  return legalPolicyPageMeta("carInsuranceAssistance");
 }
 
-export default async function CarInsuranceAssistancePage() {
-  return <StubPage route="carInsuranceAssistance" phase={5} />;
+export default function CarInsuranceAssistancePage() {
+  return <LegalPolicyPageView pageKey="carInsuranceAssistance" />;
 }

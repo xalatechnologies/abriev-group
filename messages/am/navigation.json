@@ -17,9 +17,7 @@
     "hint": "ቋንቋ"
   },
   "Header": {
-    "accountModesAria": "መግቢያ ወይም ይመዝገቡ",
     "signIn": "መግቢያ",
-    "register": "ይመዝገቡ",
     "listVehicle": "መኪና አስመዝግብ",
     "postCarAria": "ማስታወቂያ ለጥፍ"
   }

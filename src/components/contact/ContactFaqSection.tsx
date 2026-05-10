@@ -1,14 +1,18 @@
 import { ChevronDown } from "lucide-react";
-import {
-  CONTACT_PAGE_COPY,
-  CONTACT_PAGE_FAQ_ITEMS,
-} from "@/content/contactPage";
+import { getTranslations } from "next-intl/server";
+
 import { Container } from "@/components/ui/Container";
 import { SectionIntro } from "@/components/ui/SectionIntro";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils/cn";
 
-export function ContactFaqSection() {
+export async function ContactFaqSection() {
+  const t = await getTranslations("ContactPage");
+  const raw = t.raw("faqItems");
+  const faqItems = Array.isArray(raw)
+    ? (raw as readonly { readonly question: string; readonly answer: string }[])
+    : [];
+
   return (
     <section
       className="section-y scroll-mt-[88px] border-t border-outline-variant bg-surface"
@@ -16,10 +20,10 @@ export function ContactFaqSection() {
     >
       <Container className="flex flex-col gap-10 md:gap-12">
         <SectionIntro
-          eyebrow={CONTACT_PAGE_COPY.faqEyebrow}
-          title={CONTACT_PAGE_COPY.faqTitle}
+          eyebrow={t("faqEyebrow")}
+          title={t("faqTitle")}
           titleId="contact-faq-heading"
-          lede={CONTACT_PAGE_COPY.faqLede}
+          lede={t("faqLede")}
           headingAs="h2"
           align="center"
           titleClassName="text-balance"
@@ -27,8 +31,8 @@ export function ContactFaqSection() {
         />
 
         <ul role="list" className="mx-auto flex w-full max-w-5xl flex-col gap-3">
-          {CONTACT_PAGE_FAQ_ITEMS.map((item) => (
-            <li key={item.question}>
+          {faqItems.map((item, index) => (
+            <li key={`contact-faq-${index}`}>
               <details
                 className={cn(
                   "rounded-xl border border-card-border bg-surface-container-lowest shadow-editorial transition-colors duration-300 hover:border-card-border-hover",
@@ -58,15 +62,15 @@ export function ContactFaqSection() {
 
         <div className="flex justify-center">
           <Link
-            href={CONTACT_PAGE_COPY.faqBrowseAllHref}
+            href={t("faqBrowseAllHref")}
             className={cn(
               "rounded-full border border-card-border bg-surface-container-low px-6 py-3 font-label-caps text-sm font-bold uppercase tracking-[0.12em]",
               "text-text-strong shadow-editorial transition-colors duration-300 hover:border-card-border-hover",
               "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background",
             )}
-            aria-label={CONTACT_PAGE_COPY.faqBrowseAllAria}
+            aria-label={t("faqBrowseAllAria")}
           >
-            {CONTACT_PAGE_COPY.faqBrowseAllLabel}
+            {t("faqBrowseAllLabel")}
           </Link>
         </div>
       </Container>

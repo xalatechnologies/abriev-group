@@ -76,19 +76,19 @@
     "emptyDescription": "መለያዎች በዘርፉ ይስተካከሉ ወይም ሁሉንም እንደገና ይመልከቱ።"
   },
   "Catalog": {
-    "filterInventoryHeading": "መኖላዎች አጣር",
+    "filterInventoryHeading": "ክምችት ያጣሩ",
     "resetAllCount": "ሁሉን እንደገና ({count})",
     "paginationAria": "ለውጤት ገልባ",
-    "paginationDetailed": "ከ {start}–{end} ከ {total} ላይው · ገጽ {current} በ {pages}",
+    "paginationDetailed": "አሳይ {start}–{end} ከ {total} · ገጽ {current} ከ {pages}",
     "paginationSimpleOne": "{count} መኪና",
     "paginationSimpleMany": "{count} መኪኖች",
     "previous": "ቀድሞ",
-    "next": "ቀጭ"
+    "next": "ቀጥል"
   },
   "Filters": {
-    "inventoryAria": "መኖላዎች አጣር",
+    "inventoryAria": "ክምችት ያጣሩ",
     "closeAria": "አጣሪዎች ይዝጉ",
-    "viewInventory": "መኖላዎች ተመልከት",
+    "viewInventory": "ክምችት ይመልከቱ",
     "sectionBrand": "የምልክት አምራች",
     "sectionBody": "የመነላ አይነት",
     "sectionPrice": "ዋጋ ክለኛ",
@@ -100,15 +100,16 @@
     "minimum": "አነስተኝ",
     "maximum": "ከፍተኝ",
     "fromYear": "ከ አመት",
-    "resetAllChips": "ሁ኉ እንገል",
-    "minPriceChip": "ዝቋ {amount}",
-    "maxPriceChip": "መክ {amount}"
+    "resetAllChips": "ሁሉንም አስወግድ",
+    "minPriceChip": "ቢያንስ {amount}",
+    "maxPriceChip": "ከፍተኛ {amount}",
+    "noMatchingValues": "ከክምችቱጋ አይዛመንም።"
   },
   "Sort": {
     "showing": "አሳይ",
     "vehicle": "መኪና",
     "vehicles": "መኪኖች",
-    "filterInventory": "መኖላ አጣር",
+    "filterInventory": "ክምችት ያጣሩ",
     "sortLabel": "መደመር",
     "sortAria": "መኖሎች እደመር",
     "featured": "የ አርተርስ ምልጭ",

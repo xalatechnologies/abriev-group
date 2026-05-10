@@ -10,6 +10,6 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function ServicesPage() {
+export default async function ServicesPage() {
   return <ServicesPageView />;
 }

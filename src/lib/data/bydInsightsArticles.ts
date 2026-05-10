@@ -108,8 +108,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-dolphin-behind-seagull",
     slug: "dolphin-echo-behind-seagull-momentum",
     title: "Dolphin echoes behind Seagull momentum",
+    titleAm: "የዶልፊን ድምፅ ከሲጋል ግፊት በኋላ",
     excerpt:
       "Sibling platform lessons — usable interior volume, HV packaging, and the brand cues migrating between BYD hatchbacks globally.",
+    excerptAm:
+      "የወንድም መድረክ ትምህርት — ተጠቃሚ የውስጥ ስፋት፣ ከፍተኛ ቮልቴጅ ማሸግ፣ በመላው በ BYD ሃችታክ መካከል የሚጓዙ የምርት ምስሎች።",
     category: "byd-seagull",
     author: { name: "Eliot Kerr", title: "Product Notes" },
     publishedAt: "2026-03-30",
@@ -129,8 +132,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-e2-practical-lines",
     slug: "byd-e2-practical-lines-smart-electrification",
     title: "BYD E2: practical lines, smart electrification",
+    titleAm: "BYD E2፡ ተግባራዊ መስመሮች፣ ብልህ ኤሌክትሪፊኬሽን",
     excerpt:
       "The E2 corridor — why compact liftback proportions still win driveway battles and how BYD trims weight without hollow doors.",
+    excerptAm:
+      "የ E2 አቅጣጫ — ኮምፓክት ሊፍባክ ዕድል ለምን አሁንም በመኪና መተላለፊያ ዕለቶች ያሸንፋል እና BYD ክብደትን እንዴት እንደያይ ደጆች አለማለት።",
     category: "byd-e2",
     author: { name: "Dawit Mekonnen", title: "Regional Reporter" },
     publishedAt: "2026-04-22",
@@ -150,8 +156,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-e2-charging-graphs",
     slug: "byd-e2-charging-curves-what-wallboxes-reveal",
     title: "BYD E2 charging curves: what wallboxes reveal",
+    titleAm: "BYD E2 የኃይል መሙያ እንቅስቃሔ፡ የጽድ አሳቢዎች የሚገለጹት",
     excerpt:
       "From 7 kW dusk sessions to midday DC bursts — mapping the invisible graph owners actually live with.",
+    excerptAm:
+      "ከ 7 kW በምሽት እስከ በቀን መሃል DC አፍሳሽ ድምፆች — ባለቤቶች እውነተኛ ሕይወት ያለው የማያይ ግራፍ።",
     category: "byd-e2",
     author: { name: "Liya Tesfaye", title: "Infrastructure" },
     publishedAt: "2026-03-18",
@@ -171,8 +180,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-yuan-up-density",
     slug: "yuan-up-smart-crossover-density-done-right",
     title: "Yuan Up Smart: crossover density done right",
+    titleAm: "የ Yuan Up ስማርት፡ የክሮስ ኦቨር ዝድስድስ ትክክለኛ አቅጣጫ",
     excerpt:
       "Elevated seating without SUV theatrics — how the Yuan Up sweet spot caters to curb-hopping creatives and nursery runs alike.",
+    excerptAm:
+      "ከኤስዩቪ ድራማ አልፎ የከፈቱ የመቀመጫ አቀማመጥ — Yuan Up ለቅርብ መንገዶች፣ ለፈጠራ ሰራዎች እና ለልጆች ጉዞ በአንድ ጊዜ የሚመች ማእከል።",
     category: "yuan-up-smart",
     author: { name: "Nina Alvarez", title: "Lifestyle Desk" },
     publishedAt: "2026-04-30",
@@ -192,8 +204,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-yuan-up-packaging",
     slug: "yuan-up-smart-packaging-three-lessons-from-the-aisle",
     title: "Yuan Up Smart packaging: three lessons from the aisle",
+    titleAm: "የ Yuan Up ስማርት ማሸግ፡ ከመስመር ሦስት ትምህርቶች",
     excerpt:
       "Why seat H-point choices beat touchscreen inches for retaining families upgrading from older ICE crossovers.",
+    excerptAm:
+      "ከአሮጌ አይ.ሲ.ኢ. ክሮስኦቨር ሲያሻሻሉ ቤተሰቦች ለማቆየት የመቀመጫ H-ነጥብ ምርጫዎች ከስክሪን ኢንች ለምን ያስቀድማሉ።",
     category: "yuan-up-smart",
     author: { name: "Priya Anand", title: "Ownership Lab" },
     publishedAt: "2026-04-06",
@@ -213,8 +228,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-teng-family-flex",
     slug: "denza-teng-i-space-that-flexes-for-families",
     title: "Denza Teng I: space that flexes for families",
+    titleAm: "ደንዛ ተንግ I፡ ለቤተሰቦች የሚወጣጠር ቦታ",
     excerpt:
       "Seven-seat choreography — who gets lumbar priority, where bags actually live when every seat earns its keep.",
+    excerptAm:
+      "የሰባት መቀመጫ ኮሬዎግራፊ — ማን የወገብ ድጋፍ ያገኛል፣ ሁሉም መቀመጫ ሲሰራ ቦርሳዎች በእውነት የሚኖሩበት የት ነው።",
     category: "teng-i",
     author: { name: "James Ashford", title: "Driving Notes" },
     publishedAt: "2026-04-25",
@@ -234,8 +252,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-teng-evenings",
     slug: "seven-seat-evenings-in-the-teng-i",
     title: "Seven-seat evenings in the Teng I",
+    titleAm: "በተንግ I ውስጥ የሰባት መቀመጫ የሌሊት ጉዞዎች",
     excerpt:
       "Night drives, damping transparency, and the low-speed conversations that expose cabin isolation quality.",
+    excerptAm:
+      "የሌሊት መንገዶች፣ የደካማነት ግልጽነት፣ እና የዝቅተኛ ፍጥነት ንግግሮች የካቢን ማግለል ጥራትን የሚጋለጡ።",
     category: "teng-i",
     author: { name: "Eliot Kerr", title: "Product Notes" },
     publishedAt: "2026-03-26",
@@ -283,8 +304,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-ultra-dc-metrics",
     slug: "ultrafast-public-charging-what-we-measure-now",
     title: "Ultrafast public charging — what we measure now",
+    titleAm: "ከፍተኛ ፈጣን የህዝብ ኃይል መሙያ — አሁን የምንለካው",
     excerpt:
       "SoC windows, dispenser sharing, cable cooling — translating infrastructure hype into reliable trip math for BYD owners.",
+    excerptAm:
+      "የ SoC መስኮች፣ የመሙያ ተካፋይነት፣ የኬብል ቀዝቃዛ — የመሠረተ ልማት ከፍታ ለ BYD ባለቤቶች ወደ አስተማማኝ የጉዞ ሂሳብ መተርጎም።",
     category: "electric-vehicles",
     author: { name: "Liya Tesfaye", title: "Infrastructure" },
     publishedAt: "2026-04-03",
@@ -304,8 +328,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-v2l-camping",
     slug: "vehicle-to-load-weekends-byd-buyers-teach-each-other",
     title: "Vehicle-to-load weekends BYD buyers teach each other",
+    titleAm: "V2L የሳምንት መጨረሻ — BYD ገዢዎች እርስ በርስ ያስተምራሉ",
     excerpt:
       "Camping ergonomics — kettle loads, inverter etiquette, and the silent camaraderie of shared extension cords.",
+    excerptAm:
+      "የመደምደም ማመቻቻ — የቡክላ ጭነት፣ የኢንቨርተር ደንብ እና የጋራ ማመሐድድ ገመድ በዝምታ የሚዋሔድ ወዳጅነት።",
     category: "electric-vehicles",
     author: { name: "Nina Alvarez", title: "Lifestyle Desk" },
     publishedAt: "2026-03-12",
@@ -325,8 +352,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-yuan-plus-export",
     slug: "yuan-family-and-the-export-moment-buyers-watch",
     title: "Yuan family models and the export moment buyers watch",
+    titleAm: "የ Yuan ቤተሰብ ሞዴሎች እና ገዢዎች የሚከታሉት የወደ ውጭ ላክ ጊዜ",
     excerpt:
       "How outbound trim stacks and localized ADAS maps shape prestige perception even before first drive impressions.",
+    excerptAm:
+      "ወደ ውጭ የሚሄዱት የትሪም ክምችት እና የአካባቢ ADAS ካርታዎች ከመጀመሪያ መንገድ ቅንብር በፊት የክብር ግምትን እንዴት እንደሚመሰሉ።",
     category: "luxury-cars",
     author: { name: "Mei Lin", title: "Electrification Desk" },
     publishedAt: "2026-04-29",
@@ -346,8 +376,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-tactile-quiet-luxury",
     slug: "tactile-quiet-how-luxury-reads-through-materials-byd-era",
     title: "Tactile quiet: how luxury reads through materials in the BYD era",
+    titleAm: "መንካት ዝምታ፡ በ BYD ዘመን ፕሪሚየም በቁሳቁስ እንዴት እንደሚነካ",
     excerpt:
       "Silence exposes trim — seams, backlighting hotspots, and the death of gimmicky glossy piano black.",
+    excerptAm:
+      "ዝምታ ትሪምን ያጋልጣል — ጥልቀቶች፣ የንድፍ ብርሃን በረከቶች፣ እና የታየነለታ ጥላሸት ጥቁር ፒያኖ መውደቅ።",
     category: "luxury-cars",
     author: { name: "Sofia Marchetti", title: "Urban Mobility" },
     publishedAt: "2026-04-07",
@@ -367,8 +400,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-model-year-matrix",
     slug: "new-model-year-matrix-what-watchers-expect-from-byd",
     title: "New model-year matrix — what watchers expect from BYD",
+    titleAm: "አዲስ የሞዴል-ዓመት ማትሪክስ — ታዛቢዎች ከ BYD የሚጠብቁት",
     excerpt:
       "Trim ladders, inverter generations, and the quiet software cadence underpinning showroom turnover.",
+    excerptAm:
+      "የትሪም ደረጃዎች፣ የኢንቨርተር ትውልዶች፣ እና የማሳያ ክፍል ልውውጥን የሚደግፍ የሶፍትዌር የጊዜ ልምምድ።",
     category: "new-cars",
     author: { name: "Eliot Kerr", title: "Product Notes" },
     publishedAt: "2026-05-01",
@@ -388,8 +424,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-seal-vs-seagull-density",
     slug: "seal-line-density-versus-flagship-poise-buying-clarity",
     title: "Seal-line density versus flagship poise — buying clarity",
+    titleAm: "የ Seal መስመር ዝድስድስ ከከፍተኛ ሞዴል ማረጋገጫ ጋር — የግዢ ግልጽነት",
     excerpt:
       "Choosing between charismatic liftback silhouettes and utilitarian commuter heroes inside the BYD constellation.",
+    excerptAm:
+      "በ BYD የኮከቦች ስብስብ ውስጥ በራሳቸው የሚገለቡ ሊፍባክ አቀማመጦች እና ተግባራዊ የመንገድ ጀግኖች መካከል መምረጥ።",
     category: "new-cars",
     author: { name: "Priya Anand", title: "Ownership Lab" },
     publishedAt: "2026-03-31",
@@ -409,8 +448,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-weekend-rentals",
     slug: "weekend-ev-rentals-how-fleets-watch-byd-utilization",
     title: "Weekend EV rentals: how fleets watch BYD utilization",
+    titleAm: "የሳምንት መጨረሻ ኤቪ ኪራይ፡ ፍሌቶች የ BYD አጠቃቀም እንዴት እንደሚከታተሉ",
     excerpt:
       "Duty cycles — Friday take rates, midday swap economics, and the charging SLAs fleets quietly enforce.",
+    excerptAm:
+      "የሥራ ዑደት — የአርብ የመያዝ መጠኖች፣ የቀን መሃል የለውጥ ኢኮኖሚ፣ እና ፍሌቶች በዝምታ የሚያስፈፅሙት የመሙያ የአገልግሎት ደረጃ።",
     category: "car-rentals",
     author: { name: "Dawit Mekonnen", title: "Regional Reporter" },
     publishedAt: "2026-04-19",
@@ -430,8 +472,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-hotel-concierge-pair",
     slug: "concierge-rentals-pair-hotels-with-predictable-charging",
     title: "Concierge rentals pairing hotels with predictable charging",
+    titleAm: "ኮንሺየር ኪራይ ሆቴሎችን ከቅድሚያ በታቀደ የኃይል መሙያ ጋር ማጣመር",
     excerpt:
       "Hospitality programs that precondition cars overnight — shaping guest NPS curves for EV-first properties.",
+    excerptAm:
+      "መኪናዎችን በሌሊት የሚያዘጋጁ የእንግዳ ተቀባይነት ፕሮግራሞች — ኤቪ-ምርጫ ቦታዎች ለእንግዶች የ NPS መስመርን መቅረጽ።",
     category: "car-rentals",
     author: { name: "James Ashford", title: "Driving Notes" },
     publishedAt: "2026-03-22",
@@ -451,8 +496,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-thermal-intervals",
     slug: "thermal-management-intervals-worth-the-extra-pencil-time",
     title: "Thermal management intervals worth the extra pencil time",
+    titleAm: "የሙቀት አስተዳደር የጊዜ ክፍተቶች ተጨማሪ ሂሳብ ያመራሉ",
     excerpt:
       "Coolant conductivity checks, inverter dust, and regeneration-heavy habits that redefine workshop visits.",
+    excerptAm:
+      "የቀዝቃዛ ማስተላለፍ ምርመራዎች፣ የኢንቨርተር አቧራ፣ እና የመልሶ ኃይል መልሞጥ ወጎች የወርክሾፕ ጉብኝቶችን እንደገና የሚገልጹ።",
     category: "car-maintenance",
     author: { name: "Priya Anand", title: "Ownership Lab" },
     publishedAt: "2026-04-27",
@@ -472,8 +520,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-preconditioning-climb",
     slug: "preconditioning-before-long-climbs-byd-battery-etiquette",
     title: "Preconditioning before long climbs — BYD battery etiquette",
+    titleAm: "ከረጅም ወደ ላይ መንገዶች በፊት ቅድመ ማሞቂያ — የ BYD ባትሪ ደንብ",
     excerpt:
       "Altitude deltas punish unprepared packs — humane trip planning layered with thermal headroom beats hero driving.",
+    excerptAm:
+      "የከፍታ ልዩነት ያልተዘጋጁ ጥቅሎችን ይቀጣሉ — የሙቀት አስተማማኝ ቦታ ያለው ሰው መሰል የጉዞ ዕቅድ ከጀግንነት ነዳድ ይበልጣል።",
     category: "car-maintenance",
     author: { name: "James Ashford", title: "Driving Notes" },
     publishedAt: "2026-03-15",
@@ -493,8 +544,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-crater-highway",
     slug: "crater-highway-one-stop-route-plan-with-byd-metrics",
     title: "Crater highway route plan — one-stop math with BYD metrics",
+    titleAm: "ክራተር ሃይወይ መንገድ ዕቅድ — ከ BYD መለኪያዎች ጋር አንድ-ማቆሚያ ሂሳብ",
     excerpt:
       "Bench your real kWh buckets against scenic viewpoints — spoiler: snack timing moves the timetable more than topography.",
+    excerptAm:
+      "እውነተኛ kWh ክምችትዎን ከዕይታ ቦታዎች ጋር ያወዳድሩ — አስታዋሽ፡ የቀላል ምግብ ጊዜ ከመሬት ቅርጽ ይልቅ የጊዜ ሰንጠረዥን ያንቀሳቅሳል።",
     category: "road-trips",
     author: { name: "Sofia Marchetti", title: "Urban Mobility" },
     publishedAt: "2026-04-21",
@@ -514,8 +568,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-atlantic-loop",
     slug: "atlantic-loop-electric-grand-touring-with-sanity-margins",
     title: "Atlantic loop electric grand touring with sanity margins",
+    titleAm: "አትላንቲክ ሉፕ ኤሌክትሪክ ታላቅ ጉዞ — አስተማማኝ የክልል ማርጂን",
     excerpt:
       "Harbor-city hops stitched with predictable DC anchors — choreography beats raw range bragging.",
+    excerptAm:
+      "የወደብ ከተሞች መዝለል በተፈለገ DC መሰረቶች የተጣራ — ኮሬዎግራፊ ከንጹህ ክልል ትርኢት ይበልጣል።",
     category: "road-trips",
     author: { name: "James Ashford", title: "Driving Notes" },
     publishedAt: "2026-04-02",

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils/cn";
 import type { VehicleFilters } from "./filters";
 
@@ -29,18 +30,22 @@ export function VehicleFilterSidebar({
   priceRange,
   yearRange,
 }: VehicleFilterSidebarProps) {
+  const t = useTranslations("Filters");
+
   return (
     <aside className="flex flex-col divide-y divide-outline-variant">
-      <Section title="Brand" defaultOpen>
+      <Section title={t("sectionBrand")} defaultOpen>
         <CheckboxList
+          emptyHint={t("noMatchingValues")}
           options={facets.makes}
           selected={filters.makes}
           onChange={(makes) => onChange({ ...filters, makes })}
         />
       </Section>
 
-      <Section title="Body type">
+      <Section title={t("sectionBody")}>
         <CheckboxList
+          emptyHint={t("noMatchingValues")}
           options={facets.bodyStyles}
           selected={filters.bodyStyles}
           onChange={(bodyStyles) =>
@@ -49,16 +54,16 @@ export function VehicleFilterSidebar({
         />
       </Section>
 
-      <Section title="Price range">
+      <Section title={t("sectionPrice")}>
         <div className="flex items-center gap-3">
           <NumberField
-            label="Minimum"
+            label={t("minimum")}
             value={filters.priceMin}
             placeholder={String(priceRange[0])}
             onChange={(v) => onChange({ ...filters, priceMin: v })}
           />
           <NumberField
-            label="Maximum"
+            label={t("maximum")}
             value={filters.priceMax}
             placeholder={String(priceRange[1])}
             onChange={(v) => onChange({ ...filters, priceMax: v })}
@@ -66,17 +71,18 @@ export function VehicleFilterSidebar({
         </div>
       </Section>
 
-      <Section title="Model year">
+      <Section title={t("sectionYear")}>
         <NumberField
-          label="From year"
+          label={t("fromYear")}
           value={filters.yearMin}
           placeholder={String(yearRange[0])}
           onChange={(v) => onChange({ ...filters, yearMin: v })}
         />
       </Section>
 
-      <Section title="Fuel type">
+      <Section title={t("sectionFuel")}>
         <CheckboxList
+          emptyHint={t("noMatchingValues")}
           options={facets.fuels}
           selected={filters.fuels}
           onChange={(fuels) =>
@@ -85,8 +91,9 @@ export function VehicleFilterSidebar({
         />
       </Section>
 
-      <Section title="Transmission">
+      <Section title={t("sectionTransmission")}>
         <CheckboxList
+          emptyHint={t("noMatchingValues")}
           options={facets.transmissions}
           selected={filters.transmissions}
           onChange={(transmissions) =>
@@ -98,8 +105,9 @@ export function VehicleFilterSidebar({
         />
       </Section>
 
-      <Section title="Drivetrain">
+      <Section title={t("sectionDrivetrain")}>
         <CheckboxList
+          emptyHint={t("noMatchingValues")}
           options={facets.drivetrains}
           selected={filters.drivetrains}
           onChange={(drivetrains) =>
@@ -111,8 +119,9 @@ export function VehicleFilterSidebar({
         />
       </Section>
 
-      <Section title="City">
+      <Section title={t("sectionCity")}>
         <CheckboxList
+          emptyHint={t("noMatchingValues")}
           options={facets.locations}
           selected={filters.locations}
           onChange={(locations) => onChange({ ...filters, locations })}
@@ -157,10 +166,12 @@ function Section({
 }
 
 function CheckboxList({
+  emptyHint,
   options,
   selected,
   onChange,
 }: {
+  emptyHint: string;
   options: Option[];
   selected: string[];
   onChange: (next: string[]) => void;
@@ -168,7 +179,7 @@ function CheckboxList({
   if (options.length === 0) {
     return (
       <p className="font-body-lg text-body-lg font-semibold leading-snug text-on-surface-variant">
-        No matching values in the current inventory.
+        {emptyHint}
       </p>
     );
   }

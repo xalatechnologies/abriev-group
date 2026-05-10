@@ -17,9 +17,7 @@
     "hint": "Language"
   },
   "Header": {
-    "accountModesAria": "Sign in or register",
     "signIn": "Sign in",
-    "register": "Register",
     "listVehicle": "List a Car",
     "postCarAria": "Post listing"
   }

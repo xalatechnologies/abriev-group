@@ -1,0 +1,78 @@
+{
+  "ContactPage": {
+    "heroEyebrow": "Contact",
+    "heroTitle": "Clear routing from the first hello.",
+    "heroLede": "Buyers, verified dealers, and fleet support—concierge follow-through, typically within one business day.",
+    "dealersEyebrow": "Trusted dealers",
+    "dealersTitle": "Our trusted car dealers",
+    "dealersLede": "Work directly with verified partners who list inventory on ABRIEV — screened for transparent pricing and customer care.",
+    "verifiedBadge": "Verified",
+    "inventoryCount": "{count} cars",
+    "phoneFallback": "Reach us via email",
+    "dealerTaglines": {
+      "robel-yohannes-kidane": "Urban EV and executive sedans.",
+      "amanuel-gebru-motors": "Family SUVs and light commercial.",
+      "genet-mekonnen-auto": "Certified pre-owned performance.",
+      "surafel-tadesse-cars": "Cross-border logistics & retail."
+    },
+    "eyebrowConcierge": "Concierge desk",
+    "contactTitle": "Reach our team anytime.",
+    "contactLede": "Sales enquiries, dealership partnerships, fleet support — one consistent team will route your note to the right specialist within one business day.",
+    "conciergeEmailLabel": "Primary sales inbox",
+    "phoneLabelDirect": "Sales & support desk",
+    "hoursTitle": "Response hours",
+    "hoursBody": "Monday–Saturday, 8:30 — 18:30 EAT. After-hours voicemail is monitored for urgent roadside and delivery coordination.",
+    "formTitle": "Send a concise note",
+    "formLede": "Include your timeline, preferred contact channel, and the region you are browsing from.",
+    "fieldFullName": "Full name",
+    "fieldFullNamePlaceholder": "e.g. Liya Bekele",
+    "fieldEmail": "Email",
+    "fieldEmailPlaceholder": "you@example.com",
+    "fieldPhone": "Phone (optional)",
+    "fieldPhonePlaceholder": "+251 9 xx xxx xxxx",
+    "fieldMessage": "How can we help?",
+    "fieldMessagePlaceholder": "Outline your enquiry, timeframe, city, and preferred contact channel.",
+    "submitSending": "Sending…",
+    "submitSend": "Send message",
+    "spamNotice": "Spam and automated payloads are discarded without notice.",
+    "locationTitle": "Our location",
+    "locationLede": "Concierge routing and partner meetings are coordinated from our Addis Ababa base.",
+    "locationAddressLine1": "Addis Ababa",
+    "locationAddressLine2": "Ethiopia",
+    "mapsOpenLabel": "Open in Google Maps",
+    "mapIframeTitle": "Map of Addis Ababa, Ethiopia — ABRIEV contact area",
+    "mapEmbedSrc": "https://maps.google.com/maps?q=9.032%2C38.7469&hl=en&z=14&output=embed",
+    "mapsOpenHref": "https://www.google.com/maps/search/?api=1&query=9.032,38.7469",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Quick answers before you write in.",
+    "faqLede": "These cover common questions about reaching us and working with ABRIEV. Use the concierge desk above if yours is more specific.",
+    "faqBrowseAllHref": "/faqs",
+    "faqBrowseAllLabel": "Open the full FAQs page",
+    "faqBrowseAllAria": "Open the FAQs page — more topics coming soon",
+    "faqItems": [
+      {
+        "question": "How quickly will ABRIEV respond?",
+        "answer": "Routine concierge notes are routed to the right specialist within one business day, often sooner during listed response hours."
+      },
+      {
+        "question": "What should I include in my first message?",
+        "answer": "Your timeline, time zone or city, preferred contact channel, and whether you are buying, selling, partnering, or arranging logistics speeds up routing."
+      },
+      {
+        "question": "How do verified dealers work with ABRIEV?",
+        "answer": "Listed partners undergo screening around pricing disclosure and buyer care expectations. Listing teams coordinate with concierge so customer threads stay coherent."
+      },
+      {
+        "question": "Does ABRIEV support cross-border paperwork or freight?",
+        "answer": "Yes—import and export milestones are stewarded alongside compliance and customs steps. Mention origin, destination, and target delivery window."
+      }
+    ]
+  },
+  "ContactAction": {
+    "nameError": "Add your full name.",
+    "emailError": "Use a valid email address.",
+    "messageShort": "Share a short note (15+ characters) so we can help.",
+    "success": "Thank you — our concierge acknowledged your enquiry. Expect a concise reply within one business day.",
+    "successBot": "Thank you — we will reply shortly."
+  }
+}

@@ -200,14 +200,14 @@ export function RegisterCredentialsPanel({
         {/* Full document navigation — `next/link` to `/api/*` can trigger App Router fetch and "Failed to fetch". */}
         <a
           href={googleHref}
-          className="inline-flex h-12 min-h-[48px] flex-1 items-center justify-center gap-2 rounded-xl border border-outline-variant bg-surface px-4 font-label-caps text-[11px] font-bold uppercase tracking-[0.12em] text-text-strong transition-colors duration-300 hover:border-brand-primary hover:bg-surface-container-high focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary/40"
+          className="inline-flex h-12 min-h-[48px] flex-1 items-center justify-center gap-2 rounded-xl border border-brand-primary/35 dark:border-brand-primary/45 bg-surface px-4 font-label-caps text-[11px] font-bold uppercase tracking-[0.12em] text-text-strong transition-colors duration-300 hover:border-brand-primary hover:bg-surface-container-high focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary/40"
         >
           <GoogleGlyph className="shrink-0" />
           <span>{t("continueGoogle")}</span>
         </a>
         <a
           href={facebookHref}
-          className="inline-flex h-12 min-h-[48px] flex-1 items-center justify-center gap-2 rounded-xl border border-outline-variant bg-surface px-4 font-label-caps text-[11px] font-bold uppercase tracking-[0.12em] text-text-strong transition-colors duration-300 hover:border-brand-primary hover:bg-surface-container-high focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary/40"
+          className="inline-flex h-12 min-h-[48px] flex-1 items-center justify-center gap-2 rounded-xl border border-brand-primary/35 dark:border-brand-primary/45 bg-surface px-4 font-label-caps text-[11px] font-bold uppercase tracking-[0.12em] text-text-strong transition-colors duration-300 hover:border-brand-primary hover:bg-surface-container-high focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary/40"
         >
           <Facebook className="size-5 shrink-0 text-[#0866FF]" aria-hidden />
           <span>{t("continueFacebook")}</span>

@@ -1,0 +1,78 @@
+{
+  "ContactPage": {
+    "heroEyebrow": "እውቂያ",
+    "heroTitle": "ከመጀመሪያው እንኳን ሰላም ጀምሮ ግልጽ መስመር።",
+    "heroLede": "ለገዢዎች፣ ለተረጋገጡ ነጋዴዎች እና ለብድር ድጋፍ—የኮንስየር ተከታታይነት፣ ብዙውን ጊዜ በአንድ የስራ ቀን ውስጥ።",
+    "dealersEyebrow": "የታመኑ ነጋዴዎች",
+    "dealersTitle": "የእኛ የታመኑ የመኪና ነጋዴዎች",
+    "dealersLede": "በአብሬቭ ዝርዝር ላይ የሚያቀርቡ የተረጋገጡ አጋሮች ጋር በቀጥታ ይስሩ—ለግልጽ ዋጋ እና ለደንበኛ ክትትል የተመረመሩ።",
+    "verifiedBadge": "የተረጋገጠ",
+    "inventoryCount": "{count} መኪኖች",
+    "phoneFallback": "በኢሜይል ያግኙን",
+    "dealerTaglines": {
+      "robel-yohannes-kidane": "የከተማ ኤሌክትሪክ መኪና እና የኤግዚኪዩቲቭ ሴዳን።",
+      "amanuel-gebru-motors": "ለቤተሰብ SUV እና ቀላል ንግድ መኪና።",
+      "genet-mekonnen-auto": "የተረጋገጠ አፈፃፃሜ ተመላሽ።",
+      "surafel-tadesse-cars": "የድንበር ሎጂስቲክስ እና ቀጥታ ሽያጭ።"
+    },
+    "eyebrowConcierge": "የኮንስየር ዴስክ",
+    "contactTitle": "ቡድናችንን በማንኛውም ጊዜ ያግኙ።",
+    "contactLede": "የሽያጭ ጥያቄዎች፣ የነጋዴ ትብብር፣ የብድር ድጋፍ — አንድ ባለሙያ ቡድን ማስታወሻዎን በአንድ የስራ ቀን ውስጥ ለትክክለኛ ስፔሻሊስት ያስተላልፋል።",
+    "conciergeEmailLabel": "ዋና የሽያጭ ኢንቦክስ",
+    "phoneLabelDirect": "የሽያጭ እና ድጋፍ ዴስክ",
+    "hoursTitle": "የምላሽ ሰዓታት",
+    "hoursBody": "ሰኞ–ቅዳሜ፣ 8፡30 — 18፡30 EAT። ከሰዓት በኋላ የድምፅ መልዕክት ለአስቸኳይ የመንገድ እና ማድረሻ ትብብር ይታዩታል።",
+    "formTitle": "አጭር ማስታወሻ ይላኩ",
+    "formLede": "የጊዜ ሰሌዳዎን፣ የሚመርጡት የግንኙነት መንገድ እና የሚመለከቱት ክልል ያካትቱ።",
+    "fieldFullName": "ሙሉ ስም",
+    "fieldFullNamePlaceholder": "ምሳሌ፣ ሊያ በቀለ",
+    "fieldEmail": "ኢሜይል",
+    "fieldEmailPlaceholder": "you@example.com",
+    "fieldPhone": "ስልክ (አማራጭ)",
+    "fieldPhonePlaceholder": "+251 9 xx xxx xxxx",
+    "fieldMessage": "እንዴት እንረዳዎታለን?",
+    "fieldMessagePlaceholder": "ጥያቄዎን፣ የጊዜ ገደብ፣ ከተማ እና የሚመርጡት የግንኙነት መንገድ ይግለጹ።",
+    "submitSending": "በመላክ ላይ…",
+    "submitSend": "መልዕክት ላክ",
+    "spamNotice": "ስፓም እና አውቶማቲክ መልዕክቶች ማስታወቂያ ሳይኖር ይወገዳሉ።",
+    "locationTitle": "አካባቢያችን",
+    "locationLede": "የኮንስየር ማስተላለፍ እና የአጋር ስብሰባዎች ከአዲስ አበባ መሰረታችን ይተባበራሉ።",
+    "locationAddressLine1": "አዲስ አበባ",
+    "locationAddressLine2": "ኢትዮጵያ",
+    "mapsOpenLabel": "በ Google ካርታ ክፈት",
+    "mapIframeTitle": "የአዲስ አበባ ካርታ — የአብሬቭ እውቂያ ክልል",
+    "mapEmbedSrc": "https://maps.google.com/maps?q=9.032%2C38.7469&hl=am&z=14&output=embed",
+    "mapsOpenHref": "https://www.google.com/maps/search/?api=1&query=9.032,38.7469",
+    "faqEyebrow": "ተደጋጋሚ ጥያቄዎች",
+    "faqTitle": "ከመጻፍዎ በፊት ፈጣን መልሶች።",
+    "faqLede": "እኛን ለማግኘት እና ከአብሬቭ ጋር ለመስራት ስለሚታወቁ ጥያቄዎች ይሄዋል። የእርስዎ የበለጠ ልዩ ከሆነ ከላይ ያለውን የኮንስየር ዴስክ ይጠቀሙ።",
+    "faqBrowseAllHref": "/faqs",
+    "faqBrowseAllLabel": "ሙሉ የጥያቄ ጥያቄ ገጽ ክፈት",
+    "faqBrowseAllAria": "የጥያቄ ጥያቄ ገጽ ክፈት — ተጨማሪ ርዕሶች በመንገድ ላይ",
+    "faqItems": [
+      {
+        "question": "አብሬቭ ምን ያህል ፈጥኖ ይመልሳል?",
+        "answer": "የመደበኛ የኮንስየር ማስታወሻዎች በአንድ የስራ ቀን ውስጥ ለትክክለኛ ስፔሻሊስት ይላካሉ፣ በተዘረዘሩ የምላሽ ሰዓታት ውስጥ ብዙ ጊዜ ታዋቂ ነው።"
+      },
+      {
+        "question": "በመጀመሪያ መልዕክቴ ምን ማካተት አለብኝ?",
+        "answer": "የጊዜ መስመርዎ፣ የሰዓት ክልል ወይም ከተማ፣ የሚመርጡት የግንኙነት መንገድ፣ እና ትግበራዎ ግዢ፣ ሽያጭ፣ ትብብር ወይም ሎጂስቲክስ መሆኑ ማስተላለፉን ያፋጥነዋል።"
+      },
+      {
+        "question": "የተረጋገጡ ነጋዴዎች ከአብሬቭ ጋር እንዴት ይሰራሉ?",
+        "answer": "የተዘረዘሩ አጋሮች ስለ ዋጋ ግልጽነት እና ስለ ገዢ ክትትል ተገቢነት ይመረመራሉ። የዝርዝር ቡድኖች ከኮንስየር ጋር ይተባበራሉ፣ የደንበኛ ክሮች ቀላል ይቆያሉ።"
+      },
+      {
+        "question": "አብሬቭ የድንበር ሰነድ ወይም ጭነት ይደግፋል?",
+        "answer": "አዎ—የከደት እና ላክ ምዕራፎች ከተገቢነት እና ከጉምሩክ ደረጃዎች ጋር ይመራሉ። መነሻ፣ መድረሻ እና የሚፈለገው የማድረሻ ጊዜ ያካትቱ።"
+      }
+    ]
+  },
+  "ContactAction": {
+    "nameError": "ሙሉ ስምዎን ያክሉ።",
+    "emailError": "ትክክለኛ ኢሜይል ይጠቀሙ።",
+    "messageShort": "ለመርዳት አጭር ማስታወሻ (15+ ቁምፊ) ያካፍሉ።",
+    "success": "እናመሰግናለን — ኮንስየራችን ጥያቄዎን ተቀብሏል። በአንድ የስራ ቀን ውስጥ አጭር ምላሽ ይጠብቁ።",
+    "successBot": "እናመሰግናለን — በቅርቡ እንመልሳለን።"
+  }
+}

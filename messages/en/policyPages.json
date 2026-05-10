@@ -1,7 +1,9 @@
 {
   "PolicyPages": {
     "shell": {
-      "documentAriaLabel": "Policy document"
+      "documentAriaLabel": "Policy document",
+      "tocHeading": "On this page",
+      "tocAriaLabel": "Table of contents for this policy"
     },
     "carInsuranceAssistance": {
       "metaTitle": "Car insurance assistance",
@@ -9,7 +11,8 @@
       "eyebrow": "Support",
       "title": "Car insurance assistance.",
       "intro": "ABRIEV is a curated automotive marketplace. We do not underwrite insurance or act as your insurer. This page explains how our team and partners can help you navigate coverage, documentation, and claims related to vehicles you discover here.",
-      "lastUpdated": "Last updated: May 2026",
+      "lastUpdatedIso": "2026-05-10",
+      "lastUpdated": "Last updated: 10 May 2026",
       "contactLead": "If you need help with a specific listing, quote, or claim, contact {brand} at {email} and reference the vehicle or booking reference.",
       "contactCta": "Contact us",
       "sections": [
@@ -51,6 +54,13 @@
           "paragraphs": [
             "To assist you, we may process contact details and vehicle identifiers you share with us. See our Privacy Policy for how we handle personal data."
           ]
+        },
+        {
+          "heading": "Regulatory status and professional advice",
+          "paragraphs": [
+            "ABRIEV is not a licensed insurer, broker, or insurance agent in every jurisdiction. Information on this page is general and does not replace advice from a regulated professional where your purchase, policy, or claim requires it.",
+            "If you are unsure about coverage, compulsory limits, or cross-border registration, consult a qualified broker or legal adviser before you commit."
+          ]
         }
       ]
     },
@@ -60,7 +70,8 @@
       "eyebrow": "Mobility",
       "title": "Temporary car replacement.",
       "intro": "When your vehicle is unavailable because of repairs, service, or an insured event, you may be eligible for a temporary replacement depending on your policy, dealer program, and fleet availability. ABRIEV helps schedule and document these arrangements when offered through our network.",
-      "lastUpdated": "Last updated: May 2026",
+      "lastUpdatedIso": "2026-05-10",
+      "lastUpdated": "Last updated: 10 May 2026",
       "contactLead": "Tell us your situation, policy reference (if any), and preferred dates at {email}. Our concierge will share available options from the {brand} network.",
       "contactCta": "Contact us",
       "sections": [
@@ -98,6 +109,13 @@
           ]
         },
         {
+          "heading": "Identification and cross-border use",
+          "paragraphs": [
+            "You must present identity and driving credentials that the partner and local law accept. Cross-border use of a courtesy or rental vehicle may be restricted or require additional insurance endorsements.",
+            "ABRIEV does not guarantee that a replacement arranged in one country may be driven in another; confirm territorial limits in the partner agreement."
+          ]
+        },
+        {
           "heading": "Limitations",
           "paragraphs": [
             "Peak seasons, supply constraints, or remote locations may limit availability. We will propose alternatives (different class, different pickup site, or alternate dates) when possible.",
@@ -112,7 +130,8 @@
       "eyebrow": "Legal",
       "title": "Refund policy.",
       "intro": "This policy explains how refunds and cancellations work for payments you make to ABRIEV or through our checkout flows. Services performed directly by third-party dealers, insurers, or lenders follow their own contracts.",
-      "lastUpdated": "Last updated: May 2026",
+      "lastUpdatedIso": "2026-05-10",
+      "lastUpdated": "Last updated: 10 May 2026",
       "contactLead": "For refund requests, email {email} with your order or booking ID, the payment method used, and a short description of the issue. We respond within five business days in most cases.",
       "contactCta": "Contact us",
       "sections": [
@@ -152,6 +171,13 @@
           ]
         },
         {
+          "heading": "Consumer authorities and alternative dispute resolution",
+          "paragraphs": [
+            "If you believe we have not handled a refund request in line with applicable consumer law, you may escalate to your national consumer protection agency or, where available, an approved alternative dispute resolution (ADR) provider. Governments often publish contact details online.",
+            "Nothing in this policy limits any non-waivable right to bring a matter before a competent court."
+          ]
+        },
+        {
           "heading": "Currency and processing",
           "paragraphs": [
             "Refunds are sent to the original payment method. Card schemes or banks may add their own settlement timelines.",
@@ -166,7 +192,8 @@
       "eyebrow": "Legal",
       "title": "Terms of Service.",
       "intro": "Welcome to ABRIEV. By accessing our website, apps, or services, you agree to these Terms of Service and to the documents they reference (including our Privacy Policy). If you do not agree, please stop using the services.",
-      "lastUpdated": "Last updated: May 2026",
+      "lastUpdatedIso": "2026-05-10",
+      "lastUpdated": "Last updated: 10 May 2026",
       "contactLead": "Questions about these terms? Write to {email} with \"Terms\" in the subject line. References to \"{brand}\", \"we\", or \"us\" mean the ABRIEV operating entity responsible for the services in your region.",
       "contactCta": "Contact us",
       "sections": [
@@ -244,6 +271,19 @@
           ]
         },
         {
+          "heading": "Electronic communications and language",
+          "paragraphs": [
+            "Where the law allows, you consent to receive notices, receipts, and contractual communications electronically, including at the email address associated with your account.",
+            "The governing language of these Terms is English. Translations (such as Amharic) are provided for convenience; if a translation conflicts with English, the English version prevails except where mandatory local law requires otherwise."
+          ]
+        },
+        {
+          "heading": "Force majeure",
+          "paragraphs": [
+            "Neither party is liable for delay or failure caused by events beyond reasonable control, including natural disasters, war, terrorism or civil unrest, labour disputes, widespread internet or utilities failures, epidemic controls, or governmental orders. Obligations are suspended for the duration of the event."
+          ]
+        },
+        {
           "heading": "Changes",
           "paragraphs": [
             "We may update these terms to reflect new features or legal requirements. Material changes will be announced with reasonable notice where required. Continued use after the effective date constitutes acceptance.",
@@ -258,7 +298,8 @@
       "eyebrow": "Legal",
       "title": "Privacy Policy.",
       "intro": "We built ABRIEV around trust. This Policy describes the personal data we process, why we process it, how long we keep it, and the choices you have. Capitalised terms like \"Controller\" follow applicable privacy law in your region.",
-      "lastUpdated": "Last updated: May 2026",
+      "lastUpdatedIso": "2026-05-10",
+      "lastUpdated": "Last updated: 10 May 2026",
       "contactLead": "Data protection questions: {email}. Please include your country or region so we route your request correctly. The data controller for ABRIEV services is the entity identified in your contract or regional notice.",
       "contactCta": "Contact us",
       "sections": [
@@ -331,6 +372,20 @@
           "heading": "Cookies",
           "paragraphs": [
             "We use essential cookies to keep you signed in and remember preferences. With your consent where required, we use analytics cookies to understand usage. Browser settings and our cookie banner let you adjust choices."
+          ]
+        },
+        {
+          "heading": "Automated decision-making",
+          "paragraphs": [
+            "We do not rely solely on automated processing to make decisions that produce legal or similarly significant effects concerning you without meaningful human oversight, unless required or permitted by law with appropriate safeguards."
+          ]
+        },
+        {
+          "heading": "Regional disclosures",
+          "paragraphs": [
+            "European Economic Area, United Kingdom, and Switzerland: you may lodge a complaint with your local data protection supervisory authority. We honour applicable GDPR / UK GDPR rights as described above.",
+            "United States — California and similar states: depending on residency you may request to know categories of personal information collected, to delete or correct information subject to exceptions, and—where applicable—to opt out of certain sales or sharing. We do not sell personal information for money within the meaning of the CCPA/CPRA.",
+            "Other jurisdictions may confer additional statutory rights; include your region when you write to us so we can tailor our response."
           ]
         },
         {

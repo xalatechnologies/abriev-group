@@ -1,6 +1,7 @@
 "use client";
 
 import { X } from "lucide-react";
+import { useTranslations } from "next-intl";
 import type { VehicleFilters } from "./filters";
 import { countActiveFilters, emptyFilters } from "./filters";
 
@@ -12,6 +13,7 @@ type ActiveFilterChipsProps = {
 type Chip = { id: string; label: string; onRemove: () => void };
 
 export function ActiveFilterChips({ filters, onChange }: ActiveFilterChipsProps) {
+  const t = useTranslations("Filters");
   const chips: Chip[] = [];
 
   filters.makes.forEach((m) =>
@@ -49,14 +51,14 @@ export function ActiveFilterChips({ filters, onChange }: ActiveFilterChipsProps)
         onChange({ ...filters, fuels: filters.fuels.filter((x) => x !== f) }),
     }),
   );
-  filters.transmissions.forEach((t) =>
+  filters.transmissions.forEach((tr) =>
     chips.push({
-      id: `trans-${t}`,
-      label: prettify(t),
+      id: `trans-${tr}`,
+      label: prettify(tr),
       onRemove: () =>
         onChange({
           ...filters,
-          transmissions: filters.transmissions.filter((x) => x !== t),
+          transmissions: filters.transmissions.filter((x) => x !== tr),
         }),
     }),
   );
@@ -85,13 +87,13 @@ export function ActiveFilterChips({ filters, onChange }: ActiveFilterChipsProps)
   if (filters.priceMin !== undefined)
     chips.push({
       id: "price-min",
-      label: `Min $${filters.priceMin.toLocaleString()}`,
+      label: t("minPriceChip", { amount: `$${filters.priceMin.toLocaleString()}` }),
       onRemove: () => onChange({ ...filters, priceMin: undefined }),
     });
   if (filters.priceMax !== undefined)
     chips.push({
       id: "price-max",
-      label: `Max $${filters.priceMax.toLocaleString()}`,
+      label: t("maxPriceChip", { amount: `$${filters.priceMax.toLocaleString()}` }),
       onRemove: () => onChange({ ...filters, priceMax: undefined }),
     });
   if (filters.yearMin !== undefined)
@@ -122,7 +124,7 @@ export function ActiveFilterChips({ filters, onChange }: ActiveFilterChipsProps)
           onClick={() => onChange({ ...emptyFilters, category: filters.category })}
           className="inline-flex min-h-[40px] items-center px-2 py-1.5 font-label-caps text-sm font-bold uppercase tracking-wide text-on-background underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
         >
-          Reset all
+          {t("resetAllChips")}
         </button>
       ) : null}
     </div>

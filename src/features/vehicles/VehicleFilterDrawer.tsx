@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
 import type { ReactNode } from "react";
 import { useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 type VehicleFilterDrawerProps = {
   open: boolean;
@@ -20,6 +21,9 @@ export function VehicleFilterDrawer({
   activeCount,
   children,
 }: VehicleFilterDrawerProps) {
+  const tFilters = useTranslations("Filters");
+  const tCatalog = useTranslations("Catalog");
+
   useEffect(() => {
     if (!open) return;
     document.body.style.overflow = "hidden";
@@ -50,17 +54,18 @@ export function VehicleFilterDrawer({
               ease: [0.22, 1, 0.36, 1],
             }}
             className="fixed inset-y-0 right-0 z-50 flex w-full max-w-md flex-col bg-surface-container-lowest shadow-editorial lg:hidden"
-            aria-label="Filter inventory"
+            aria-label={tFilters("inventoryAria")}
           >
             <header className="flex items-center justify-between border-b border-outline-variant px-6 py-5">
               <span className="font-label-caps text-sm font-bold uppercase tracking-[0.14em] text-on-background">
-                Filter inventory {activeCount > 0 ? `(${activeCount})` : ""}
+                {tCatalog("filterInventoryHeading")}
+                {activeCount > 0 ? ` (${activeCount})` : ""}
               </span>
               <button
                 type="button"
                 onClick={onClose}
                 className="flex size-11 items-center justify-center rounded-full text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary/40 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-container-lowest"
-                aria-label="Close filters"
+                aria-label={tFilters("closeAria")}
               >
                 <X className="size-5" aria-hidden />
               </button>
@@ -72,7 +77,7 @@ export function VehicleFilterDrawer({
                 onClick={onApply ?? onClose}
                 className="flex h-14 flex-1 items-center justify-center rounded-sm bg-on-background text-base font-semibold text-background transition-colors duration-200 hover:bg-inverse-surface"
               >
-                View inventory
+                {tFilters("viewInventory")}
               </button>
             </footer>
           </motion.aside>

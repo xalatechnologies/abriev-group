@@ -67,9 +67,11 @@ export function SiteHeader() {
         backdropFilter: scrolledChrome ? "blur(20px) saturate(1.4)" : "blur(0px)",
         borderBottomColor: scrolledChrome
           ? isDark
-            ? "rgba(255, 255, 255, 0.10)"
-            : "rgba(0, 0, 0, 0.08)"
-          : "rgba(0, 0, 0, 0)",
+            ? "rgba(255, 255, 255, 0.16)"
+            : "rgba(0, 0, 0, 0.12)"
+          : isDark
+            ? "rgba(255, 255, 255, 0.12)"
+            : "rgba(0, 0, 0, 0.10)",
       }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
       className={cn(
@@ -160,7 +162,7 @@ export function SiteHeader() {
           >
             {tHeader("listVehicle")}
           </CTAButton>
-          <AuthModeSwitch className="min-w-0 max-w-[218px] shrink" />
+          <AuthModeSwitch className="min-w-0 max-w-[152px] shrink sm:max-w-[168px]" />
         </div>
 
         <div className="relative z-10 col-start-2 row-start-1 flex items-center gap-2 justify-self-end lg:hidden">
