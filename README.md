@@ -17,12 +17,22 @@ A curated automotive marketplace — built with Next.js 15, React 19, Tailwind, 
 
 ```bash
 pnpm install
+pnpm clean      # rm -rf .next (fixes stale webpack chunks locally)
 pnpm dev        # dev server
+pnpm dev:clean  # clean then dev
 pnpm build      # production build
 pnpm start      # run prod build
 pnpm lint       # lint
 pnpm typecheck  # tsc --noEmit
 ```
+
+## Deploying on Vercel
+
+- **Framework preset:** Next.js (App Router).
+- **Install:** `pnpm install` (enable corepack locally: `corepack enable`; Vercel can use **Install Command:** `pnpm install`).
+- **Build:** `pnpm build` (default **`next build`** is fine).
+- **Output:** Next default — no custom `output` in `next.config.ts`.
+- **Environment variables:** copy from [`.env.example`](./.env.example). Set `AUTH_PUBLIC_ORIGIN` to your production URL (for example `https://<project>.vercel.app` or your custom domain) when using OAuth redirects.
 
 ## Structure
 
