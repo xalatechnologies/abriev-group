@@ -1,0 +1,515 @@
+import type { Article } from "@/types/article";
+
+/** Model-led news hub content — appended before legacy editorial entries in `articles.ts`. */
+export const BYD_INSIGHT_ARTICLES: Article[] = [
+  {
+    id: "n-yangwang-u8-hero",
+    slug: "yangwang-u8-luxury-that-learns-your-road",
+    title: "Yangwang U8: luxury that learns your road",
+    excerpt:
+      "How BYD’s flagship SUV-caliber Yangwang proposition blends theater, traction logic, and long-horizon refinement for drivers who rarely stay on pavement.",
+    category: "byd-u8",
+    author: {
+      name: "Mei Lin",
+      title: "Electrification Desk",
+    },
+    publishedAt: "2026-05-04",
+    readingTime: 9,
+    views: 15_820,
+    featured: true,
+    cover: {
+      src: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=2000&q=80&auto=format&fit=crop",
+      alt: "Premium SUV silhouette on mountain road",
+    },
+    content: [
+      "The Yangwang U8 narrative is less about ticking spec-sheet boxes and more about confidence: traction that anticipates crests and camber changes, damping that hides mass without pretending the vehicle is petite, and a cabin disciplined enough that long drives feel composed rather than choreographed.",
+      "What surprises first-time observers is how the hardware story maps to everyday Africa–Europe routes planners care about — heat, altitude swings, charging cadence — without turning the cockpit into an engineering symposium.",
+      "Expect continued refinements around brake feel blending and predictive energy use as fleets gather telematics; the experiential bar for “luxury electric SUV” is moving quickly, and this is where BYD stakes a visible flag.",
+      "If you are cross-shopping prestige ladder SUVs, track real-world preconditioning behaviors and servicing transparency — both areas where early adopters report the steepest learning curves.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-u8-calibration",
+    slug: "byd-u8-calibration-for-real-drivers",
+    title: "BYD U8 capability: calibration for real drivers",
+    excerpt:
+      "Beyond the launch reels — what suspension cross-talk, tyre choices, and drive-mode memory mean when you daily a high-mass electrified performer.",
+    category: "byd-u8",
+    author: { name: "James Ashford", title: "Driving Notes" },
+    publishedAt: "2026-04-28",
+    readingTime: 7,
+    views: 9_940,
+    cover: {
+      src: "https://images.unsplash.com/photo-1503376780353-7e669276fc8f?w=2000&q=80&auto=format&fit=crop",
+      alt: "Sports SUV parked at dusk",
+    },
+    content: [
+      "Flagship SUVs live or die by the quiet harmony between regeneration and friction braking; on the U8, the goal is repeatable pedal character across battery states.",
+      "Tyre stagger and unsprung mass matter twice as much when motor torque arrives without theatrics — fitment choices noticeably change steer weight and motorway stability.",
+      "For owners who alternate city weeks with gravel access roads, pinning a custom drive preset (ride height, creep, recuperation bias) eliminates daily menu-diving.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-seagull-shift",
+    slug: "byd-seagull-the-quiet-shift-in-city-motoring",
+    title: "BYD Seagull: the quiet shift in city motoring",
+    excerpt:
+      "Why the smallest BYD halo models are rewriting parking economics, insurer telematics, and the shape of commuter EV fleets.",
+    category: "byd-seagull",
+    author: { name: "Sofia Marchetti", title: "Urban Mobility" },
+    publishedAt: "2026-05-02",
+    readingTime: 6,
+    views: 18_340,
+    cover: {
+      src: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=2000&q=80&auto=format&fit=crop",
+      alt: "Compact hatchback on city avenue",
+    },
+    content: [
+      "Density-friendly packaging is Seagull’s thesis: enough range for weekday loops without turning every kerb negotiation into spatial geometry finals.",
+      "Fleet buyers watch total cost curves — depreciation, electrons vs. liters, downtime — Seagull’s story is persuasive when chargers sit near depots.",
+      "Ride quality over broken urban surfaces separates polished city EVs from parts-bin conversions; longitudinal pitch control defines perceived quality here.",
+      "Families stepping out of ageing compact ICE cars will notice maintenance silence first — then predictable energy bills.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-seagull-commute",
+    slug: "living-with-the-seagull-commute-metrics-that-stick",
+    title: "Living with the Seagull: commute metrics that stick",
+    excerpt:
+      "Measured kWh/km swings, preconditioning etiquette, and the micro-habits that keep small-battery commuters drama-free.",
+    category: "byd-seagull",
+    author: { name: "Priya Anand", title: "Ownership Lab" },
+    publishedAt: "2026-04-12",
+    readingTime: 5,
+    views: 6_120,
+    cover: {
+      src: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=2000&q=80&auto=format&fit=crop",
+      alt: "City traffic aerial view",
+    },
+    content: [
+      "Log three weeks of morning departures uncorrected vs. preconditioned — the delta shows up immediately in usable range comfort, not brochure range.",
+      "Short-trip skew punishes metrics; blend at least two longer mixed-speed runs quarterly to sanity-check tyre pressure and alignment.",
+      "Cable discipline at home beats opportunistic top-ups unless your grid tariff rewards them.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-dolphin-behind-seagull",
+    slug: "dolphin-echo-behind-seagull-momentum",
+    title: "Dolphin echoes behind Seagull momentum",
+    excerpt:
+      "Sibling platform lessons — usable interior volume, HV packaging, and the brand cues migrating between BYD hatchbacks globally.",
+    category: "byd-seagull",
+    author: { name: "Eliot Kerr", title: "Product Notes" },
+    publishedAt: "2026-03-30",
+    readingTime: 6,
+    views: 7_088,
+    cover: {
+      src: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=2000&q=80&auto=format&fit=crop",
+      alt: "Bright compact car front detail",
+    },
+    content: [
+      "Portfolio overlap is intentional — materials and UX modules migrate vertically so service networks see fewer one-off quirks.",
+      "Seagull buyers often cross-shop Dolphin variants; hinge packaging, ingress height, and boot aperture matter more than 0–100 folklore.",
+      "Regional homologations still influence motor maps — throttle maps soften in some colder markets to protect traction narratives.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-e2-practical-lines",
+    slug: "byd-e2-practical-lines-smart-electrification",
+    title: "BYD E2: practical lines, smart electrification",
+    excerpt:
+      "The E2 corridor — why compact liftback proportions still win driveway battles and how BYD trims weight without hollow doors.",
+    category: "byd-e2",
+    author: { name: "Dawit Mekonnen", title: "Regional Reporter" },
+    publishedAt: "2026-04-22",
+    readingTime: 6,
+    views: 8_760,
+    cover: {
+      src: "https://images.unsplash.com/photo-1617814076367-ab27c5339d94?w=2000&q=80&auto=format&fit=crop",
+      alt: "Silver compact electric car side profile",
+    },
+    content: [
+      "E2 shines when garages are measured in centimeters, not brochures — roofline discipline pays off in shading and hail-prone climates.",
+      "Heat-pump adoption cycles matter for temperate highland cities — winter range anxiety compresses dramatically with sensible preconditioning schedules.",
+      "Service footprints favor consolidated drivetrains; ask about brake fluid hygiene intervals paired with regeneration-heavy routines.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-e2-charging-graphs",
+    slug: "byd-e2-charging-curves-what-wallboxes-reveal",
+    title: "BYD E2 charging curves: what wallboxes reveal",
+    excerpt:
+      "From 7 kW dusk sessions to midday DC bursts — mapping the invisible graph owners actually live with.",
+    category: "byd-e2",
+    author: { name: "Liya Tesfaye", title: "Infrastructure" },
+    publishedAt: "2026-03-18",
+    readingTime: 5,
+    views: 4_330,
+    cover: {
+      src: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=2000&q=80&auto=format&fit=crop",
+      alt: "Electric vehicle at charging station",
+    },
+    content: [
+      "Flat segments late in SOC windows often matter more than peak kW spikes for dinner-hour top-ups.",
+      "Temperature derates show up politely in telemetry until they do not — log connector heat on repeated DC hops.",
+      "Residential tariffs that reward midday solar alignment pair naturally with midday errands and battery thermal stability.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-yuan-up-density",
+    slug: "yuan-up-smart-crossover-density-done-right",
+    title: "Yuan Up Smart: crossover density done right",
+    excerpt:
+      "Elevated seating without SUV theatrics — how the Yuan Up sweet spot caters to curb-hopping creatives and nursery runs alike.",
+    category: "yuan-up-smart",
+    author: { name: "Nina Alvarez", title: "Lifestyle Desk" },
+    publishedAt: "2026-04-30",
+    readingTime: 7,
+    views: 11_210,
+    cover: {
+      src: "https://images.unsplash.com/photo-1519641471654-76ce4327cad7?w=2000&q=80&auto=format&fit=crop",
+      alt: "Compact crossover in studio light",
+    },
+    content: [
+      "The Yuan Up brief is visibility without bulk — windshield pace, pillar placement, and mirror noise define confidence more than nominal ground clearance.",
+      "Colour and trim palettes skew playful; resale curves will split between safe neutrals and statement hues.",
+      "Cargo flexibility beats max litres on paper — false floor heights and seat tumble friction determine real swaps between pram weeks and IKEA weekends.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-yuan-up-packaging",
+    slug: "yuan-up-smart-packaging-three-lessons-from-the-aisle",
+    title: "Yuan Up Smart packaging: three lessons from the aisle",
+    excerpt:
+      "Why seat H-point choices beat touchscreen inches for retaining families upgrading from older ICE crossovers.",
+    category: "yuan-up-smart",
+    author: { name: "Priya Anand", title: "Ownership Lab" },
+    publishedAt: "2026-04-06",
+    readingTime: 5,
+    views: 5_420,
+    cover: {
+      src: "https://images.unsplash.com/photo-1523983254930-cf986e5e8135?w=2000&q=80&auto=format&fit=crop",
+      alt: "Family loading car with cargo",
+    },
+    content: [
+      "Kid-seat door swing arcs punish poorly placed charge ports — Yuan Up teams learned from early operator feedback loops.",
+      "Second-row egress width tracks school-run satisfaction more reliably than reclining angle marketing.",
+      "Pet owners watch seat material sealing and HV cable routing under load floors.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-teng-family-flex",
+    slug: "denza-teng-i-space-that-flexes-for-families",
+    title: "Denza Teng I: space that flexes for families",
+    excerpt:
+      "Seven-seat choreography — who gets lumbar priority, where bags actually live when every seat earns its keep.",
+    category: "teng-i",
+    author: { name: "James Ashford", title: "Driving Notes" },
+    publishedAt: "2026-04-25",
+    readingTime: 8,
+    views: 9_055,
+    cover: {
+      src: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=2000&q=80&auto=format&fit=crop",
+      alt: "Premium SUV cruising at dusk with city lights ahead",
+    },
+    content: [
+      "The Teng I story is amortized across school terms and airport fortnights alike — aisle width earns its keep during third-row ingress panic moments.",
+      "Climate stratification separates patient cabins from argumentative ones — watch rear vent placement under child seats.",
+      "Roof-loading compatibility still surprises buyers migrating from taller ladder-frame traditions — rack crossbar spread data matters.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-teng-evenings",
+    slug: "seven-seat-evenings-in-the-teng-i",
+    title: "Seven-seat evenings in the Teng I",
+    excerpt:
+      "Night drives, damping transparency, and the low-speed conversations that expose cabin isolation quality.",
+    category: "teng-i",
+    author: { name: "Eliot Kerr", title: "Product Notes" },
+    publishedAt: "2026-03-26",
+    readingTime: 6,
+    views: 5_870,
+    cover: {
+      src: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=2000&q=80&auto=format&fit=crop",
+      alt: "City lights through car windshield at night",
+    },
+    content: [
+      "Rear coaxial speaker placement clashes with chatter-heavy rows — tune accordingly before road-trip playlists duel with homework debriefs.",
+      "Thermal mass in rear glass areas shows up past sunset — ceramic film decisions change HVAC duty cycles subtly.",
+      "Motor whine perceptibility climbs on broken chipseal — isolation foam density is the unsung hero.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-blade-battery-story",
+    slug: "blade-battery-the-engineering-story-buyers-see",
+    title: "Blade Battery: the engineering story buyers actually see",
+    excerpt:
+      "Pack architecture translated into leasing confidence — why thermal pathways and collision load cases now show up in showroom conversations.",
+    category: "electric-vehicles",
+    author: { name: "Mei Lin", title: "Electrification Desk" },
+    publishedAt: "2026-05-07",
+    readingTime: 8,
+    views: 21_090,
+    cover: {
+      src: "https://images.unsplash.com/photo-1621263764928-df1444cde5bc?w=2000&q=80&auto=format&fit=crop",
+      alt: "Engineering workstation with battery modules",
+    },
+    content: [
+      "Structural integration stories only resonate when fleets publish transparent incident telemetry — insurers now model BYD cohorts distinctly.",
+      "Cell-to-pack rhetoric aside, buyers feel confidence through coolant routing simplicity and predictable service disconnect choreography.",
+      "Residual values climb when resale inspection checklists shorten — Blade’s serviceability narrative helps here.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-ultra-dc-metrics",
+    slug: "ultrafast-public-charging-what-we-measure-now",
+    title: "Ultrafast public charging — what we measure now",
+    excerpt:
+      "SoC windows, dispenser sharing, cable cooling — translating infrastructure hype into reliable trip math for BYD owners.",
+    category: "electric-vehicles",
+    author: { name: "Liya Tesfaye", title: "Infrastructure" },
+    publishedAt: "2026-04-03",
+    readingTime: 6,
+    views: 6_640,
+    cover: {
+      src: "https://images.unsplash.com/photo-1647788419779-abd8d4e7ecd4?w=2000&q=80&auto=format&fit=crop",
+      alt: "Ultra-fast chargers in a plaza",
+    },
+    content: [
+      "Splitter losses when paired dispensers saturate show up politely in ETA drift — plan margins on holiday Fridays.",
+      "Charge curve knees shift with preconditioning diligence — colder starts punish both time and patience.",
+      "Payment rails still fragment across regions — keep two RFID profiles if your routing crosses borders monthly.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-v2l-camping",
+    slug: "vehicle-to-load-weekends-byd-buyers-teach-each-other",
+    title: "Vehicle-to-load weekends BYD buyers teach each other",
+    excerpt:
+      "Camping ergonomics — kettle loads, inverter etiquette, and the silent camaraderie of shared extension cords.",
+    category: "electric-vehicles",
+    author: { name: "Nina Alvarez", title: "Lifestyle Desk" },
+    publishedAt: "2026-03-12",
+    readingTime: 5,
+    views: 4_880,
+    cover: {
+      src: "https://images.unsplash.com/photo-1523983254930-cf986e5e8145?w=2000&q=80&auto=format&fit=crop",
+      alt: "Camping kettle and mugs outdoors",
+    },
+    content: [
+      "Understand continuous vs. peak export ratings before promising espresso for eight.",
+      "Ground-fault quirks appear on damp mornings — elevate cable runs and segregate refrigeration starts.",
+      "Neighbour etiquette: announce inverter hum politely at shared sites — perceptible coil whine surprises tent neighbours.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-yuan-plus-export",
+    slug: "yuan-family-and-the-export-moment-buyers-watch",
+    title: "Yuan family models and the export moment buyers watch",
+    excerpt:
+      "How outbound trim stacks and localized ADAS maps shape prestige perception even before first drive impressions.",
+    category: "luxury-cars",
+    author: { name: "Mei Lin", title: "Electrification Desk" },
+    publishedAt: "2026-04-29",
+    readingTime: 7,
+    views: 7_995,
+    cover: {
+      src: "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=2000&q=80&auto=format&fit=crop",
+      alt: "Luxury coupe detail headlamp studio",
+    },
+    content: [
+      "Regional ADAS divergence still triggers warranty conversations — insist on localized release notes.",
+      "Leather substitutes age differently in dry climates vs. maritime ports — scrutinize UV warranty footnotes.",
+      "Export-wave buyers compare finance products more than horsepower — residuals anchor decisions.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-tactile-quiet-luxury",
+    slug: "tactile-quiet-how-luxury-reads-through-materials-byd-era",
+    title: "Tactile quiet: how luxury reads through materials in the BYD era",
+    excerpt:
+      "Silence exposes trim — seams, backlighting hotspots, and the death of gimmicky glossy piano black.",
+    category: "luxury-cars",
+    author: { name: "Sofia Marchetti", title: "Urban Mobility" },
+    publishedAt: "2026-04-07",
+    readingTime: 6,
+    views: 5_100,
+    cover: {
+      src: "https://images.unsplash.com/photo-1503376780353-7e669276fc8f?w=2000&q=80&auto=format&fit=crop",
+      alt: "Car interior stitched leather detail",
+    },
+    content: [
+      "Ambient lighting pipelines need hierarchy — drowning every surface washes depth cues.",
+      "Haptic fidelity on column stalks survives longer scrutiny than touchscreen skins.",
+      "Smell neutrality at delivery predicts long-term VOC satisfaction — airing cycles still matter.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-model-year-matrix",
+    slug: "new-model-year-matrix-what-watchers-expect-from-byd",
+    title: "New model-year matrix — what watchers expect from BYD",
+    excerpt:
+      "Trim ladders, inverter generations, and the quiet software cadence underpinning showroom turnover.",
+    category: "new-cars",
+    author: { name: "Eliot Kerr", title: "Product Notes" },
+    publishedAt: "2026-05-01",
+    readingTime: 7,
+    views: 13_442,
+    cover: {
+      src: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=2000&q=80&auto=format&fit=crop",
+      alt: "Manufacturing robotics line bokeh",
+    },
+    content: [
+      "Model-year choreography now includes rolling OTA payloads — brochure freeze dates skew earlier annually.",
+      "Motor codenames rarely align with headlines — correlate inverter part numbers against homologation PDFs.",
+      "Dealer demos benefit from scripted heat-soak afternoons — repeatable stories beat random spin loops.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-seal-vs-seagull-density",
+    slug: "seal-line-density-versus-flagship-poise-buying-clarity",
+    title: "Seal-line density versus flagship poise — buying clarity",
+    excerpt:
+      "Choosing between charismatic liftback silhouettes and utilitarian commuter heroes inside the BYD constellation.",
+    category: "new-cars",
+    author: { name: "Priya Anand", title: "Ownership Lab" },
+    publishedAt: "2026-03-31",
+    readingTime: 6,
+    views: 6_220,
+    cover: {
+      src: "https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=2000&q=80&auto=format&fit=crop",
+      alt: "Blue sedan coupe profile",
+    },
+    content: [
+      "Seal-line buyers chase sweep and stance — Seagull buyers chase parking deltas; cross-shopping overlaps exist but regrets cluster around charging fit.",
+      "Insurance bands diverge materially — normalize quotes before negotiating paint protection.",
+      "Software bundle eligibility varies — confirm connected services trials at handover.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-weekend-rentals",
+    slug: "weekend-ev-rentals-how-fleets-watch-byd-utilization",
+    title: "Weekend EV rentals: how fleets watch BYD utilization",
+    excerpt:
+      "Duty cycles — Friday take rates, midday swap economics, and the charging SLAs fleets quietly enforce.",
+    category: "car-rentals",
+    author: { name: "Dawit Mekonnen", title: "Regional Reporter" },
+    publishedAt: "2026-04-19",
+    readingTime: 6,
+    views: 4_095,
+    cover: {
+      src: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=2000&q=80&auto=format&fit=crop",
+      alt: "Airport arrivals hall motion blur",
+    },
+    content: [
+      "Fleet managers amortize windshield chips and tyre squaring differently than private owners — underwriting models adapt.",
+      "Weekend uplift tariffs sometimes subsidize midday DC upkeep — renters feel it in ancillary line items.",
+      "Geofencing for insurance telematics still triggers support tickets near borders — preload roaming policies.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-hotel-concierge-pair",
+    slug: "concierge-rentals-pair-hotels-with-predictable-charging",
+    title: "Concierge rentals pairing hotels with predictable charging",
+    excerpt:
+      "Hospitality programs that precondition cars overnight — shaping guest NPS curves for EV-first properties.",
+    category: "car-rentals",
+    author: { name: "James Ashford", title: "Driving Notes" },
+    publishedAt: "2026-03-22",
+    readingTime: 5,
+    views: 3_540,
+    cover: {
+      src: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=2000&q=80&auto=format&fit=crop",
+      alt: "Luxury resort pool at dusk",
+    },
+    content: [
+      "Keys-out valet preconditioning hinges on SOC SLAs communicated at check-in, not buried in inbox footers.",
+      "Destination chargers with load management beat headline kW plaques when three BYD SUVs queue after weddings.",
+      "Fleet liability waivers tighten around cable routing — signage matters aesthetically and legally.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-thermal-intervals",
+    slug: "thermal-management-intervals-worth-the-extra-pencil-time",
+    title: "Thermal management intervals worth the extra pencil time",
+    excerpt:
+      "Coolant conductivity checks, inverter dust, and regeneration-heavy habits that redefine workshop visits.",
+    category: "car-maintenance",
+    author: { name: "Priya Anand", title: "Ownership Lab" },
+    publishedAt: "2026-04-27",
+    readingTime: 6,
+    views: 5_660,
+    cover: {
+      src: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=2000&q=80&auto=format&fit=crop",
+      alt: "Mechanical workshop elevated car",
+    },
+    content: [
+      "Thermal loops age through seasonal humidity cycles — glycol testing intervals shorten in coastal depots.",
+      "Brake component inspection cadence lengthens politely until descending mountain holidays prove otherwise.",
+      "Firmware dependencies now gate some fluid-level monitors — insist on preconditioned diagnostics reads.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-preconditioning-climb",
+    slug: "preconditioning-before-long-climbs-byd-battery-etiquette",
+    title: "Preconditioning before long climbs — BYD battery etiquette",
+    excerpt:
+      "Altitude deltas punish unprepared packs — humane trip planning layered with thermal headroom beats hero driving.",
+    category: "car-maintenance",
+    author: { name: "James Ashford", title: "Driving Notes" },
+    publishedAt: "2026-03-15",
+    readingTime: 5,
+    views: 4_210,
+    cover: {
+      src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=2000&q=80&auto=format&fit=crop",
+      alt: "Mountain pass road panorama",
+    },
+    content: [
+      "Morning departures with cold packs and midday ascents distort cell balance — precondition while breakfast queues.",
+      "Descent recuperation heats brakes less but taxes contactors — smell-based diagnostics still apply.",
+      "Carry portable tyre inflation when crossing rough chipseal to remote chargers — uptime beats vanity PSI.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-crater-highway",
+    slug: "crater-highway-one-stop-route-plan-with-byd-metrics",
+    title: "Crater highway route plan — one-stop math with BYD metrics",
+    excerpt:
+      "Bench your real kWh buckets against scenic viewpoints — spoiler: snack timing moves the timetable more than topography.",
+    category: "road-trips",
+    author: { name: "Sofia Marchetti", title: "Urban Mobility" },
+    publishedAt: "2026-04-21",
+    readingTime: 7,
+    views: 6_780,
+    cover: {
+      src: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=2000&q=80&auto=format&fit=crop",
+      alt: "Open road winding through plateau",
+    },
+    content: [
+      "Morning crosswinds punish aero fantasies — plan SOC buffers after coastal segments.",
+      "Picnic chargers often share parking with coaches — etiquette wins queue priority.",
+      "Night departures shave heat loads but amplify wildlife risk — headlights alignment checks matter.",
+    ].join("\n\n"),
+  },
+  {
+    id: "n-atlantic-loop",
+    slug: "atlantic-loop-electric-grand-touring-with-sanity-margins",
+    title: "Atlantic loop electric grand touring with sanity margins",
+    excerpt:
+      "Harbor-city hops stitched with predictable DC anchors — choreography beats raw range bragging.",
+    category: "road-trips",
+    author: { name: "James Ashford", title: "Driving Notes" },
+    publishedAt: "2026-04-02",
+    readingTime: 8,
+    views: 8_930,
+    cover: {
+      src: "https://images.unsplash.com/photo-1506929562872-b785aa6c4d7c?w=2000&q=80&auto=format&fit=crop",
+      alt: "Coastal cliffs and ocean panorama",
+    },
+    content: [
+      "Salt air accelerates connector pin maintenance — silicone caps are not nerdy extras.",
+      "Ferry crossings mean idle HV states — precondition before queues if regulations allow.",
+      "Border paperwork still delays telematics handshakes occasionally — screenshot reservation codes.",
+    ].join("\n\n"),
+  },
+];

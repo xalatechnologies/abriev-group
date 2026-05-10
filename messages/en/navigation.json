@@ -1,0 +1,26 @@
+{
+  "Navigation": {
+    "primaryAria": "Primary",
+    "mobileAria": "Mobile",
+    "footerAria": "Footer",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "brandHomeAria": "{name} — home",
+    "home": "Home",
+    "vehicles": "Vehicles",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "LocaleSwitcher": {
+    "english": "English",
+    "amharic": "አማርኛ",
+    "hint": "Language"
+  },
+  "Header": {
+    "accountModesAria": "Sign in or register",
+    "signIn": "Sign in",
+    "register": "Register",
+    "listVehicle": "List a Car",
+    "postCarAria": "Post listing"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "Navigation": {
+    "primaryAria": "ዋና አሰላለፍ",
+    "mobileAria": "ሞባይል",
+    "footerAria": "ግርጌ",
+    "openMenu": "ምናሌ ክፈት",
+    "closeMenu": "ምናሌ አዝም",
+    "brandHomeAria": "{name} — መነሻ",
+    "home": "መነሻ",
+    "vehicles": "መኪኖች",
+    "services": "አገልግሎቶች",
+    "contact": "እውቂያ"
+  },
+  "LocaleSwitcher": {
+    "english": "English",
+    "amharic": "አማርኛ",
+    "hint": "ቋንቋ"
+  },
+  "Header": {
+    "accountModesAria": "መግቢያ ወይም ይመዝገቡ",
+    "signIn": "መግቢያ",
+    "register": "ይመዝገቡ",
+    "listVehicle": "መኪና አስመዝግብ",
+    "postCarAria": "ማስታወቂያ ለጥፍ"
+  }
+}

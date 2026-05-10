@@ -1,0 +1,29 @@
+{
+  "Footer": {
+    "tagline": "Premium automotive marketplace \u2014 curated vehicles and concierge support.",
+    "contactHeading": "Contact",
+    "rightsReserved": "All rights reserved.",
+    "rightsLine": "\u00a9 {year} {brand}. {rightsReserved}.",
+    "columns": [
+      {
+        "title": "Explore",
+        "items": [
+          { "label": "List your vehicle", "href": "/list-your-vehicle" },
+          { "label": "News", "href": "/insights" }
+        ]
+      },
+      {
+        "title": "Help & policies",
+        "items": [
+          { "label": "FAQs", "href": "/faqs" },
+          { "label": "Car Insurance Assistance", "href": "/car-insurance-assistance" },
+          { "label": "Temporary Car Replacement", "href": "/temporary-car-replacement" },
+          { "label": "Refund policy", "href": "/refund-policy" },
+          { "label": "About us", "href": "/about" },
+          { "label": "Terms of Service", "href": "/terms" },
+          { "label": "Privacy Policy", "href": "/privacy" }
+        ]
+      }
+    ]
+  }
+}

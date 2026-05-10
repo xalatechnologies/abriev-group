@@ -1,0 +1,514 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------------------------------------------------------------- */
+/*                         ABRIEV Design Token System                         */
+/*  Single source of truth. Every token surfaces as a CSS custom property     */
+/*  and is consumed through Tailwind semantic classes (bg-background, etc.).  */
+/* -------------------------------------------------------------------------- */
+
+:root {
+  /* ---------------------------------------------------------------- */
+  /* Brand spec — primitive tokens (single source of truth)           */
+  /* These are the values explicitly defined by the brand system.     */
+  /* All semantic aliases below derive from this set.                  */
+  /* ---------------------------------------------------------------- */
+  --color-white: #ffffff;
+
+  /* Slightly bolder than stock Ant spec — readability on pure-white. */
+  --color-text-primary: rgba(0, 0, 0, 0.95);
+  --color-text-body: rgba(0, 0, 0, 0.86);
+  --color-text-muted: rgba(0, 0, 0, 0.68);
+  --color-text-disabled: rgba(0, 0, 0, 0.38);
+
+  /* Brand accent — aligned with Checkmycar-style forest green */
+  --color-primary: #008f4c;
+  --color-primary-ios: #00a056;
+
+  --color-selection-bg: #008f4c;
+  --color-selection-text: #ffffff;
+
+  /* Align with Tailwind / single-typeface rule; `layout.tsx` sets --font-primary on
+   * `<html>` to `var(--font-sans)` so Manrope loads via next/font. :root fallbacks
+   * stay sans-only (no second marketing/display family). */
+  --font-primary: Manrope, ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --font-system: Manrope, ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --font-size-base: 14px;
+  --font-size-small: 12px;
+
+  --line-height-base: 1.5;
+  --line-height-html: 1.15;
+
+  --min-width-page: 320px;
+
+  --tap-highlight-color: transparent;
+  --box-sizing: border-box;
+
+  /* ---------------------------------------------------------------- */
+  /* Semantic aliases — derived from brand spec                        */
+  /* ---------------------------------------------------------------- */
+
+  /* Backgrounds & surfaces — pure-white canvas with whisper tints */
+  /* The whole product sits on #ffffff. Off-whites are reserved for     */
+  /* subtle hover states and dividers only.                             */
+  --background: var(--color-white);
+  --surface: var(--color-white);
+  --surface-bright: var(--color-white);
+  --surface-dim: var(--color-white);
+  --surface-container-lowest: var(--color-white);
+  --surface-container-low: var(--color-white);
+  --surface-container: var(--color-white);
+  --surface-container-high: #fafafa;
+  --surface-container-highest: #f5f5f5;
+  --surface-variant: var(--color-white);
+
+  /* Text — derived from brand text scale */
+  --on-background: var(--color-text-primary);
+  --on-surface: var(--color-text-primary);
+  --on-surface-variant: var(--color-text-muted);
+  --inverse-on-surface: var(--color-white);
+  --inverse-surface: #18181b;
+
+  /* Primary — near-black for editorial weight */
+  --primary: #18181b;
+  --on-primary: var(--color-white);
+  --primary-container: #fafafa;
+  --on-primary-container: #3f3f46;
+  --primary-fixed: #e4e4e7;
+  --primary-fixed-dim: #a1a1aa;
+  --on-primary-fixed: var(--color-text-primary);
+  --on-primary-fixed-variant: #3f3f46;
+  --inverse-primary: #e4e4e7;
+  --surface-tint: #18181b;
+
+  /* Secondary — cool grey */
+  --secondary: #52525b;
+  --on-secondary: var(--color-white);
+  --secondary-container: #f4f4f5;
+  --on-secondary-container: #3f3f46;
+  --secondary-fixed: #e4e4e7;
+  --secondary-fixed-dim: #a1a1aa;
+  --on-secondary-fixed: var(--color-text-primary);
+  --on-secondary-fixed-variant: #3f3f46;
+
+  /* Tertiary — brand accent (green) */
+  --tertiary: var(--color-primary);
+  --on-tertiary: var(--color-white);
+  --tertiary-container: #e8faf1;
+  --on-tertiary-container: #064e32;
+  --tertiary-fixed: #f0fdf6;
+  --tertiary-fixed-dim: #9ee5c0;
+  --on-tertiary-fixed: #064e32;
+  --on-tertiary-fixed-variant: #0a7a4a;
+
+  /* Borders & states — subtle hairlines so the white never feels empty */
+  --outline: rgba(0, 0, 0, 0.12);
+  --outline-variant: rgba(0, 0, 0, 0.06);
+
+  /* Card-surface borders.
+     Use these (not --outline-variant) for any rounded card/panel/tile.
+     Resting border is visible enough to read on white surfaces; hover lifts
+     to brand-primary. The divider is the inner hairline that sits inside a
+     card (e.g. above a price row) and shifts to a soft brand-green echo
+     when the parent card is hovered.                                       */
+  --border-card: rgba(0, 0, 0, 0.18);
+  --border-card-hover: var(--color-primary);
+  --border-card-divider: rgba(0, 0, 0, 0.1);
+  --border-card-divider-hover: rgba(0, 143, 76, 0.45);
+
+  --error: #dc2626;
+  --on-error: var(--color-white);
+  --error-container: #fee2e2;
+  --on-error-container: #991b1b;
+
+  /* Radius */
+  --radius-default: 2px;
+  --radius-lg: 4px;
+  --radius-xl: 8px;
+  --radius-full: 12px;
+
+  /* Spacing */
+  --space-unit: 8px;
+  --space-gutter: 32px;
+  --space-margin-edge: 64px;
+  --space-section-gap: 80px;
+  --container-max: 1440px;
+
+  /* Effects */
+  --editorial-shadow: 0 10px 40px -15px rgba(0, 0, 0, 0.08);
+  --editorial-shadow-lg: 0 24px 80px -24px rgba(0, 0, 0, 0.14);
+  --glass-bg: rgba(255, 255, 255, 0.72);
+  --glass-border: 0.5px solid rgba(0, 0, 0, 0.06);
+  --glass-blur: 20px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* -------------------------------------------------------------------------- */
+/*  Dark theme — every semantic token from :root re-bound for dark surfaces.   */
+/*  Brand green stays the same; surfaces, text, outlines, and shadows invert. */
+/* -------------------------------------------------------------------------- */
+.dark {
+  /* Brand spec — text on dark canvas */
+  --color-text-primary: rgba(255, 255, 255, 0.96);
+  --color-text-body: rgba(255, 255, 255, 0.84);
+  --color-text-muted: rgba(255, 255, 255, 0.66);
+  --color-text-disabled: rgba(255, 255, 255, 0.36);
+
+  --color-selection-bg: #008f4c;
+  --color-selection-text: #ffffff;
+
+  /* Surfaces — neutral near-black scale.
+     The page sits on #0a0a0a; containers nudge slightly lighter as you elevate. */
+  --background: #0a0a0a;
+  --surface: #0a0a0a;
+  --surface-bright: #161618;
+  --surface-dim: #050505;
+  --surface-container-lowest: #050505;
+  --surface-container-low: #0e0e10;
+  --surface-container: #111114;
+  --surface-container-high: #17171a;
+  --surface-container-highest: #1d1d21;
+  --surface-variant: #131316;
+
+  /* Text */
+  --on-background: var(--color-text-primary);
+  --on-surface: var(--color-text-primary);
+  --on-surface-variant: var(--color-text-muted);
+  --inverse-on-surface: #18181b;
+  --inverse-surface: #f4f4f5;
+
+  /* Primary — light grey for editorial weight on dark */
+  --primary: #fafafa;
+  --on-primary: #18181b;
+  --primary-container: #1d1d21;
+  --on-primary-container: #e4e4e7;
+  --primary-fixed: #2a2a2e;
+  --primary-fixed-dim: #71717a;
+  --on-primary-fixed: var(--color-text-primary);
+  --on-primary-fixed-variant: #d4d4d8;
+  --inverse-primary: #18181b;
+  --surface-tint: #fafafa;
+
+  /* Secondary — warm grey on dark */
+  --secondary: #a1a1aa;
+  --on-secondary: #0a0a0a;
+  --secondary-container: #1d1d21;
+  --on-secondary-container: #e4e4e7;
+  --secondary-fixed: #2a2a2e;
+  --secondary-fixed-dim: #71717a;
+  --on-secondary-fixed: var(--color-text-primary);
+  --on-secondary-fixed-variant: #d4d4d8;
+
+  /* Tertiary — brand green tints adjusted for dark */
+  --tertiary: #1aa365;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #0e3a25;
+  --on-tertiary-container: #b9efd2;
+  --tertiary-fixed: #064e32;
+  --tertiary-fixed-dim: #1aa365;
+  --on-tertiary-fixed: #b9efd2;
+  --on-tertiary-fixed-variant: #87dab1;
+
+  /* Borders & states */
+  --outline: rgba(255, 255, 255, 0.14);
+  --outline-variant: rgba(255, 255, 255, 0.07);
+  --border-card: rgba(255, 255, 255, 0.2);
+  --border-card-hover: var(--color-primary);
+  --border-card-divider: rgba(255, 255, 255, 0.1);
+  --border-card-divider-hover: rgba(0, 143, 76, 0.55);
+  --error: #f87171;
+  --on-error: #1a0a0a;
+  --error-container: #3a1212;
+  --on-error-container: #fecaca;
+
+  /* Effects */
+  --editorial-shadow: 0 14px 50px -20px rgba(0, 0, 0, 0.65);
+  --editorial-shadow-lg: 0 28px 90px -28px rgba(0, 0, 0, 0.75);
+  --glass-bg: rgba(20, 20, 22, 0.72);
+  --glass-border: 0.5px solid rgba(255, 255, 255, 0.08);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Base layer                                  */
+/* -------------------------------------------------------------------------- */
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: var(--box-sizing);
+    border-color: var(--outline-variant);
+    -webkit-tap-highlight-color: var(--tap-highlight-color);
+  }
+
+  html {
+    line-height: var(--line-height-html);
+    min-width: var(--min-width-page);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "ss01", "ss02", "cv11";
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--color-text-body);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    font-weight: 500;
+    min-width: var(--min-width-page);
+  }
+
+  small {
+    font-size: var(--font-size-small);
+  }
+
+  ::selection {
+    background-color: var(--color-selection-bg);
+    color: var(--color-selection-text);
+  }
+
+  /* Focus ring — quiet, editorial, brand-accent */
+  :focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--background), 0 0 0 4px var(--color-primary);
+    border-radius: var(--radius-lg);
+  }
+
+  /* Reduce motion respect */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Component layer                               */
+/* -------------------------------------------------------------------------- */
+
+@layer components {
+  /* Glass ------------------------------------------------------------------ */
+  .glass-card {
+    background-color: var(--glass-bg);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.4);
+    backdrop-filter: blur(var(--glass-blur)) saturate(1.4);
+    border: var(--glass-border);
+  }
+
+  .glass-card-strong {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(28px) saturate(1.5);
+    backdrop-filter: blur(28px) saturate(1.5);
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+  }
+
+  /* Editorial shadow ------------------------------------------------------- */
+  .editorial-shadow {
+    box-shadow: var(--editorial-shadow);
+  }
+
+  .editorial-shadow-lg {
+    box-shadow: var(--editorial-shadow-lg);
+  }
+
+  /* Layout spacing --------------------------------------------------------- */
+  /*
+   * Canonical vertical rhythm. Every full-width content section across the
+   * app uses `.section-y`; never override `pt-*`/`pb-*` on a section to
+   * change its rhythm — adjust this token instead. `.section-y-sm` is the
+   * tighter variant for compact strips (e.g. inline product rails).
+   */
+  .section-y {
+    padding-block: clamp(56px, 6vw, 80px);
+  }
+
+  .section-y-sm {
+    padding-block: clamp(40px, 5vw, 64px);
+  }
+
+  .edge-x {
+    padding-inline: clamp(24px, 6vw, 64px);
+  }
+
+  /* Typography presets — bound 1:1 to design tokens ----------------------- */
+  .serif-display,
+  .text-display-lg {
+    font-family: var(--font-sans), Manrope, ui-sans-serif, system-ui,
+      -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .serif-headline-lg,
+  .text-headline-lg {
+    font-family: var(--font-sans), Manrope, ui-sans-serif, system-ui,
+      -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .serif-headline-md,
+  .text-headline-md {
+    font-family: var(--font-sans), Manrope, ui-sans-serif, system-ui,
+      -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .label-caps {
+    font-family: var(--font-sans), Manrope, system-ui, sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  /* Mobile-responsive display — scales down while remaining token-aligned */
+  @media (max-width: 768px) {
+    .serif-display,
+    .text-display-lg {
+      font-size: 44px;
+      line-height: 1.1;
+    }
+    .serif-headline-lg,
+    .text-headline-lg {
+      font-size: 30px;
+    }
+    .serif-headline-md,
+    .text-headline-md {
+      font-size: 22px;
+    }
+  }
+
+  /* Hairlines -------------------------------------------------------------- */
+  .hairline {
+    height: 1px;
+    background-color: var(--outline-variant);
+    width: 100%;
+  }
+
+  .hairline-vertical {
+    width: 1px;
+    background-color: var(--outline-variant);
+    height: 100%;
+  }
+
+  /* Editorial link underline ---------------------------------------------- */
+  .link-underline {
+    background-image: linear-gradient(var(--on-background), var(--on-background));
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 400ms var(--ease-out);
+  }
+
+  .link-underline:hover {
+    background-size: 0% 1px;
+    background-position: 100% 100%;
+  }
+
+  .liquid-hover {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+
+  .liquid-hover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-101%);
+    background: var(--tertiary-fixed-dim);
+    transition: transform 500ms var(--ease-out);
+    z-index: -1;
+  }
+
+  .liquid-hover:hover::after {
+    transform: translateX(0%);
+  }
+
+  .asymmetric-mask {
+    clip-path: polygon(0 0, 100% 8%, 100% 100%, 8% 92%);
+  }
+
+  .hero-fade-overlay {
+    background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 72%,
+      var(--background) 100%
+    );
+  }
+
+  /* Hero car gentle float -------------------------------------------------- */
+  @keyframes hero-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .animate-hero-float {
+    animation: hero-float 6s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-hero-float {
+      animation: none;
+    }
+  }
+
+  /* Subtle grain for hero sections (used Phase 2) ------------------------- */
+  .grain-overlay::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Utilities                                   */
+/* -------------------------------------------------------------------------- */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+}

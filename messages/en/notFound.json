@@ -1,0 +1,9 @@
+{
+  "NotFound": {
+    "eyebrow": "404 — Not found",
+    "title": "This page isn\u2019t in our collection.",
+    "description": "The URL may be retired, mistyped, or awaiting editorial. Return home or continue browsing the marketplace.",
+    "returnHome": "Return home",
+    "browseVehicles": "Browse vehicles"
+  }
+}

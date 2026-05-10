@@ -1,0 +1,108 @@
+{
+  "VehicleListingHero": {
+    "eyebrow": "Curated stock",
+    "title": "Every listing earns its place.",
+    "description": "Verified dealers, vetted listings. Filter here or tab between new, pre-owned, and rentals\u2014one flow."
+  },
+  "PageMeta": {
+    "vehicles": {
+      "title": "Browse Vehicles",
+      "description": "Discover curated new, pre-owned, and rental vehicles on ABRIEV."
+    },
+    "vehiclesNew": {
+      "title": "New Vehicles",
+      "description": "New-delivery vehicles from ABRIEV's verified dealer network."
+    },
+    "vehiclesUsed": {
+      "title": "Pre-owned Vehicles",
+      "description": "Pre-owned and certified vehicles from ABRIEV's editorial catalog."
+    },
+    "vehiclesForRent": {
+      "title": "Vehicles for Rent",
+      "description": "Private, chauffeured, and self-drive rentals from ABRIEV's global fleet."
+    },
+    "vehicleNotFound": "Vehicle not found",
+    "services": {
+      "title": "Services",
+      "description": "Vehicle sales & purchase, car finance, maintenance & repair, and import & export coordination \u2014 concierge automotive services from ABRIEV."
+    }
+  },
+  "VehicleCategories": {
+    "ariaLabel": "Vehicle categories",
+    "all": "All",
+    "new": "New",
+    "used": "Pre-owned",
+    "forRent": "For rent"
+  },
+  "VehicleCard": {
+    "editorsPick": "Editor's pick",
+    "deliveryMileage": "Delivery mileage",
+    "statMiles": "Miles",
+    "statFuel": "Fuel",
+    "statTransmission": "Trans.",
+    "viewDetail": "View",
+    "conditionNew": "New",
+    "conditionPreOwned": "Pre-owned",
+    "conditionCertified": "Certified",
+    "statusReserved": "reserved",
+    "statusSold": "sold",
+    "fuelPetrol": "Petrol",
+    "fuelDiesel": "Diesel",
+    "fuelHybrid": "Hybrid",
+    "fuelPlugIn": "Plug-in",
+    "fuelElectric": "Electric",
+    "transAutomatic": "Auto",
+    "transManual": "Manual",
+    "transDct": "DCT",
+    "transCvt": "CVT",
+    "priceFrom": "From",
+    "priceStarting": "Starting",
+    "priceAsking": "Asking"
+  },
+  "VehicleGrid": {
+    "emptyTitle": "No vehicles match your filters.",
+    "emptyDescription": "Try adjusting the filters, or clear them to see the full catalog."
+  },
+  "Catalog": {
+    "filterInventoryHeading": "Filter inventory",
+    "resetAllCount": "Reset all ({count})",
+    "paginationAria": "Results pagination",
+    "paginationDetailed": "Showing {start}\u2013{end} of {total} \u00b7 Page {current} of {pages}",
+    "paginationSimpleOne": "{count} vehicle",
+    "paginationSimpleMany": "{count} vehicles",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "Filters": {
+    "inventoryAria": "Filter inventory",
+    "closeAria": "Close filters",
+    "viewInventory": "View inventory",
+    "sectionBrand": "Brand",
+    "sectionBody": "Body type",
+    "sectionPrice": "Price range",
+    "sectionYear": "Model year",
+    "sectionFuel": "Fuel type",
+    "sectionTransmission": "Transmission",
+    "sectionDrivetrain": "Drivetrain",
+    "sectionCity": "City",
+    "minimum": "Minimum",
+    "maximum": "Maximum",
+    "fromYear": "From year",
+    "resetAllChips": "Reset all",
+    "minPriceChip": "Min {amount}",
+    "maxPriceChip": "Max {amount}"
+  },
+  "Sort": {
+    "showing": "Showing",
+    "vehicle": "vehicle",
+    "vehicles": "vehicles",
+    "filterInventory": "Filter inventory",
+    "sortLabel": "Sort",
+    "sortAria": "Sort vehicles",
+    "featured": "Editor's selection",
+    "priceAsc": "Price \u2014 low to high",
+    "priceDesc": "Price \u2014 high to low",
+    "yearDesc": "Year \u2014 newest first",
+    "mileageAsc": "Mileage \u2014 lowest first"
+  }
+}

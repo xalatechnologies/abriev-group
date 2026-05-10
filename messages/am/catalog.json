@@ -1,0 +1,108 @@
+{
+  "VehicleListingHero": {
+    "eyebrow": "የተመረጠ ክምችት",
+    "title": "እያንዳንዱ ዝርዝር ቦታውን ያተካራል።",
+    "description": "የተረጋገጡ ነጋዴዎች፣ የተጣራ ዝርዝሮች። እዚህ ያጣሩ፣ እንዲሁም አዲስ፣ አጠቃላይ ተመላሾች እና ኪራዮች መካከል በአንድ ፍሰት።"
+  },
+  "PageMeta": {
+    "vehicles": {
+      "title": "መኪኖች ይመልከቱ",
+      "description": "በአብሬቭ እንዲሁም አጠቃላይ ተመላሾች እና የኪራይ መኪኖች።"
+    },
+    "vehiclesNew": {
+      "title": "አዲስ መኪኖች",
+      "description": "ከተረጋገጡ የአብሬቭ ነጋዴዎች አዲስ አቅርቦት መኪኖች።"
+    },
+    "vehiclesUsed": {
+      "title": "አጠቃላይ ተመላሾች",
+      "description": "ያገለጡ እና የተመሳሰሉ መኪኖች።"
+    },
+    "vehiclesForRent": {
+      "title": "ለኪራይ መኪኖች",
+      "description": "ግላዊ የአሽከርካሪ እና ራስ መመላለሽ ኪራዮች።"
+    },
+    "vehicleNotFound": "መኪና አልተገኘም",
+    "services": {
+      "title": "አገልግሎቶች",
+      "description": "የመኪና ግዜና ሽያጭ፣ የፋይናንስ እና ብድር፣ ጥገና፣ እና ከድንበር አቋራ እንቅስታሔ።"
+    }
+  },
+  "VehicleCategories": {
+    "ariaLabel": "የመኪና ምድቦች",
+    "all": "ሁሉም",
+    "new": "አዲስ",
+    "used": "የመንቀለ",
+    "forRent": "ለኪራይ"
+  },
+  "VehicleCard": {
+    "editorsPick": "የአርታ ",
+    "deliveryMileage": "የላክ ክል",
+    "statMiles": "ክ.መ",
+    "statFuel": "ነዳጅ",
+    "statTransmission": "ትራንስ።",
+    "viewDetail": "ይመልከት",
+    "conditionNew": "አዲስ",
+    "conditionPreOwned": "የመንቀለ",
+    "conditionCertified": "ተረጋግ አል",
+    "statusReserved": "የተያዘ",
+    "statusSold": "ይሸተ",
+    "fuelPetrol": "ቤንዚን",
+    "fuelDiesel": "ዲዞል",
+    "fuelHybrid": "ሕብረ",
+    "fuelPlugIn": "ፕላግ እን",
+    "fuelElectric": "ኤለክትሪክ",
+    "transAutomatic": "አውቶ",
+    "transManual": "መልቲ",
+    "transDct": "DCT",
+    "transCvt": "CVT",
+    "priceFrom": "ከ",
+    "priceStarting": "ጀመሩ",
+    "priceAsking": "ይጠያ"
+  },
+  "VehicleGrid": {
+    "emptyTitle": "ፊልተሮች አይዛመንም።",
+    "emptyDescription": "መለያዎች በዘርፉ ይስተካከሉ ወይም ሁሉንም እንደገና ይመልከቱ።"
+  },
+  "Catalog": {
+    "filterInventoryHeading": "መኖላዎች አጣር",
+    "resetAllCount": "ሁሉን እንደገና ({count})",
+    "paginationAria": "ለውጤት ገልባ",
+    "paginationDetailed": "ከ {start}–{end} ከ {total} ላይው · ገጽ {current} በ {pages}",
+    "paginationSimpleOne": "{count} መኪና",
+    "paginationSimpleMany": "{count} መኪኖች",
+    "previous": "ቀድሞ",
+    "next": "ቀጭ"
+  },
+  "Filters": {
+    "inventoryAria": "መኖላዎች አጣር",
+    "closeAria": "አጣሪዎች ይዝጉ",
+    "viewInventory": "መኖላዎች ተመልከት",
+    "sectionBrand": "የምልክት አምራች",
+    "sectionBody": "የመነላ አይነት",
+    "sectionPrice": "ዋጋ ክለኛ",
+    "sectionYear": "የመአት አመት",
+    "sectionFuel": "የንዝጌ አይነት",
+    "sectionTransmission": "መቀይርያ",
+    "sectionDrivetrain": "ማመላከያ",
+    "sectionCity": "ከተማ",
+    "minimum": "አነስተኝ",
+    "maximum": "ከፍተኝ",
+    "fromYear": "ከ አመት",
+    "resetAllChips": "ሁ኉ እንገል",
+    "minPriceChip": "ዝቋ {amount}",
+    "maxPriceChip": "መክ {amount}"
+  },
+  "Sort": {
+    "showing": "አሳይ",
+    "vehicle": "መኪና",
+    "vehicles": "መኪኖች",
+    "filterInventory": "መኖላ አጣር",
+    "sortLabel": "መደመር",
+    "sortAria": "መኖሎች እደመር",
+    "featured": "የ አርተርስ ምልጭ",
+    "priceAsc": "ዋጋ — ነነተአ ከተራ",
+    "priceDesc": "ዋጋ — ነነተአ እርከ",
+    "yearDesc": "አመት — አያምጪኛ",
+    "mileageAsc": "ክሎ — እንኁን ነአ"
+  }
+}

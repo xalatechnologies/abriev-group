@@ -1,0 +1,59 @@
+{
+  "HomeTestimonials": {
+    "title": "What they say about us?",
+    "lede": "Real feedback from buyers and sellers who used ABRIEV to move with confidence.",
+    "viewAll": "View All",
+    "marqueeHint": "Customer testimonials scroll horizontally. Hover the band to pause.",
+    "starsLabel": "{rating} out of 5 stars",
+    "cards": [
+      {
+        "quote": "From the first message to handing over the keys, everything felt intentional. Photos matched the car, pricing was transparent, and I never had to chase anyone for answers. This is how buying a car should feel.",
+        "authorName": "Dawit Mekonnen",
+        "role": "Verified buyer · Addis Ababa",
+        "rating": 5,
+        "avatarSrc": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=160&q=80&auto=format&fit=crop",
+        "avatarAlt": "Portrait of Dawit"
+      },
+      {
+        "quote": "I listed on a Tuesday and had serious buyers before the weekend. The listing flow was clear, and the messages I got were actually from people ready to move—not endless lowball noise. Sold faster than I expected.",
+        "authorName": "Tigist Bekele",
+        "role": "Private seller · Hawassa",
+        "rating": 5,
+        "avatarSrc": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=160&q=80&auto=format&fit=crop",
+        "avatarAlt": "Portrait of Tigist"
+      },
+      {
+        "quote": "We run a small fleet and timing matters. ABRIEV helped us compare options side by side, and support picked up when we needed a document clarification late at night. That reliability is worth a lot.",
+        "authorName": "Yared Tekle",
+        "role": "Fleet coordinator · Adama",
+        "rating": 5,
+        "avatarSrc": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=160&q=80&auto=format&fit=crop",
+        "avatarAlt": "Portrait of Yared"
+      },
+      {
+        "quote": "First time buying without walking a showroom floor—I was nervous. The verification details on the listing made the decision easy, and the handover was exactly what was promised. I'd do it again in a heartbeat.",
+        "authorName": "Liya Tadesse",
+        "role": "First-time buyer · Dire Dawa",
+        "rating": 5,
+        "avatarSrc": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=160&q=80&auto=format&fit=crop",
+        "avatarAlt": "Portrait of Liya"
+      },
+      {
+        "quote": "I'm picky about history, specs, and provenance. The listings here read complete—not marketing fluff—and when I asked technical questions, the answers came with substance. Found exactly what I was hunting for.",
+        "authorName": "Eskinder Wolde",
+        "role": "Enthusiast collector · Bahir Dar",
+        "rating": 5,
+        "avatarSrc": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=160&q=80&auto=format&fit=crop",
+        "avatarAlt": "Portrait of Eskinder"
+      },
+      {
+        "quote": "Trade-in numbers were explained line by line, financing options were easy to compare, and I never felt pushed. I drove away confident I made a fair deal—not just a fast one.",
+        "authorName": "Meklit Sisay",
+        "role": "Finance manager · Addis Ababa",
+        "rating": 5,
+        "avatarSrc": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=160&q=80&auto=format&fit=crop",
+        "avatarAlt": "Portrait of Meklit"
+      }
+    ]
+  }
+}

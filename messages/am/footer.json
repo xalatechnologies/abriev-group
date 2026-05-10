@@ -1,0 +1,29 @@
+{
+  "Footer": {
+    "tagline": "የፕሪሚየም የመኪና ገበያ \u2014 የተመረጡ ተከፋፋያት እና የኮንስየር አገልግሎት።",
+    "contactHeading": "እውቂያ",
+    "rightsReserved": "መብት ሁሉ የተጠበቀ ነው።",
+    "rightsLine": "\u00a9 {year} {brand}. {rightsReserved}.",
+    "columns": [
+      {
+        "title": "ይመልከቱ",
+        "items": [
+          { "label": "መኪናዎን ያስመዝግቡ", "href": "/list-your-vehicle" },
+          { "label": "ዜና", "href": "/insights" }
+        ]
+      },
+      {
+        "title": "እገዛ እና ፖሊሲ",
+        "items": [
+          { "label": "ተደጋጋሞ የሚጠየቁ ጥያቄዎች", "href": "/faqs" },
+          { "label": "የመኪና ኢንሹራንስ ድጋፍ", "href": "/car-insurance-assistance" },
+          { "label": "የጊዜያዊ የመተካ አገልግሎት", "href": "/temporary-car-replacement" },
+          { "label": "የመመለስ ፖሊሲ", "href": "/refund-policy" },
+          { "label": "ስለ እኛ", "href": "/about" },
+          { "label": "የአገልግሎት ውል", "href": "/terms" },
+          { "label": "የግለ መገለያ መመሪያ", "href": "/privacy" }
+        ]
+      }
+    ]
+  }
+}
