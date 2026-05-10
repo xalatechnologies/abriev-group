@@ -1,0 +1,21 @@
+{
+  "ArticleCategories": {
+    "editorial": "Editorial",
+    "market": "Market",
+    "design": "Design",
+    "ownership": "Ownership",
+    "guides": "Guide",
+    "heritage": "Heritage",
+    "byd-u8": "BYD U8",
+    "byd-seagull": "BYD Seagull",
+    "byd-e2": "BYD E2",
+    "yuan-up-smart": "Yuan Up Smart",
+    "teng-i": "Teng I",
+    "electric-vehicles": "Electric vehicles",
+    "luxury-cars": "Luxury cars",
+    "car-maintenance": "Car maintenance",
+    "new-cars": "New cars",
+    "car-rentals": "Car rentals",
+    "road-trips": "Road trips"
+  }
+}

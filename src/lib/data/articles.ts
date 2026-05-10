@@ -7,8 +7,11 @@ export const ARTICLES: Article[] = [
     id: "a-last-of-v10",
     slug: "the-last-of-the-v10",
     title: "The last of the V10",
+    titleAm: "የ V10 የመጨረሻው",
     excerpt:
       "A quiet elegy to the naturally-aspirated engines that defined a generation — and the vehicles that still carry them.",
+    excerptAm:
+      "ትውልድን ያነገቡ ተፈተኛ-አየር ሞተሮችን እና እስካሁን በመንገድ ላይ ያሉትን ተሽከርካሪዎች የሚያስታውስ ጸጥተኛ ምስጋና።",
     category: "editorial",
     author: { name: "Sofia Marchetti", title: "Editor-at-Large" },
     publishedAt: "2025-03-14",
@@ -24,8 +27,11 @@ export const ARTICLES: Article[] = [
     id: "a-buying-air-cooled",
     slug: "a-quiet-guide-to-buying-air-cooled",
     title: "A quiet guide to buying air-cooled",
+    titleAm: "ለኤር-ኮልድ መግዛት የተረጋጋ መመሪያ",
     excerpt:
       "What to look for, what to walk away from, and how to read a service history that spans three decades.",
+    excerptAm:
+      "ምን ማየት እንዳለብዎ፣ መቼ መተው እንዳለብዎ፣ እና በሶስት አስር አመታት የሚዘልቅ የአገልግሎት ታሪክ እንዴት እንደሚነበብ።",
     category: "guides",
     author: { name: "James Ashford", title: "Heritage Correspondent" },
     publishedAt: "2025-02-28",
@@ -41,8 +47,11 @@ export const ARTICLES: Article[] = [
     id: "a-electric-gt",
     slug: "the-electric-grand-tourer",
     title: "The electric grand tourer, reconsidered",
+    titleAm: "ኤሌክትሪክ ግራንድ ቱሪር — እንደገና ማሰብ",
     excerpt:
       "The silent arrival of long-distance EV tourers and what they mean for the old rituals of the road trip.",
+    excerptAm:
+      "ለረጅም ርቀት የኤሌክትሪክ ቱሪንግ መኪናዎች ጸጥተኛ መምጣት፣ እና ለየመንገድ ጉዞ አሠራሮች ምን ማለት እንደሆነ።",
     category: "market",
     author: { name: "Mei Lin", title: "Market Desk" },
     publishedAt: "2025-02-10",
@@ -57,8 +66,11 @@ export const ARTICLES: Article[] = [
     id: "a-london-britishness",
     slug: "a-new-britishness",
     title: "A new Britishness",
+    titleAm: "አዲስ ብሪቲሽነስ",
     excerpt:
       "From Aston Martin to Bentley, how British coachwork is quietly rewriting itself in the electric age.",
+    excerptAm:
+      "ከ አስቶን ማርቲን እስከ በንትሊ፣ የብሪቲሽ አካል ስራ በኤሌክትሪክ ዘመን እንዴት በጸጥታ እየተጻፈ እንደሆነ።",
     category: "design",
     author: { name: "Eliot Kerr", title: "Design Editor" },
     publishedAt: "2025-01-22",
@@ -73,8 +85,11 @@ export const ARTICLES: Article[] = [
     id: "a-ownership-playbook",
     slug: "the-ownership-playbook",
     title: "The ownership playbook",
+    titleAm: "የባለቤትነት መመሪያ",
     excerpt:
       "A practical essay on what it actually costs to keep a premium car on the road — beyond the sticker.",
+    excerptAm:
+      "ፕሪሚየም መኪና በመንገድ ላይ ለመጠበቅ እውነተኛው የወጪ ምን እንደሆነ በተግባታዊ መንገድ።",
     category: "ownership",
     author: { name: "Priya Anand", title: "Ownership Desk" },
     publishedAt: "2025-01-08",
@@ -88,8 +103,11 @@ export const ARTICLES: Article[] = [
     id: "a-monaco-atelier",
     slug: "an-atelier-in-monaco",
     title: "An atelier in Monaco",
+    titleAm: "በሞናኮ አቴሊዬ",
     excerpt:
       "A morning inside Atelier Vittoria — where every restoration is documented, photographed, and paced like a gallery show.",
+    excerptAm:
+      "በ Atelier Vittoria ውስጥ ከጎህ ጀምሮ — እያንዳንዱ እንደገና ማድስ ተመዝግቧል፣ በፎቶ ተይዟል፣ እና እንደ ማሳያ በደረጃ የሚቀርብ ነው።",
     category: "heritage",
     author: { name: "Nina Alvarez", title: "Features" },
     publishedAt: "2024-12-18",

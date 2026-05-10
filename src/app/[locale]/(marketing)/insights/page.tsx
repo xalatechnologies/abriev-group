@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { NewsPageView } from "@/components/marketing/NewsPageView";
 import { parseInsightHubCategory } from "@/content/newsPage";
 import { partitionInsightsListing } from "@/lib/utils/insightListing";
 import { getInsightsHubListing } from "@/server/queries/articles";
 
-export const metadata: Metadata = {
-  title: "News",
-  description:
-    "Model-led reporting on BYD U8 capability, compact Seagull commuters, Yuan Up Smart, Denza Teng I—and the electrified ownership journey from ABRIEV.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("InsightsHub");
+  return {
+    title: t("breadcrumbNews"),
+    description: t("lede"),
+  };
+}
 
 export default async function InsightsPage({
   searchParams,
@@ -29,7 +32,6 @@ export default async function InsightsPage({
       featured={partitioned.featured}
       trending={partitioned.trending}
       grid={partitioned.grid}
-      latest={partitioned.latest}
     />
   );
 }

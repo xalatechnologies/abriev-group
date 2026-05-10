@@ -231,8 +231,9 @@ const config: Config = {
         "container-max": "var(--container-max)",
       },
       maxWidth: {
-        container: "var(--container-max)",
-        "container-max": "var(--container-max)",
+        /** Full-bleed page chrome (matches sticky header insets); no 1440px cap. */
+        container: "none",
+        "container-max": "none",
         prose: "68ch",
       },
       boxShadow: {

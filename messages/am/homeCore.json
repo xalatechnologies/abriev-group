@@ -1,1 +1,104 @@
-{}
+{
+  "HomeMarketingHero": {
+    "eyebrow": "ፍጹም የሆነውን መኪና ያግኙ",
+    "line1": "መኪና እየፈለጉ ነው?",
+    "line2": "እዚህ ትክክለኛው ቦታ ነዎት።",
+    "checklist": [
+      "በመጣጣኝ ዋጋ ከፍተኛ ጥራት",
+      "ፕሪሚየም አገልግሎቶች",
+      "24/7 የመንገድ ድጋፍ"
+    ],
+    "primaryCta": "መኪና ፈልግ",
+    "secondaryCta": "መኪናዎችን ይመልከቱ",
+    "backgroundAlt": "በጨለማ ስቱዲዮ ከኋላ ከሶስት ሩብ ማዕዘን የተዘረዘረ ቀይ ኩፔ የመኪና ሐሳብ"
+  },
+  "HomeHeroSearch": {
+    "tabsAll": "ሁሉም መኪናዎች",
+    "tabsNew": "አዲስ",
+    "tabsUsed": "ያስተናገዱ",
+    "helper": "ከብዙ ሺህ መኪናዎች ውስጥ ይፈልጉ",
+    "makeModelLabel": "ብራንድ / ሞዴል",
+    "makeModelPlaceholder": "ብራንድ ወይም ሞዴል ይይዙ",
+    "bodyStyleLabel": "አካል ዘይቤ",
+    "priceRangeLabel": "የዋጋ ክልል",
+    "searchCta": "መኪና ፈልግ",
+    "popular": "የተወደዱ",
+    "reset": "እንደገና ጀምር",
+    "listingTypeAria": "የመዝገብ አይነት",
+    "bodyStyleLabels": [
+      "ሁሉም አይነቶች",
+      "ሴዳን",
+      "ኤስዩቪ",
+      "ኩፔ",
+      "ኮንቨርቲብል",
+      "ሃችባክ",
+      "ክሮስኦቨር",
+      "ፒካፕ",
+      "ግራንድ ቱሪር"
+    ],
+    "priceRangeLabels": [
+      "የማንኛውም ዋጋ",
+      "ከ $25k በታች",
+      "$25k – $50k",
+      "$50k – $100k",
+      "$100k – $200k",
+      "$200k+"
+    ]
+  },
+  "HomeMostViewed": {
+    "title": "በብዛት የተመለከቱ መኪናዎች",
+    "lede": "ለእርስዎ የሚስማማውን መኪና ይምረጡ",
+    "viewAll": "ሁሉንም ይመልከቱ"
+  },
+  "HomeBrowseByType": {
+    "title": "በአይነት ይፈልጉ",
+    "lede": "ለኑሮ ዘይብዎ በሚስማማው መኪና ይድረሱ",
+    "browseCta": "{label} ይፈልጉ",
+    "allVehicles": "ሁሉም መኪናዎች",
+    "vehiclesCount": "{count} መኪናዎች ይገኛሉ",
+    "oneVehicle": "1 መኪና ይገኛል",
+    "moreArriving": "ተጨማሪ በመንገድ ላይ",
+    "prevCategory": "ያለፈው ምድብ",
+    "nextCategory": "ቀጣዩ ምድብ",
+    "categoryPages": "የምድብ ገጾች",
+    "goToCategory": "ወደ {label} ሂድ",
+    "categoryImageAlt": "{label} ምድብ",
+    "tiles": {
+      "coupe": {
+        "label": "ኩፔ",
+        "description": "ለሁለት በሮች ቅጽ።"
+      },
+      "grand-tourer": {
+        "label": "ግራንድ ቱሪር",
+        "description": "ለረጅም መንገድ።"
+      },
+      "suv": {
+        "label": "ኤስዩቪ",
+        "description": "የታቀፈ ታማኝነት።"
+      },
+      "sedan": {
+        "label": "ሴዳን",
+        "description": "የሥራ አለም እምነት።"
+      },
+      "hatchback": {
+        "label": "ሃችባክ",
+        "description": "ለከተማ ብዛት አጠቃቀም።"
+      },
+      "convertible": {
+        "label": "ኮንቨርቲብል",
+        "description": "ክፍት የሆነ ወቅት።"
+      }
+    }
+  },
+  "HomeUpcomingEvents": {
+    "title": "የሚመጡ መኪናዎች እና ዝግጅቶች",
+    "lede": "ከአዳዲስ ዜናዎች እና ዝግጅቶች ጋር ይከታተሉ",
+    "readMore": "ተጨማሪ ያንብቡ",
+    "categories": {
+      "auction": "ጨረታ",
+      "reveal": "የግል ማሳያ",
+      "drive": "የግል ነዳድ",
+      "exhibition": "ማሳያ"
+    }
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "PolicyPages": {
+    "shell": {
+      "documentAriaLabel": "Policy document"
+    },
+    "carInsuranceAssistance": {
+      "metaTitle": "Car insurance assistance",
+      "metaDescription": "How ABRIEV helps you coordinate insurance paperwork, partner referrals, and claims guidance for vehicles on our marketplace.",
+      "eyebrow": "Support",
+      "title": "Car insurance assistance.",
+      "intro": "ABRIEV is a curated automotive marketplace. We do not underwrite insurance or act as your insurer. This page explains how our team and partners can help you navigate coverage, documentation, and claims related to vehicles you discover here.",
+      "lastUpdated": "Last updated: May 2026",
+      "contactLead": "If you need help with a specific listing, quote, or claim, contact {brand} at {email} and reference the vehicle or booking reference.",
+      "contactCta": "Contact us",
+      "sections": [
+        {
+          "heading": "What this service is",
+          "paragraphs": [
+            "Insurance assistance on ABRIEV means coordination support: helping you understand which documents dealers may need, pointing you to licensed partners where available, and clarifying how marketplace activity relates to your own policy.",
+            "We do not guarantee coverage, premiums, or claim outcomes. All policies are issued by licensed insurers, and you should always read the policy documents you receive from them."
+          ]
+        },
+        {
+          "heading": "Working with insurers and brokers",
+          "paragraphs": [
+            "Depending on your region, we may introduce you to brokers or insurers we work with. Any quote or bind decision is between you and that provider.",
+            "ABRIEV may receive a referral fee from some partners. Where that applies, it does not change the price you pay to the insurer for the same risk information."
+          ]
+        },
+        {
+          "heading": "Claims and accidents",
+          "paragraphs": [
+            "If you are involved in an incident, prioritize safety and follow local law. Notify your insurer as required by your policy.",
+            "Our team can help you locate dealer or marketplace records (for example, a handover checklist or service date) that your insurer requests. We cannot intervene in claim decisions."
+          ],
+          "bullets": [
+            "Gather photos, police or incident report numbers, and witness details when appropriate.",
+            "Keep rental or mobility receipts if your policy covers them.",
+            "Do not admit fault at the scene; exchange information calmly and accurately."
+          ]
+        },
+        {
+          "heading": "New purchases and financed vehicles",
+          "paragraphs": [
+            "Lenders and dealers often require proof of comprehensive or collision coverage before delivery. Start the quote process early so binding and proof of insurance align with your pickup date.",
+            "If you import or register a vehicle across regions, coverage rules differ. Confirm minimum limits and mandatory coverages in the place where the vehicle will be registered."
+          ]
+        },
+        {
+          "heading": "Privacy",
+          "paragraphs": [
+            "To assist you, we may process contact details and vehicle identifiers you share with us. See our Privacy Policy for how we handle personal data."
+          ]
+        }
+      ]
+    },
+    "temporaryCarReplacement": {
+      "metaTitle": "Temporary car replacement",
+      "metaDescription": "How ABRIEV coordinates courtesy and temporary replacement vehicles with dealers and mobility partners after a covered event or repair.",
+      "eyebrow": "Mobility",
+      "title": "Temporary car replacement.",
+      "intro": "When your vehicle is unavailable because of repairs, service, or an insured event, you may be eligible for a temporary replacement depending on your policy, dealer program, and fleet availability. ABRIEV helps schedule and document these arrangements when offered through our network.",
+      "lastUpdated": "Last updated: May 2026",
+      "contactLead": "Tell us your situation, policy reference (if any), and preferred dates at {email}. Our concierge will share available options from the {brand} network.",
+      "contactCta": "Contact us",
+      "sections": [
+        {
+          "heading": "Eligibility",
+          "paragraphs": [
+            "Replacement or courtesy vehicles are not automatic. Eligibility depends on the warranty or insurance product you hold, dealer goodwill programs, and regional availability.",
+            "You must hold a valid driving licence accepted where the replacement will be used, and you must meet partner age and deposit requirements."
+          ]
+        },
+        {
+          "heading": "How booking works",
+          "paragraphs": [
+            "We confirm the class of vehicle, pickup location, and return window. You sign the partner’s rental or loan agreement and are responsible for fuel, tolls, traffic fines, and any deductibles described in that agreement.",
+            "Extensions require partner approval. Late returns may incur additional day charges."
+          ]
+        },
+        {
+          "heading": "Insurance on the replacement",
+          "paragraphs": [
+            "Collision and liability coverage on a courtesy or rental vehicle may come from your existing policy, a bundled product from the partner, or both. Ask for a coverage summary before you drive away.",
+            "ABRIEV does not decide whether a loss is covered; that remains with your insurer and the partner’s contract."
+          ],
+          "bullets": [
+            "Document pre-existing damage on the handover form.",
+            "Use the partner’s hotline for breakdowns or accidents involving the replacement car.",
+            "Return the vehicle with the agreed fuel level and cleanliness."
+          ]
+        },
+        {
+          "heading": "Fees and deposits",
+          "paragraphs": [
+            "Partners may place a pre-authorisation hold on a card. Any damage, missing equipment, or cleaning charges will follow the partner’s tariff and inspection.",
+            "Promotional or complimentary days, if offered, will be stated in writing; otherwise assume standard retail rates apply after any covered period ends."
+          ]
+        },
+        {
+          "heading": "Limitations",
+          "paragraphs": [
+            "Peak seasons, supply constraints, or remote locations may limit availability. We will propose alternatives (different class, different pickup site, or alternate dates) when possible.",
+            "ABRIEV is not liable for indirect costs such as lost wages or missed flights arising from vehicle unavailability."
+          ]
+        }
+      ]
+    },
+    "refundPolicy": {
+      "metaTitle": "Refund policy",
+      "metaDescription": "Refund and cancellation rules for ABRIEV marketplace fees, bookings, and partner services.",
+      "eyebrow": "Legal",
+      "title": "Refund policy.",
+      "intro": "This policy explains how refunds and cancellations work for payments you make to ABRIEV or through our checkout flows. Services performed directly by third-party dealers, insurers, or lenders follow their own contracts.",
+      "lastUpdated": "Last updated: May 2026",
+      "contactLead": "For refund requests, email {email} with your order or booking ID, the payment method used, and a short description of the issue. We respond within five business days in most cases.",
+      "contactCta": "Contact us",
+      "sections": [
+        {
+          "heading": "Scope",
+          "paragraphs": [
+            "ABRIEV may charge listing fees, subscription or spotlight products, deposits for appointments, or service fees on certain transactions. This policy covers those ABRIEV charges.",
+            "Purchase price for a vehicle, finance charges, insurance premiums, and repair invoices are contracts between you and the dealer or provider. Refunds for those amounts follow their policies and applicable law."
+          ]
+        },
+        {
+          "heading": "Cooling-off and statutory rights",
+          "paragraphs": [
+            "Where local consumer regulations grant a cooling-off period for distance contracts, those rights apply in addition to the rules here. Nothing in this policy limits non-waivable rights.",
+            "If a court or regulator finds part of this policy invalid, the remainder stays in effect."
+          ]
+        },
+        {
+          "heading": "Listing and promotion fees",
+          "paragraphs": [
+            "Listing fees are generally non-refundable once editorial review has started, because the work involves human time and tooling costs.",
+            "If we decline a listing for a reason stated in our editorial guidelines before publication, we refund any prepaid listing fee to the original payment method within ten business days."
+          ]
+        },
+        {
+          "heading": "Bookings and appointment deposits",
+          "paragraphs": [
+            "Deposits for viewings or handovers may be refundable if you cancel before the cutoff stated at checkout. Late cancellations or no-shows may forfeit some or all of the deposit to compensate the dealer or concierge time.",
+            "When weather, force majeure, or safety issues force cancellation, we rebook without penalty when possible, or refund the deposit if no suitable slot exists."
+          ]
+        },
+        {
+          "heading": "Duplicate or erroneous charges",
+          "paragraphs": [
+            "If you are charged twice for the same ABRIEV service or the amount does not match the checkout summary, we correct the ledger and return the excess within ten business days of verification.",
+            "Chargebacks should be a last step. Opening a chargeback while we are actively resolving an issue can delay everyone's access to payment records."
+          ]
+        },
+        {
+          "heading": "Currency and processing",
+          "paragraphs": [
+            "Refunds are sent to the original payment method. Card schemes or banks may add their own settlement timelines.",
+            "If your account is closed, we may request updated payout details subject to fraud checks."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "metaTitle": "Terms of Service",
+      "metaDescription": "The agreement that governs your use of ABRIEV, our marketplace listings, and related concierge services.",
+      "eyebrow": "Legal",
+      "title": "Terms of Service.",
+      "intro": "Welcome to ABRIEV. By accessing our website, apps, or services, you agree to these Terms of Service and to the documents they reference (including our Privacy Policy). If you do not agree, please stop using the services.",
+      "lastUpdated": "Last updated: May 2026",
+      "contactLead": "Questions about these terms? Write to {email} with \"Terms\" in the subject line. References to \"{brand}\", \"we\", or \"us\" mean the ABRIEV operating entity responsible for the services in your region.",
+      "contactCta": "Contact us",
+      "sections": [
+        {
+          "heading": "Who may use ABRIEV",
+          "paragraphs": [
+            "You must be able to form a binding contract where you live. If you use ABRIEV on behalf of a business, you confirm you have authority to bind that organisation.",
+            "We may refuse service, close accounts, or remove content that risks users, partners, or the integrity of the marketplace."
+          ]
+        },
+        {
+          "heading": "Marketplace role",
+          "paragraphs": [
+            "ABRIEV displays listings and facilitates introductions between buyers, renters, sellers, and dealers. Unless we explicitly act as seller of record for an item, we are not a party to your vehicle sale, lease, or finance contract.",
+            "Specifications, photographs, pricing, and availability come from sellers or dealers. You must verify critical facts in person and with appropriate professionals before you rely on them."
+          ]
+        },
+        {
+          "heading": "Accounts and security",
+          "paragraphs": [
+            "Keep your login credentials confidential. Notify us promptly if you suspect unauthorised access.",
+            "You are responsible for activity conducted through your account unless you demonstrate we failed to implement reasonable security controls."
+          ]
+        },
+        {
+          "heading": "Listing rules",
+          "paragraphs": [
+            "Listings must be accurate, lawful, and respectful. You may not post malware, spam, discriminatory content, or misleading pricing.",
+            "We may edit metadata for clarity, decline publication, or remove listings that break these terms or editorial standards."
+          ],
+          "bullets": [
+            "Honor appointments you schedule through ABRIEV or cancel with adequate notice.",
+            "Disclose material defects, accident history, title brands, and mileage honestly.",
+            "Only list vehicles you are entitled to sell or rent."
+          ]
+        },
+        {
+          "heading": "Fees and taxes",
+          "paragraphs": [
+            "We publish applicable service fees before you confirm payment. You are responsible for any taxes, duties, or registration costs imposed on your transaction by authorities.",
+            "Third parties (dealers, insurers, lenders) set their own prices; ABRIEV does not control those."
+          ]
+        },
+        {
+          "heading": "Intellectual property",
+          "paragraphs": [
+            "ABRIEV branding, software, and editorial layouts are protected. You receive a limited, revocable licence to use the consumer-facing features for their intended purpose.",
+            "You grant ABRIEV a licence to host, format, and promote content you upload so the marketplace can function."
+          ]
+        },
+        {
+          "heading": "Disclaimer of warranties",
+          "paragraphs": [
+            "Except where law requires otherwise, services are provided \"as is\" and \"as available\". We disclaim implied warranties of merchantability, fitness for a particular purpose, and non-infringement to the fullest extent permitted."
+          ]
+        },
+        {
+          "heading": "Limitation of liability",
+          "paragraphs": [
+            "To the extent permitted by law, ABRIEV is not liable for indirect, incidental, special, consequential, or punitive damages, or for lost profits, data, or goodwill.",
+            "Our aggregate liability arising out of these terms or the services for any claim is limited to the greater of (a) the fees you paid to ABRIEV for the service giving rise to the claim during the three months before the event, or (b) one hundred euros (or local equivalent), except where statute forbids such a cap."
+          ]
+        },
+        {
+          "heading": "Indemnity",
+          "paragraphs": [
+            "You will defend and indemnify ABRIEV and its affiliates against claims arising from your misuse of the services, your listings, or your violation of law or these terms, subject to our prompt notice and reasonable cooperation."
+          ]
+        },
+        {
+          "heading": "Governing law and disputes",
+          "paragraphs": [
+            "Unless mandatory consumer protections require a different forum, these terms are governed by the laws of the jurisdiction stated in your order or account documentation, without regard to conflict-of-law rules.",
+            "Many disputes can be resolved informally; contact us first. If informal resolution fails, exclusive courts or arbitration in that same jurisdiction may apply as detailed in supplemental regional terms when we publish them."
+          ]
+        },
+        {
+          "heading": "Changes",
+          "paragraphs": [
+            "We may update these terms to reflect new features or legal requirements. Material changes will be announced with reasonable notice where required. Continued use after the effective date constitutes acceptance.",
+            "If you do not agree to an update, stop using the services and close your account."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "metaTitle": "Privacy Policy",
+      "metaDescription": "How ABRIEV collects, uses, and protects personal data when you use our marketplace and concierge services.",
+      "eyebrow": "Legal",
+      "title": "Privacy Policy.",
+      "intro": "We built ABRIEV around trust. This Policy describes the personal data we process, why we process it, how long we keep it, and the choices you have. Capitalised terms like \"Controller\" follow applicable privacy law in your region.",
+      "lastUpdated": "Last updated: May 2026",
+      "contactLead": "Data protection questions: {email}. Please include your country or region so we route your request correctly. The data controller for ABRIEV services is the entity identified in your contract or regional notice.",
+      "contactCta": "Contact us",
+      "sections": [
+        {
+          "heading": "Data we collect",
+          "paragraphs": [
+            "Account data: identifiers such as name, email address, phone number, and encrypted password.",
+            "Transaction and support data: bookings, listings, messages with concierge, and documents you upload (for example ID for high-value pickups when required by partners).",
+            "Technical data: device type, browser, approximate location from IP, cookies, and analytics events."
+          ]
+        },
+        {
+          "heading": "Why we use data",
+          "paragraphs": [
+            "Provide and secure the marketplace, authenticate users, process payments, and coordinate appointments.",
+            "Improve performance and design through aggregated analytics, subject to your cookie preferences where required.",
+            "Comply with legal obligations such as anti-fraud checks, tax reporting, and lawful requests from authorities."
+          ]
+        },
+        {
+          "heading": "Legal bases (EEA, UK, and similar regimes)",
+          "paragraphs": [
+            "Contract necessity for services you request, legitimate interests in operating a secure platform (balanced against your rights), consent where we must ask explicitly, and legal obligations where processing is mandatory."
+          ]
+        },
+        {
+          "heading": "Sharing",
+          "paragraphs": [
+            "We share data with dealers, insurers, payment processors, cloud hosting vendors, and analytics providers strictly as needed to deliver the product.",
+            "Vendors process data under contracts requiring confidentiality and appropriate safeguards. We do not sell your personal data for money."
+          ],
+          "bullets": [
+            "Dealers see the contact and vehicle information required to complete a sale or appointment you initiate.",
+            "Regulators or courts may receive data when the law compels disclosure."
+          ]
+        },
+        {
+          "heading": "International transfers",
+          "paragraphs": [
+            "Our infrastructure may be located outside your country. Where law requires, we use Standard Contractual Clauses or equivalent mechanisms to protect transfers."
+          ]
+        },
+        {
+          "heading": "Retention",
+          "paragraphs": [
+            "We keep account and transaction records for the period needed to provide services, resolve disputes, and meet accounting or regulatory requirements, then delete or anonymise them.",
+            "Marketing consents are refreshed periodically; you may withdraw consent at any time without affecting the lawfulness of earlier processing."
+          ]
+        },
+        {
+          "heading": "Security",
+          "paragraphs": [
+            "We implement administrative, technical, and organisational measures such as encryption in transit, access controls, and staff training. No method of transmission is 100% secure; report suspected issues promptly."
+          ]
+        },
+        {
+          "heading": "Your rights",
+          "paragraphs": [
+            "Depending on your location you may have rights to access, correct, delete, restrict, or port your data, and to object to certain processing, including profiling that produces legal effects.",
+            "To exercise rights, contact us using the email above. You may lodge a complaint with your supervisory authority."
+          ]
+        },
+        {
+          "heading": "Children",
+          "paragraphs": [
+            "ABRIEV is not directed at children under the age digital consent applies in your region, and we do not knowingly collect their personal data."
+          ]
+        },
+        {
+          "heading": "Cookies",
+          "paragraphs": [
+            "We use essential cookies to keep you signed in and remember preferences. With your consent where required, we use analytics cookies to understand usage. Browser settings and our cookie banner let you adjust choices."
+          ]
+        },
+        {
+          "heading": "Updates",
+          "paragraphs": [
+            "When this Policy changes materially, we post the new version here and adjust the \"Last updated\" line. For significant changes affecting existing users, we may also email you or show an in-product notice."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -23,10 +23,10 @@ export function ContactFaqSection() {
           headingAs="h2"
           align="center"
           titleClassName="text-balance"
-          className="mx-auto max-w-3xl items-center px-4 text-center"
+          className="mx-auto max-w-5xl items-center px-4 text-center"
         />
 
-        <ul role="list" className="mx-auto flex w-full max-w-3xl flex-col gap-3">
+        <ul role="list" className="mx-auto flex w-full max-w-5xl flex-col gap-3">
           {CONTACT_PAGE_FAQ_ITEMS.map((item) => (
             <li key={item.question}>
               <details

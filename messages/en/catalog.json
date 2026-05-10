@@ -25,6 +25,18 @@
     "services": {
       "title": "Services",
       "description": "Vehicle sales & purchase, car finance, maintenance & repair, and import & export coordination \u2014 concierge automotive services from ABRIEV."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Speak with {brand} concierge sales ({email}) — or connect with verified partner dealers."
+    },
+    "listYourVehicle": {
+      "title": "List your vehicle",
+      "description": "Submit photos, vehicle details, and pricing in a guided four-step flow for ABRIEV editorial review."
+    },
+    "listingSubmitted": {
+      "title": "Listing submitted",
+      "description": "Your vehicle listing is with the ABRIEV editorial team for review."
     }
   },
   "VehicleCategories": {

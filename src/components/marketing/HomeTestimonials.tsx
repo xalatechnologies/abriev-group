@@ -60,7 +60,7 @@ export async function HomeTestimonials() {
       <Container>
         <div className="mb-12 flex flex-col gap-3 text-center md:text-left">
           <h2 className="font-headline-lg text-headline-lg text-text-strong">{t("title")}</h2>
-          <p className="mx-auto max-w-2xl font-body-lg text-body-lg text-text-body md:mx-0">{t("lede")}</p>
+          <p className="mx-auto max-w-4xl font-body-lg text-body-lg text-text-body md:mx-0">{t("lede")}</p>
         </div>
       </Container>
 

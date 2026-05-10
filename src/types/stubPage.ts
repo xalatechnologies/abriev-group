@@ -1,0 +1,23 @@
+/** Route keys for stubPages.json (StubPage namespace). */
+export type StubRouteKey =
+  | "about"
+  | "faqs"
+  | "privacy"
+  | "terms"
+  | "copyright"
+  | "refundPolicy"
+  | "dealers"
+  | "dealerDetail"
+  | "temporaryReplacement"
+  | "carInsuranceAssistance"
+  | "dashboard"
+  | "dashboardFavorites"
+  | "dashboardListings"
+  | "dashboardBookings"
+  | "dashboardProfile"
+  | "listYourVehicle"
+  | "listPricing"
+  | "listSuccess"
+  | "bookingAvailability"
+  | "bookingCheckout"
+  | "bookingConfirmation";

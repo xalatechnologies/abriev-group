@@ -9,17 +9,17 @@
         "title": "Explore",
         "items": [
           { "label": "List your vehicle", "href": "/list-your-vehicle" },
-          { "label": "News", "href": "/insights" }
+          { "label": "News", "href": "/insights" },
+          { "label": "FAQs", "href": "/faqs" },
+          { "label": "About us", "href": "/about" }
         ]
       },
       {
         "title": "Help & policies",
         "items": [
-          { "label": "FAQs", "href": "/faqs" },
           { "label": "Car Insurance Assistance", "href": "/car-insurance-assistance" },
           { "label": "Temporary Car Replacement", "href": "/temporary-car-replacement" },
           { "label": "Refund policy", "href": "/refund-policy" },
-          { "label": "About us", "href": "/about" },
           { "label": "Terms of Service", "href": "/terms" },
           { "label": "Privacy Policy", "href": "/privacy" }
         ]

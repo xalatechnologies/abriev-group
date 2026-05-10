@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
@@ -19,10 +22,48 @@ export function VehicleCard({
   tone = "light",
   className,
 }: VehicleCardProps) {
+  const t = useTranslations("VehicleCard");
+
   const milesDisplay =
     vehicle.specs.mileage !== undefined
       ? formatMileage(vehicle.specs.mileage) ?? "—"
-      : "Delivery mileage";
+      : t("deliveryMileage");
+
+  const condition =
+    vehicle.condition === "pre-owned"
+      ? t("conditionPreOwned")
+      : vehicle.condition === "certified"
+        ? t("conditionCertified")
+        : t("conditionNew");
+
+  const fuel = {
+    petrol: t("fuelPetrol"),
+    diesel: t("fuelDiesel"),
+    hybrid: t("fuelHybrid"),
+    "plug-in-hybrid": t("fuelPlugIn"),
+    electric: t("fuelElectric"),
+  }[vehicle.specs.fuel];
+
+  const transmission = {
+    automatic: t("transAutomatic"),
+    manual: t("transManual"),
+    dct: t("transDct"),
+    cvt: t("transCvt"),
+  }[vehicle.specs.transmission];
+
+  const priceHeading =
+    vehicle.category === "for-rent"
+      ? t("priceFrom")
+      : vehicle.condition === "new"
+        ? t("priceStarting")
+        : t("priceAsking");
+
+  const statusLabel =
+    vehicle.status === "reserved"
+      ? t("statusReserved")
+      : vehicle.status === "sold"
+        ? t("statusSold")
+        : vehicle.status;
 
   return (
     <Link
@@ -36,7 +77,6 @@ export function VehicleCard({
         className,
       )}
     >
-      {/* Image — wide, billboard-style */}
       <div className="relative aspect-[16/10] overflow-hidden bg-surface-container-high sm:aspect-[5/3]">
         <Image
           src={vehicle.heroImage.src}
@@ -53,7 +93,7 @@ export function VehicleCard({
               size="sm"
               className="border-0 bg-background/90 font-semibold shadow-sm backdrop-blur-sm dark:bg-black/70"
             >
-              Editor&apos;s pick
+              {t("editorsPick")}
             </Badge>
           ) : null}
           <Badge
@@ -61,7 +101,7 @@ export function VehicleCard({
             size="sm"
             className="border-white/20 bg-background/90 font-semibold shadow-sm backdrop-blur-sm dark:bg-black/60 dark:text-white"
           >
-            {conditionLabel(vehicle.condition)}
+            {condition}
           </Badge>
           {vehicle.status !== "available" ? (
             <Badge
@@ -69,13 +109,12 @@ export function VehicleCard({
               size="sm"
               className="shadow-sm"
             >
-              {vehicle.status}
+              {statusLabel}
             </Badge>
           ) : null}
         </div>
       </div>
 
-      {/* Body — Tesla-like: tight title, stat strip, price runway */}
       <div className="flex flex-1 flex-col px-5 pb-6 pt-6 sm:px-6 sm:pb-7 sm:pt-7">
         <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-text-muted">
           {vehicle.make} · {formatYear(vehicle.specs.year)}
@@ -90,7 +129,7 @@ export function VehicleCard({
         <dl className="mt-6 grid grid-cols-3 divide-x divide-outline-variant/50 border-t border-outline-variant pt-6 text-center">
           <div className="flex flex-col gap-1 px-1 first:pl-0">
             <dt className="text-[10px] font-bold uppercase tracking-[0.14em] text-text-muted">
-              Miles
+              {t("statMiles")}
             </dt>
             <dd className="text-[13px] font-semibold tabular-nums text-text-strong sm:text-sm">
               {milesDisplay}
@@ -98,26 +137,22 @@ export function VehicleCard({
           </div>
           <div className="flex flex-col gap-1 px-1">
             <dt className="text-[10px] font-bold uppercase tracking-[0.14em] text-text-muted">
-              Fuel
+              {t("statFuel")}
             </dt>
-            <dd className="text-[13px] font-semibold text-text-strong sm:text-sm">
-              {fuelLabel(vehicle.specs.fuel)}
-            </dd>
+            <dd className="text-[13px] font-semibold text-text-strong sm:text-sm">{fuel}</dd>
           </div>
           <div className="flex flex-col gap-1 px-1 last:pr-0">
             <dt className="text-[10px] font-bold uppercase tracking-[0.14em] text-text-muted">
-              Trans.
+              {t("statTransmission")}
             </dt>
-            <dd className="text-[13px] font-semibold text-text-strong sm:text-sm">
-              {transmissionLabel(vehicle.specs.transmission)}
-            </dd>
+            <dd className="text-[13px] font-semibold text-text-strong sm:text-sm">{transmission}</dd>
           </div>
         </dl>
 
         <div className="mt-6 flex flex-1 flex-col justify-end border-t border-card-divider pt-6 transition-colors duration-300 group-hover:border-card-divider-hover sm:flex-row sm:items-end sm:justify-between sm:gap-4">
           <div>
             <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-text-muted">
-              {priceLabel(vehicle)}
+              {priceHeading}
             </span>
             <p className="mt-1.5 text-2xl font-semibold tabular-nums leading-none tracking-[-0.02em] text-text-strong sm:text-[1.625rem]">
               {formatPrice(vehicle.price)}
@@ -128,7 +163,7 @@ export function VehicleCard({
               {vehicle.location.city}
             </span>
             <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-primary transition-transform duration-300 group-hover:translate-x-0.5">
-              View
+              {t("viewDetail")}
               <ArrowUpRight className="size-4 shrink-0" aria-hidden strokeWidth={2.5} />
             </span>
           </div>
@@ -136,28 +171,4 @@ export function VehicleCard({
       </div>
     </Link>
   );
-}
-
-function conditionLabel(c: Vehicle["condition"]) {
-  return c === "pre-owned" ? "Pre-owned" : c === "certified" ? "Certified" : "New";
-}
-
-function fuelLabel(f: Vehicle["specs"]["fuel"]) {
-  return {
-    petrol: "Petrol",
-    diesel: "Diesel",
-    hybrid: "Hybrid",
-    "plug-in-hybrid": "Plug-in",
-    electric: "Electric",
-  }[f];
-}
-
-function transmissionLabel(t: Vehicle["specs"]["transmission"]) {
-  return { automatic: "Auto", manual: "Manual", dct: "DCT", cvt: "CVT" }[t];
-}
-
-function priceLabel(v: Vehicle) {
-  if (v.category === "for-rent") return "From";
-  if (v.condition === "new") return "Starting";
-  return "Asking";
 }

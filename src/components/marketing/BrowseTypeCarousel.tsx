@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils/cn";
@@ -22,6 +23,7 @@ type BrowseTypeCarouselProps = {
 const GAP = 20;
 
 export function BrowseTypeCarousel({ tiles }: BrowseTypeCarouselProps) {
+  const tr = useTranslations("HomeBrowseByType");
   const trackRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -77,19 +79,21 @@ export function BrowseTypeCarousel({ tiles }: BrowseTypeCarouselProps) {
         ref={trackRef}
         className="scrollbar-none -mx-4 flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth px-4 pb-2 sm:-mx-6 sm:px-6"
       >
-        {tiles.map((t) => {
+        {tiles.map((tile) => {
           const countLabel =
-            t.count > 0
-              ? `${t.count} ${t.count === 1 ? "vehicle" : "vehicles"} available`
-              : "More arriving soon";
+            tile.count > 0
+              ? tile.count === 1
+                ? tr("oneVehicle")
+                : tr("vehiclesCount", { count: tile.count })
+              : tr("moreArriving");
           return (
             <article
-              key={t.key}
+              key={tile.key}
               className="group relative aspect-[3/2] w-[88%] shrink-0 snap-start overflow-hidden rounded-2xl border border-card-border bg-surface-container-highest sm:aspect-[4/3] sm:w-[64%] lg:w-[52%] xl:w-[48%]"
             >
               <Image
-                src={t.cover}
-                alt={`${t.label} category`}
+                src={tile.cover}
+                alt={tr("categoryImageAlt", { label: tile.label })}
                 fill
                 sizes="(max-width: 640px) 88vw, (max-width: 1024px) 64vw, 48vw"
                 className="object-cover transition-transform duration-[1400ms] ease-editorial group-hover:scale-[1.05]"
@@ -97,7 +101,7 @@ export function BrowseTypeCarousel({ tiles }: BrowseTypeCarouselProps) {
 
               {/* Top-left tagline pill */}
               <span className="absolute left-6 top-6 z-10 inline-flex items-center rounded-full bg-black/30 px-3 py-1.5 font-label-caps text-sm font-bold uppercase tracking-[0.12em] text-white backdrop-blur-md">
-                {t.description}
+                {tile.description}
               </span>
 
               {/* Bottom gradient + content */}
@@ -107,23 +111,23 @@ export function BrowseTypeCarousel({ tiles }: BrowseTypeCarouselProps) {
               />
               <div className="relative z-10 flex h-full flex-col justify-end p-6 md:p-8">
                 <h3 className="text-[32px] font-extrabold leading-[1.05] tracking-[-0.01em] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.4)] sm:text-[40px] md:text-[44px]">
-                  {t.label}
+                  {tile.label}
                 </h3>
                 <p className="mt-1.5 font-body-md text-body-md font-semibold text-white/85">
                   {countLabel}
                 </p>
                 <div className="mt-5 flex flex-wrap items-center gap-2.5">
                   <Link
-                    href={t.href}
+                    href={tile.href}
                     className="inline-flex h-10 items-center rounded-md bg-brand-primary px-5 text-sm font-bold text-white shadow-[0_8px_20px_-8px_rgba(0,143,76,0.7)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#00a056] active:translate-y-0"
                   >
-                    Browse {t.label}
+                    {tr("browseCta", { label: tile.label })}
                   </Link>
                   <Link
                     href="/vehicles"
                     className="inline-flex h-10 items-center rounded-md border border-white/40 bg-white/10 px-5 text-sm font-bold text-white backdrop-blur-md transition-all duration-200 hover:border-white/60 hover:bg-white/20"
                   >
-                    All Vehicles
+                    {tr("allVehicles")}
                   </Link>
                 </div>
               </div>
@@ -134,7 +138,7 @@ export function BrowseTypeCarousel({ tiles }: BrowseTypeCarouselProps) {
 
       <button
         type="button"
-        aria-label="Previous category"
+        aria-label={tr("prevCategory")}
         onClick={handlePrev}
         disabled={!canScrollLeft}
         className={cn(
@@ -146,7 +150,7 @@ export function BrowseTypeCarousel({ tiles }: BrowseTypeCarouselProps) {
       </button>
       <button
         type="button"
-        aria-label="Next category"
+        aria-label={tr("nextCategory")}
         onClick={handleNext}
         disabled={!canScrollRight}
         className={cn(
@@ -160,17 +164,17 @@ export function BrowseTypeCarousel({ tiles }: BrowseTypeCarouselProps) {
       <div
         className="mt-7 flex items-center justify-center gap-2"
         role="tablist"
-        aria-label="Category pages"
+        aria-label={tr("categoryPages")}
       >
-        {tiles.map((t, i) => {
+        {tiles.map((navTile, i) => {
           const active = activeIndex === i;
           return (
             <button
-              key={t.key}
+              key={navTile.key}
               type="button"
               role="tab"
               aria-selected={active}
-              aria-label={`Go to ${t.label}`}
+              aria-label={tr("goToCategory", { label: navTile.label })}
               onClick={() => scrollToIndex(i)}
               className={cn(
                 "h-2 rounded-full transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2 focus-visible:ring-offset-surface",

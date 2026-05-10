@@ -1,75 +1,62 @@
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
-import { SERVICE_OFFERINGS, SERVICES_HERO_IMAGE } from "@/content/servicesOfferings";
+import { SERVICE_OFFERINGS, servicesPageHero } from "@/content/servicesOfferings";
 import { FinalCTA } from "@/components/marketing/FinalCTA";
 import { Container } from "@/components/ui/Container";
-import { SectionIntro } from "@/components/ui/SectionIntro";
 import { cn } from "@/lib/utils/cn";
 
 export function ServicesPageView() {
   return (
     <div className="font-primary">
-      <header className="relative isolate min-h-[min(520px,calc(100dvh-72px))] overflow-hidden">
-        <Image
-          src={SERVICES_HERO_IMAGE.src}
-          alt={SERVICES_HERO_IMAGE.alt}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,0.95)_0%,rgba(0,0,0,0.78)_24%,rgba(0,0,0,0.48)_50%,rgba(0,0,0,0.18)_82%,rgba(0,0,0,0.06)_100%)]"
-        />
-        <Container className="absolute inset-x-0 bottom-24 z-10 w-full pb-12 pt-[5.75rem] md:bottom-36 md:pb-14 md:pt-28 lg:bottom-44">
-          <div className="flex max-w-3xl flex-col gap-7">
-            <h1 className="text-balance font-display-lg font-semibold text-5xl tracking-[-0.02em] text-white md:text-6xl lg:text-[4.25rem]">
-              Services
-            </h1>
-            <p className="max-w-xl font-body-lg text-body-lg leading-snug text-white text-pretty md:leading-relaxed">
-              From acquisition and finance through workshop care and global logistics — one
-              consistent standard of clarity and discretion.
-            </p>
+      <header className="bg-surface font-primary">
+        <Container>
+          <div className="relative flex flex-col pt-20 md:pt-24 lg:pt-28">
+            <div className="flex max-w-5xl flex-col gap-5 pb-8 md:gap-6 md:pb-10 lg:pb-12">
+              <span className="font-label-caps text-label-caps uppercase tracking-[0.12em] text-on-surface-variant">
+                {servicesPageHero.eyebrow}
+              </span>
+              <h1 className="font-display-lg text-display-lg text-balance text-on-background">
+                {servicesPageHero.title}
+              </h1>
+              <p className="max-w-4xl font-body-lg text-body-lg leading-relaxed text-on-surface-variant text-pretty">
+                {servicesPageHero.description}
+              </p>
+            </div>
           </div>
         </Container>
       </header>
 
       <section
         className="section-y border-t border-outline-variant bg-surface"
-        aria-label="Introduction"
+        aria-label="Explore services"
       >
-        <Container className="flex flex-col gap-14">
-          <SectionIntro
-            eyebrow="Our approach"
-            title="Four focused teams—with one playbook from enquiry to closure."
-            headingAs="h2"
-            titleClassName="text-balance"
-            className="max-w-3xl"
-          />
-
+        <Container>
           <nav aria-label="Jump to services">
-            <div className="rounded-2xl border border-card-border bg-surface-container-lowest p-5 md:p-6">
-              <div className="mb-6 flex flex-wrap items-center gap-3 md:mb-8">
+            <div className="rounded-xl border border-card-border bg-surface-container-lowest p-1.5 shadow-sm md:p-2">
+              <div className="mb-2 flex flex-wrap items-center gap-2 px-0.5 md:mb-2.5 md:px-1">
                 <span className="font-label-caps text-xs font-bold uppercase tracking-[0.14em] text-on-surface-variant">
                   Explore
                 </span>
                 <span aria-hidden className="hidden h-px w-12 bg-brand-primary/45 sm:inline" />
               </div>
-              <ul role="list" className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              <ul role="list" className="m-0 grid list-none grid-cols-2 gap-1.5 p-0 sm:grid-cols-4 sm:gap-2">
                 {SERVICE_OFFERINGS.map((s) => (
-                  <li key={s.anchorId}>
+                  <li key={s.anchorId} className="min-w-0">
                     <a
                       href={`#${s.anchorId}`}
-                      className="group flex gap-4 rounded-xl border border-card-border bg-surface p-4 transition-colors duration-300 ease-editorial hover:-translate-y-0.5 hover:border-card-border-hover hover:shadow-editorial focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary/40 md:p-[18px]"
+                      className={cn(
+                        "group flex min-h-[44px] w-full items-center gap-2 rounded-lg border border-card-border bg-surface px-2.5 py-2 transition-colors duration-200 ease-editorial md:min-h-[46px] md:gap-2 md:px-3 md:py-2.5",
+                        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary/40 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-container-lowest",
+                        "text-text-body hover:border-card-border-hover hover:bg-surface hover:text-text-strong hover:shadow-sm",
+                      )}
                     >
-                      <span className="flex size-10 shrink-0 items-center justify-center self-center rounded-lg border border-outline-variant bg-tertiary-fixed text-tertiary transition-colors duration-300 ease-editorial group-hover:border-transparent group-hover:bg-tertiary group-hover:text-on-tertiary">
+                      <span className="flex size-8 shrink-0 items-center justify-center self-center rounded-md border border-outline-variant bg-tertiary-fixed text-tertiary transition-colors duration-200 ease-editorial group-hover:border-transparent group-hover:bg-tertiary group-hover:text-on-tertiary">
                         <ChevronRight
-                          className="size-[18px] transition-transform duration-300 ease-editorial group-hover:translate-x-0.5"
+                          className="size-4 transition-transform duration-200 ease-editorial group-hover:translate-x-0.5"
                           aria-hidden
                         />
                       </span>
-                      <span className="flex min-h-10 flex-1 items-center font-body-md text-body-md font-semibold leading-snug text-on-background text-pretty">
+                      <span className="flex min-w-0 flex-1 items-center text-left text-[0.9375rem] font-bold leading-tight text-on-background text-pretty md:text-base">
                         {s.title}
                       </span>
                     </a>
@@ -80,7 +67,6 @@ export function ServicesPageView() {
           </nav>
         </Container>
       </section>
-
       {SERVICE_OFFERINGS.map((service, index) => {
         const headingId = `${service.anchorId}-heading`;
         return (

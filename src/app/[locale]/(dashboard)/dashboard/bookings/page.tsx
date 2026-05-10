@@ -1,20 +1,16 @@
 import type { Metadata } from "next";
-import { StubPage } from "@/components/marketing";
+import { stubPageMeta, StubPage } from "@/components/marketing";
 
-export const metadata: Metadata = {
-  title: "Your bookings",
-  description: "View and manage your bookings on ABRIEV.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return stubPageMeta("dashboardBookings");
+}
 
-export default function DashboardBookingsPage() {
+export default async function DashboardBookingsPage() {
   return (
     <StubPage
-      eyebrow="Dashboard"
-      title="Your bookings."
-      description="Bookings timeline and status tracking arrive in Phase 4."
+      route="dashboardBookings"
       phase={4}
       backHref="/dashboard"
-      backLabel="Dashboard"
     />
   );
 }

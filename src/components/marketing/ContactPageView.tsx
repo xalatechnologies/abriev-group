@@ -1,15 +1,12 @@
-import Image from "next/image";
-import { BadgeCheck, Building2, ChevronRight, Clock, Mail, Phone } from "lucide-react";
+import { BadgeCheck, Building2, Clock, Mail, Phone } from "lucide-react";
 
 import type { Dealer } from "@/types/dealer";
 import { SITE } from "@/lib/constants/site";
-import {
-  CONTACT_PAGE_COPY,
-  CONTACT_PAGE_HERO,
-} from "@/content/contactPage";
+import { CONTACT_PAGE_COPY } from "@/content/contactPage";
 import { Container } from "@/components/ui/Container";
 import { SectionIntro } from "@/components/ui/SectionIntro";
 import { ContactFaqSection } from "@/components/contact/ContactFaqSection";
+import { ContactLocationMap } from "@/components/contact/ContactLocationMap";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { Link } from "@/i18n/navigation";
 
@@ -27,45 +24,21 @@ type ContactPageViewProps = {
 export function ContactPageView({ dealers }: ContactPageViewProps) {
   return (
     <div className="font-primary">
-      <header className="relative isolate flex min-h-[min(480px,calc(100dvh-72px))] items-center justify-center overflow-hidden text-center md:items-end md:justify-center md:text-center">
-        <Image
-          src={CONTACT_PAGE_HERO.src}
-          alt={CONTACT_PAGE_HERO.alt}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div
-          aria-hidden
-          className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/45 to-black/30"
-        />
-        <Container className="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center px-6 pb-16 pt-28 md:px-margin-edge md:pb-24 md:pt-32">
-          <nav aria-label="Breadcrumb" className="mb-8 rounded-full border border-white/35 bg-black/35 px-5 py-2.5 backdrop-blur-md md:mb-10">
-            <ol className="flex flex-wrap items-center justify-center gap-2 font-label-caps text-[11px] font-bold uppercase tracking-[0.16em] text-white md:text-xs">
-              <li>
-                <Link
-                  href="/"
-                  className="rounded-sm text-white/90 underline-offset-4 transition-colors hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
-                >
-                  Home
-                </Link>
-              </li>
-              <li aria-hidden className="text-white/40">
-                <ChevronRight className="mx-0.5 inline size-3.5 -translate-y-px" aria-hidden />
-              </li>
-              <li className="text-white/95" aria-current="page">
-                Contact
-              </li>
-            </ol>
-          </nav>
-
-          <h1 className="text-balance font-display-lg text-5xl tracking-[-0.02em] text-white md:text-6xl lg:text-[4.25rem]">
-            Contact ABRIEV
-          </h1>
-          <p className="mt-6 max-w-2xl font-body-lg text-body-lg text-white/88 text-pretty">
-            Dedicated lines for concierge sales and verified dealer partners listing with us.
-          </p>
+      <header className="bg-surface font-primary">
+        <Container>
+          <div className="relative flex flex-col pt-20 md:pt-24 lg:pt-28">
+            <div className="flex max-w-5xl flex-col gap-5 pb-8 md:gap-6 md:pb-10 lg:pb-12">
+              <span className="font-label-caps text-label-caps uppercase tracking-[0.12em] text-on-surface-variant">
+                {CONTACT_PAGE_COPY.heroEyebrow}
+              </span>
+              <h1 className="font-display-lg text-display-lg text-balance text-on-background">
+                {CONTACT_PAGE_COPY.heroTitle}
+              </h1>
+              <p className="max-w-4xl font-body-lg text-body-lg leading-relaxed text-on-surface-variant text-pretty">
+                {CONTACT_PAGE_COPY.heroLede}
+              </p>
+            </div>
+          </div>
         </Container>
       </header>
 
@@ -82,7 +55,7 @@ export function ContactPageView({ dealers }: ContactPageViewProps) {
             lede={CONTACT_PAGE_COPY.dealersLede}
             headingAs="h2"
             titleClassName="text-balance"
-            className="mx-auto items-center px-4 text-center lg:max-w-3xl"
+            className="mx-auto items-center px-4 text-center lg:max-w-5xl"
           />
 
           <ul
@@ -160,8 +133,9 @@ export function ContactPageView({ dealers }: ContactPageViewProps) {
         aria-labelledby="concierge-contact-heading"
       >
         <Container>
-          <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-14">
-            <div className="flex flex-col gap-10 rounded-2xl border border-card-border bg-surface-container-lowest p-6 shadow-editorial md:p-8">
+          <div className="flex flex-col gap-12 lg:gap-14">
+            <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-14">
+              <div className="flex flex-col gap-10 rounded-2xl border border-card-border bg-surface-container-lowest p-6 shadow-editorial md:p-8">
               <div className="flex flex-col gap-4">
                 <span className="font-label-caps text-xs font-bold uppercase tracking-[0.14em] text-brand-primary">
                   {CONTACT_PAGE_COPY.eyebrowConcierge}
@@ -222,9 +196,12 @@ export function ContactPageView({ dealers }: ContactPageViewProps) {
                   </div>
                 </div>
               </div>
+              </div>
+
+              <ContactForm />
             </div>
 
-            <ContactForm />
+            <ContactLocationMap />
           </div>
         </Container>
       </section>

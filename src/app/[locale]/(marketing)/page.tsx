@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import {
   HomeMarketingHero,
   MostViewedVehicles,
@@ -11,11 +12,14 @@ import { getVehicles, getFeaturedVehicles } from "@/server/queries/vehicles";
 import { getArticles } from "@/server/queries/articles";
 import { getUpcomingEvents } from "@/server/queries/events";
 import { buildMakeModelFacets } from "@/lib/utils/makeModelFacets";
-import { homePageMeta } from "@/content/homePageReference";
 
-export const metadata: Metadata = {
-  title: homePageMeta.title,
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("Site");
+  return {
+    title: t("metaTitleDefault"),
+    description: t("metaDescription"),
+  };
+}
 
 export default async function HomePage() {
   const [featured, curated, articles, events, allForFacets] = await Promise.all([

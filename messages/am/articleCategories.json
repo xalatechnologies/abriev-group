@@ -1,0 +1,21 @@
+{
+  "ArticleCategories": {
+    "editorial": "አርታዊ",
+    "market": "ገበያ",
+    "design": "ዲዛይን",
+    "ownership": "ባለቤትነት",
+    "guides": "መመሪያ",
+    "heritage": "ቅርስ",
+    "byd-u8": "BYD U8",
+    "byd-seagull": "BYD ሲጋል",
+    "byd-e2": "BYD E2",
+    "yuan-up-smart": "ዩአን አፕ ስማርት",
+    "teng-i": "ቴንግ I",
+    "electric-vehicles": "ኤሌክትሪክ ተሽከርካሪዎች",
+    "luxury-cars": "ፕሪሚየም መኪኖች",
+    "car-maintenance": "መኪና ጥገና",
+    "new-cars": "አዲስ መኪኖች",
+    "car-rentals": "የመኪና ኪራይ",
+    "road-trips": "የመንገድ ጉዞዎች"
+  }
+}

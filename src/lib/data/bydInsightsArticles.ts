@@ -6,8 +6,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-yangwang-u8-hero",
     slug: "yangwang-u8-luxury-that-learns-your-road",
     title: "Yangwang U8: luxury that learns your road",
+    titleAm: "ያንግዋንግ U8፡ መንገድዎን የሚማር ፕሪሚየም ምርጫ",
     excerpt:
       "How BYD’s flagship SUV-caliber Yangwang proposition blends theater, traction logic, and long-horizon refinement for drivers who rarely stay on pavement.",
+    excerptAm:
+      "የ BYD ከፍተኛ ኤስዩቪ-ክብደት የያንግዋንግ ተሳክ ማስፈፀሚያ፣ መሳሪያ፣ እና ለረጅም መንገድ ማረጋገጫ በአንድ ላይ የሚዋሐድበት አፈፃፀም ለንደስተኛ አሽከርካሪዎች።",
     category: "byd-u8",
     author: {
       name: "Mei Lin",
@@ -32,15 +35,18 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-u8-calibration",
     slug: "byd-u8-calibration-for-real-drivers",
     title: "BYD U8 capability: calibration for real drivers",
+    titleAm: "BYD U8 ችሎታ፡ ለእውነተኛ ነዳዮች ማስተካከያ",
     excerpt:
       "Beyond the launch reels — what suspension cross-talk, tyre choices, and drive-mode memory mean when you daily a high-mass electrified performer.",
+    excerptAm:
+      "ከመጀመሪያ ምስል አልፎ—የሰረገላ ውይይት፣ የትይ ዕለታ እና የነዳድ ሁነታ ትውስታ በብዙ ክብደት ኤሌክትሪክ መኪና ላይ በዕለት ተወል ያለው ትርጓሜ።",
     category: "byd-u8",
     author: { name: "James Ashford", title: "Driving Notes" },
     publishedAt: "2026-04-28",
     readingTime: 7,
     views: 9_940,
     cover: {
-      src: "https://images.unsplash.com/photo-1503376780353-7e669276fc8f?w=2000&q=80&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=2000&q=80&auto=format&fit=crop",
       alt: "Sports SUV parked at dusk",
     },
     content: [
@@ -53,8 +59,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-seagull-shift",
     slug: "byd-seagull-the-quiet-shift-in-city-motoring",
     title: "BYD Seagull: the quiet shift in city motoring",
+    titleAm: "BYD ሲጋል፡ በከተማ አሽከርካሪ ውስጥ የቀዘቀዘ ለውጥ",
     excerpt:
       "Why the smallest BYD halo models are rewriting parking economics, insurer telematics, and the shape of commuter EV fleets.",
+    excerptAm:
+      "ለምን ትናንሹ BYD ሞዴሎች የመኪና ማቆሚያ ኢኮኖሚ፣ የኢንሹራንስ ቴለሜትሪክስ እና የመንገደኛ ኤቪ ታርጋ ቅርጽ እየቀየሩ ነው።",
     category: "byd-seagull",
     author: { name: "Sofia Marchetti", title: "Urban Mobility" },
     publishedAt: "2026-05-02",
@@ -75,8 +84,11 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-seagull-commute",
     slug: "living-with-the-seagull-commute-metrics-that-stick",
     title: "Living with the Seagull: commute metrics that stick",
+    titleAm: "ከሲጋል ጋር ሕይወት፡ የማይረሱ የመንገድ መለኪያዎች",
     excerpt:
       "Measured kWh/km swings, preconditioning etiquette, and the micro-habits that keep small-battery commuters drama-free.",
+    excerptAm:
+      "የተለካ kWh/ኪ.ም ልዩነት፣ ቅድመ-ማሞቂያ ደንብ፣ እና ትንሽ ባትሪ ያላቸውን መንገደኞች አለዳነት የሚጠብቁ ትናንሽ ወጎች።",
     category: "byd-seagull",
     author: { name: "Priya Anand", title: "Ownership Lab" },
     publishedAt: "2026-04-12",
@@ -125,7 +137,7 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     readingTime: 6,
     views: 8_760,
     cover: {
-      src: "https://images.unsplash.com/photo-1617814076367-ab27c5339d94?w=2000&q=80&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=2000&q=80&auto=format&fit=crop",
       alt: "Silver compact electric car side profile",
     },
     content: [
@@ -167,7 +179,7 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     readingTime: 7,
     views: 11_210,
     cover: {
-      src: "https://images.unsplash.com/photo-1519641471654-76ce4327cad7?w=2000&q=80&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=2000&q=80&auto=format&fit=crop",
       alt: "Compact crossover in studio light",
     },
     content: [
@@ -188,7 +200,7 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     readingTime: 5,
     views: 5_420,
     cover: {
-      src: "https://images.unsplash.com/photo-1523983254930-cf986e5e8135?w=2000&q=80&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=2000&q=80&auto=format&fit=crop",
       alt: "Family loading car with cargo",
     },
     content: [
@@ -243,16 +255,23 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     id: "n-blade-battery-story",
     slug: "blade-battery-the-engineering-story-buyers-see",
     title: "Blade Battery: the engineering story buyers actually see",
+    titleAm:
+      "ብሌድ ባትሪ፡ ገዢዎች በእውነት የሚያዩት የመሃንዲስነት ታሪክ",
     excerpt:
       "Pack architecture translated into leasing confidence — why thermal pathways and collision load cases now show up in showroom conversations.",
+    excerptAm:
+      "የጥቅል አρχክቴክቸር ወደ ኪራይ እምነት መተርጎም — ሙቀት መንገዶች እና የጥቃት ጭነት ሁኔታዎች አሁን በማሳያ ክፍል ንግግሮች ላይ ለምን እንደሚታዩ።",
     category: "electric-vehicles",
     author: { name: "Mei Lin", title: "Electrification Desk" },
     publishedAt: "2026-05-07",
     readingTime: 8,
     views: 21_090,
     cover: {
-      src: "https://images.unsplash.com/photo-1621263764928-df1444cde5bc?w=2000&q=80&auto=format&fit=crop",
-      alt: "Engineering workstation with battery modules",
+      /** Commons thumbnails for this file return HTTP 400; direct original loads reliably next/image resize. */
+      src: "https://upload.wikimedia.org/wikipedia/commons/6/60/2022_BYD_Seal.jpg",
+      alt: "BYD Seal electric sedan in blue — a production flagship that carries Blade Battery engineering",
+      altAm:
+        "በሰማያዊ የቀለም የ BYD Seal ኤሌክትሪክ ሴዳን፣ ብሌድ ባትሪም ያለበት የአምራች ተሽከርካሪ",
     },
     content: [
       "Structural integration stories only resonate when fleets publish transparent incident telemetry — insurers now model BYD cohorts distinctly.",
@@ -272,7 +291,7 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     readingTime: 6,
     views: 6_640,
     cover: {
-      src: "https://images.unsplash.com/photo-1647788419779-abd8d4e7ecd4?w=2000&q=80&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=2000&q=80&auto=format&fit=crop",
       alt: "Ultra-fast chargers in a plaza",
     },
     content: [
@@ -293,8 +312,8 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     readingTime: 5,
     views: 4_880,
     cover: {
-      src: "https://images.unsplash.com/photo-1523983254930-cf986e5e8145?w=2000&q=80&auto=format&fit=crop",
-      alt: "Camping kettle and mugs outdoors",
+      src: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=2000&q=80&auto=format&fit=crop",
+      alt: "Bright compact hatchback gleaming — weekend-ready urban EV escape",
     },
     content: [
       "Understand continuous vs. peak export ratings before promising espresso for eight.",
@@ -335,7 +354,7 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     readingTime: 6,
     views: 5_100,
     cover: {
-      src: "https://images.unsplash.com/photo-1503376780353-7e669276fc8f?w=2000&q=80&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=2000&q=80&auto=format&fit=crop",
       alt: "Car interior stitched leather detail",
     },
     content: [
@@ -503,7 +522,7 @@ export const BYD_INSIGHT_ARTICLES: Article[] = [
     readingTime: 8,
     views: 8_930,
     cover: {
-      src: "https://images.unsplash.com/photo-1506929562872-b785aa6c4d7c?w=2000&q=80&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=2000&q=80&auto=format&fit=crop",
       alt: "Coastal cliffs and ocean panorama",
     },
     content: [

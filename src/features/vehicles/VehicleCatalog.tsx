@@ -37,10 +37,50 @@ export function VehicleCatalog(props: VehicleCatalogProps) {
 
 function VehicleCatalogSuspenseFallback() {
   return (
-    <section className="section-y-sm bg-surface font-primary" aria-busy="true">
+    <section
+      className="section-y-sm bg-surface font-primary"
+      aria-busy="true"
+      aria-label="Loading vehicle catalog"
+    >
+      <span className="sr-only">Loading vehicle catalog…</span>
       <div className="grid gap-10 lg:grid-cols-[300px_minmax(0,1fr)] lg:gap-12 xl:gap-14">
-        <div className="hidden min-h-[400px] rounded-xl border border-card-border bg-surface-container-lowest lg:block" />
-        <div className="min-h-[480px] rounded-xl border border-card-border bg-surface-container-lowest" />
+        <div className="hidden lg:block">
+          <div className="flex flex-col gap-3">
+            <div className="h-4 w-32 animate-pulse rounded-md bg-surface-container-highest" />
+            <div className="max-h-[calc(100dvh-14rem)] rounded-xl border border-card-border bg-surface-container-lowest px-5 py-4">
+              <div className="flex flex-col gap-4">
+                {[0, 1, 2, 3, 4, 5].map((i) => (
+                  <div
+                    key={i}
+                    className="h-9 animate-pulse rounded-lg bg-surface-container-highest"
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="min-w-0 space-y-6">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="h-10 max-w-xs animate-pulse rounded-lg bg-surface-container-highest sm:flex-1" />
+            <div className="h-11 w-full animate-pulse rounded-full bg-surface-container-highest sm:max-w-[11rem]" />
+          </div>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-3">
+            {Array.from({ length: PAGE_SIZE }, (_, i) => (
+              <div
+                key={i}
+                className="overflow-hidden rounded-xl border border-card-border bg-surface-container-lowest"
+              >
+                <div className="aspect-[4/3] animate-pulse bg-surface-container-highest" />
+                <div className="space-y-3 p-4">
+                  <div className="h-4 w-4/5 max-w-[14rem] animate-pulse rounded bg-surface-container-highest" />
+                  <div className="h-3 w-1/2 max-w-[8rem] animate-pulse rounded bg-surface-container-highest" />
+                  <div className="h-6 w-24 animate-pulse rounded-md bg-surface-container-highest" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -1,1 +1,167 @@
-{}
+{
+  "StubPage": {
+    "shell": {
+      "back": "Back",
+      "inDevelopment": "In development",
+      "phaseBlurb": "This route is scaffolded and ready. The full editorial experience lands in Phase {phase}.",
+      "returnHome": "Return home",
+      "defaultEyebrow": "Route"
+    },
+    "about": {
+      "metaTitle": "About",
+      "metaDescription": "ABRIEV is a curated automotive marketplace — built around trust, design, and clarity.",
+      "eyebrow": "Company",
+      "title": "A quieter way to buy, sell, and drive.",
+      "description": "ABRIEV was built for people who care about how a marketplace reads, not just what it lists. An editorial house for automotive commerce."
+    },
+    "faqs": {
+      "metaTitle": "FAQs",
+      "metaDescription": "Answers on buying, renting, listing, and dealer services on ABRIEV.",
+      "eyebrow": "Support",
+      "title": "Frequently asked questions.",
+      "description": "Questions on buying, renting, listing, and dealer services — organized with editorial clarity in Phase 3."
+    },
+    "privacy": {
+      "metaTitle": "Privacy Policy",
+      "metaDescription": "How ABRIEV handles personal data and cookies.",
+      "eyebrow": "Legal",
+      "title": "Privacy Policy.",
+      "description": "Transparent handling of personal data, cookies, and analytics. Full copy arrives in Phase 5."
+    },
+    "terms": {
+      "metaTitle": "Terms of Service",
+      "metaDescription": "The legal framework for using the ABRIEV marketplace.",
+      "eyebrow": "Legal",
+      "title": "Terms of Service.",
+      "description": "The legal framework governing use of the ABRIEV marketplace. Full copy arrives in Phase 5."
+    },
+    "copyright": {
+      "metaTitle": "Copyright",
+      "metaDescription": "Copyright and intellectual property notice for ABRIEV.",
+      "eyebrow": "Legal",
+      "title": "Copyright.",
+      "description": "DMCA, takedown procedures, and intellectual property notice. Full copy arrives in Phase 5."
+    },
+    "refundPolicy": {
+      "metaTitle": "Refund Policy",
+      "metaDescription": "Refund terms for bookings and marketplace services.",
+      "eyebrow": "Legal",
+      "title": "Refund Policy.",
+      "description": "Refund terms for bookings, reservations, and marketplace services. Full copy arrives in Phase 5."
+    },
+    "dealers": {
+      "metaTitle": "Dealers",
+      "metaDescription": "Verified ABRIEV dealer directory — inventory quality and editorial fit.",
+      "eyebrow": "Directory",
+      "title": "A network of verified dealers.",
+      "description": "Every dealer on ABRIEV is vetted for inventory quality, service integrity, and editorial fit. Browse by region and specialty in Phase 3."
+    },
+    "dealerDetail": {
+      "metaTitle": "Dealer",
+      "metaDescription": "Dealer profile and inventory on ABRIEV.",
+      "eyebrow": "Dealer",
+      "title": "Dealer",
+      "description": "Dealer hero, profile, contact, inventory feed, and credibility markers arrive in Phase 3.",
+      "backLabel": "All dealers"
+    },
+    "temporaryReplacement": {
+      "metaTitle": "Temporary car replacement",
+      "metaDescription": "Courtesy vehicles during repairs or claims — coordinated with ABRIEV partners.",
+      "eyebrow": "Mobility",
+      "title": "Temporary car replacement.",
+      "description": "Courtesy wheels and bridging coverage during repairs or claims—coordinated here with partners. Scheduling and eligibility go live in Phase 5."
+    },
+    "carInsuranceAssistance": {
+      "metaTitle": "Car insurance assistance",
+      "metaDescription": "Guidance and paperwork support for automotive insurance.",
+      "eyebrow": "Support",
+      "title": "Car insurance assistance.",
+      "description": "Partnership-linked guidance, paperwork checklists, and claims coaching so insurance never feels opaque. Detailed flows land in Phase 5."
+    },
+    "dashboard": {
+      "metaTitle": "Dashboard",
+      "metaDescription": "Your ABRIEV workspace — listings, bookings, and profile.",
+      "eyebrow": "Dashboard",
+      "title": "Your workspace.",
+      "description": "Restrained dashboard shell with listings, bookings, favorites, and profile sections. Arrives in Phase 4."
+    },
+    "dashboardFavorites": {
+      "metaTitle": "Favorites",
+      "metaDescription": "Saved vehicles on ABRIEV.",
+      "eyebrow": "Dashboard",
+      "title": "Your favorites.",
+      "description": "Saved vehicle grid with quick actions arrives in Phase 4.",
+      "backLabel": "Dashboard"
+    },
+    "dashboardListings": {
+      "metaTitle": "Listings",
+      "metaDescription": "Your vehicle listings on ABRIEV.",
+      "eyebrow": "Dashboard",
+      "title": "Your listings.",
+      "description": "Listings table, filtering, and edit flows arrive in Phase 4.",
+      "backLabel": "Dashboard"
+    },
+    "dashboardBookings": {
+      "metaTitle": "Bookings",
+      "metaDescription": "Your bookings on ABRIEV.",
+      "eyebrow": "Dashboard",
+      "title": "Your bookings.",
+      "description": "Bookings timeline and status tracking arrive in Phase 4.",
+      "backLabel": "Dashboard"
+    },
+    "dashboardProfile": {
+      "metaTitle": "Profile",
+      "metaDescription": "Your ABRIEV account profile.",
+      "eyebrow": "Dashboard",
+      "title": "Your profile.",
+      "description": "Profile form, preferences, and account controls arrive in Phase 4.",
+      "backLabel": "Dashboard"
+    },
+    "listYourVehicle": {
+      "metaTitle": "List your vehicle",
+      "metaDescription": "Create a listing on ABRIEV.",
+      "eyebrow": "Flow",
+      "title": "List your vehicle.",
+      "description": "Step-based listing flow — photos, details, pricing, review — arrives in Phase 4."
+    },
+    "listPricing": {
+      "metaTitle": "Listing pricing",
+      "metaDescription": "Plans and pricing for listing on ABRIEV.",
+      "eyebrow": "Flow",
+      "title": "Listing pricing.",
+      "description": "Plan comparison and upgrade path arrive in Phase 4.",
+      "backLabel": "Back to listing"
+    },
+    "listSuccess": {
+      "metaTitle": "Listing submitted",
+      "metaDescription": "Your listing is being reviewed.",
+      "eyebrow": "Flow",
+      "title": "Your listing is in review.",
+      "description": "Editorial confirmation screen with next-steps guidance arrives in Phase 4.",
+      "backLabel": "Go to your listings"
+    },
+    "bookingAvailability": {
+      "metaTitle": "Check availability",
+      "metaDescription": "Choose a time for your ABRIEV booking.",
+      "eyebrow": "Booking",
+      "title": "Check availability.",
+      "description": "Date selection, time slot, and location confirmation arrive in Phase 4."
+    },
+    "bookingCheckout": {
+      "metaTitle": "Review booking",
+      "metaDescription": "Confirm your booking details.",
+      "eyebrow": "Booking",
+      "title": "Review & confirm.",
+      "description": "Booking summary, trust messaging, and payment handoff arrive in Phase 4.",
+      "backLabel": "Back to availability"
+    },
+    "bookingConfirmation": {
+      "metaTitle": "Booking confirmed",
+      "metaDescription": "Your booking is confirmed.",
+      "eyebrow": "Booking",
+      "title": "You're confirmed.",
+      "description": "Editorial confirmation with itinerary, policy, and dealer contact arrives in Phase 4.",
+      "backLabel": "View bookings"
+    }
+  }
+}

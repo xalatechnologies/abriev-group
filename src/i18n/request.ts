@@ -15,7 +15,10 @@ async function mergeMessages(locale: string) {
     "homeCore",
     "testimonials",
     "carReviews",
+    "articleCategories",
+    "insights",
     "auth",
+    "listYourVehicle",
   ] as const;
 
   const fallbackLocale = routing.defaultLocale;
@@ -50,5 +53,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
   return {
     locale,
     messages: await mergeMessages(locale),
+    getMessageFallback({ namespace, key }) {
+      return [namespace, key].filter(Boolean).join(".");
+    },
   };
 });

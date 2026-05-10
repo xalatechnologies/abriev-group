@@ -63,7 +63,7 @@ export function Hero() {
         </span>
       </div>
 
-      <div className="relative z-10 mx-auto grid w-full max-w-container-max flex-1 grid-cols-1 items-center gap-12 px-6 pb-12 pt-10 md:grid-cols-[minmax(0,0.95fr)_minmax(0,1.35fr)] md:gap-20 md:px-margin-edge md:pb-16 md:pt-16 lg:pl-[120px]">
+      <div className="relative z-10 mx-auto grid w-full flex-1 grid-cols-1 items-center gap-12 edge-x pb-12 pt-10 md:grid-cols-[minmax(0,0.95fr)_minmax(0,1.35fr)] md:gap-20 md:pb-16 md:pt-16 lg:pl-[120px]">
         {/* Copy column */}
         <div className="flex flex-col gap-8 md:gap-10">
           {/* Live status pill */}
@@ -204,7 +204,7 @@ export function Hero() {
 
       {/* Bottom feature rail */}
       <div className="relative z-10 border-t border-outline-variant bg-white/70 backdrop-blur-sm">
-        <div className="mx-auto grid max-w-container-max grid-cols-1 items-center gap-6 px-6 py-7 md:grid-cols-[1fr_1fr_1fr_auto] md:gap-10 md:px-margin-edge md:py-8">
+        <div className="mx-auto grid w-full grid-cols-1 items-center gap-6 edge-x py-7 md:grid-cols-[1fr_1fr_1fr_auto] md:gap-10 md:py-8">
           {BENEFITS.map(({ icon: Icon, title, detail }) => (
             <div key={title} className="flex items-start gap-4">
               <span className="mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-full border border-outline-variant bg-white">

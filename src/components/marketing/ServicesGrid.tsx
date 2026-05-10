@@ -14,7 +14,7 @@ export function ServicesGrid() {
           eyebrow="Services"
           title="A quiet ecosystem, built around the vehicle."
           lede="Beyond commerce, ABRIEV offers concierge-grade pillars for buying, financing, upkeep, and global logistics — each with the same editorial calm as the marketplace."
-          className="mb-16 max-w-3xl"
+          className="mb-16 max-w-5xl"
         />
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">

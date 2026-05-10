@@ -8,12 +8,13 @@ export const CONTACT_FEATURED_DEALER_SLUGS = [
   "surafel-tadesse-cars",
 ] as const;
 
-export const CONTACT_PAGE_HERO = {
-  src: "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=2400&q=85&auto=format&fit=crop",
-  alt: "Close-up front view of a modern electric vehicle grille and headlights in studio lighting",
-} as const;
-
 export const CONTACT_PAGE_COPY = {
+  /** Hero — matches `/vehicles` listing header pattern (eyebrow + display title + lede). */
+  heroEyebrow: "Contact",
+  /** Hero — editorial h1; page `<title>` still labels the route “Contact”. */
+  heroTitle: "Clear routing from the first hello.",
+  heroLede:
+    "Buyers, verified dealers, and fleet support—concierge follow-through, typically within one business day.",
   eyebrowConcierge: "Concierge desk",
   contactTitle: "Reach our team anytime.",
   contactLede:
@@ -24,6 +25,17 @@ export const CONTACT_PAGE_COPY = {
   hoursBody: "Monday–Saturday, 8:30 — 18:30 EAT. After-hours voicemail is monitored for urgent roadside and delivery coordination.",
   formTitle: "Send a concise note",
   formLede: "Include your timeline, preferred contact channel, and the region you are browsing from.",
+  locationTitle: "Our location",
+  locationLede: "Concierge routing and partner meetings are coordinated from our Addis Ababa base.",
+  locationAddressLine1: "Addis Ababa",
+  locationAddressLine2: "Ethiopia",
+  mapsOpenLabel: "Open in Google Maps",
+  mapIframeTitle: "Map of Addis Ababa, Ethiopia — ABRIEV contact area",
+  /** Approx. city-center pin; swap for a verified street address when available. */
+  mapEmbedSrc:
+    "https://maps.google.com/maps?q=9.032%2C38.7469&hl=en&z=14&output=embed",
+  mapsOpenHref:
+    "https://www.google.com/maps/search/?api=1&query=9.032,38.7469",
   dealersEyebrow: "Trusted dealers",
   dealersTitle: "Our trusted car dealers",
   dealersLede:

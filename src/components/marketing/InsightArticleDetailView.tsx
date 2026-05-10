@@ -1,11 +1,12 @@
 import Image from "next/image";
+import { getLocale, getTranslations } from "next-intl/server";
 import { ChevronRight, Clock } from "lucide-react";
 
 import type { Article } from "@/types/article";
 import { Container } from "@/components/ui/Container";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils/cn";
-import { articleCategoryLabel } from "@/lib/utils/articleCategoryLabel";
+import { pickArticleExcerpt, pickArticleTitle, pickCoverAlt } from "@/lib/i18n/articleLocale";
 import { formatDate } from "@/lib/utils/format";
 
 const AVATAR_TONES = [
@@ -17,23 +18,29 @@ const AVATAR_TONES = [
   "bg-amber-600",
 ] as const;
 
-export function InsightArticleDetailView({ article }: { article: Article }) {
+export async function InsightArticleDetailView({ article }: { article: Article }) {
+  const locale = await getLocale();
+  const t = await getTranslations("InsightsArticle");
+  const tc = await getTranslations("ArticleCategories");
+  const title = pickArticleTitle(article, locale) ?? article.title;
+  const excerpt = pickArticleExcerpt(article, locale) ?? article.excerpt;
   const paragraphs = splitArticleBody(article);
   const authorTone =
     AVATAR_TONES[article.author.name.charCodeAt(0) % AVATAR_TONES.length];
+  const formatDateIso = (iso: string) => formatDate(iso, locale);
 
   return (
     <article className="font-primary bg-surface">
       <header className="section-y bg-surface">
         <Container>
-          <nav aria-label="Breadcrumb">
+          <nav aria-label={t("breadcrumbAria")}>
             <ol className="mb-8 flex flex-wrap items-center gap-2 md:justify-start">
               <li>
                 <Link
                   href="/"
                   className="font-label-caps text-xs font-bold uppercase tracking-[0.14em] text-text-muted underline-offset-4 transition-colors hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary/40"
                 >
-                  Home
+                  {t("breadcrumbHome")}
                 </Link>
               </li>
               <li aria-hidden className="text-text-muted">
@@ -44,7 +51,7 @@ export function InsightArticleDetailView({ article }: { article: Article }) {
                   href="/insights"
                   className="font-label-caps text-xs font-bold uppercase tracking-[0.14em] text-text-muted underline-offset-4 transition-colors hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary/40"
                 >
-                  News
+                  {t("breadcrumbNews")}
                 </Link>
               </li>
               <li aria-hidden className="text-text-muted">
@@ -54,26 +61,26 @@ export function InsightArticleDetailView({ article }: { article: Article }) {
                 aria-current="page"
                 className="line-clamp-2 max-w-xl font-label-caps text-xs font-bold uppercase tracking-[0.14em] text-text-strong md:max-w-2xl"
               >
-                {article.title}
+                {title}
               </li>
             </ol>
           </nav>
 
           <div className="mx-auto flex max-w-3xl flex-col gap-6 text-center md:mx-0 md:text-left">
             <span className="mx-auto inline-flex rounded-full border border-card-border px-4 py-1.5 font-label-caps text-[11px] font-bold uppercase tracking-[0.14em] text-brand-primary md:mx-0">
-              {articleCategoryLabel(article.category)}
+              {tc(article.category)}
             </span>
             <h1 className="text-balance font-display-lg text-[clamp(1.875rem,4.4vw,2.75rem)] font-semibold leading-[1.12] tracking-[-0.02em] text-text-strong md:text-[2.75rem]">
-              {article.title}
+              {title}
             </h1>
             <p className="font-body-lg text-body-lg leading-relaxed text-text-body md:max-w-2xl">
-              {article.excerpt}
+              {excerpt}
             </p>
           </div>
 
           <dl className="mx-auto mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 border-y border-outline-variant py-6 text-body-md md:mx-0 md:justify-start">
             <div className="flex items-center gap-3">
-              <dt className="sr-only">Author</dt>
+              <dt className="sr-only">{t("authorSr")}</dt>
               <dd className="inline-flex items-center gap-3 font-semibold text-text-strong">
                 <span
                   className={cn(
@@ -95,21 +102,21 @@ export function InsightArticleDetailView({ article }: { article: Article }) {
               </dd>
             </div>
             <div>
-              <dt className="sr-only">Published date</dt>
+              <dt className="sr-only">{t("publishedSr")}</dt>
               <dd>
                 <time
                   dateTime={article.publishedAt}
                   className="tabular-nums font-semibold text-text-strong"
                 >
-                  {formatDate(article.publishedAt)}
+                  {formatDateIso(article.publishedAt)}
                 </time>
               </dd>
             </div>
             <div>
-              <dt className="sr-only">Reading time</dt>
+              <dt className="sr-only">{t("readingTimeSr")}</dt>
               <dd className="inline-flex items-center gap-2 font-semibold text-text-strong">
                 <Clock className="size-5 shrink-0 text-text-muted" aria-hidden />
-                {article.readingTime} min read
+                {t("minRead", { minutes: article.readingTime })}
               </dd>
             </div>
           </dl>
@@ -122,7 +129,7 @@ export function InsightArticleDetailView({ article }: { article: Article }) {
             <div className="relative aspect-[16/10] w-full bg-surface-container-highest lg:aspect-[21/10]">
               <Image
                 src={article.cover.src}
-                alt={article.cover.alt}
+                alt={pickCoverAlt(article, locale)}
                 fill
                 className="object-cover"
                 priority
@@ -145,7 +152,7 @@ export function InsightArticleDetailView({ article }: { article: Article }) {
               prefetch={false}
               className="inline-flex items-center rounded-full bg-brand-primary px-8 py-3 font-label-caps text-xs font-bold uppercase tracking-[0.14em] text-white shadow-editorial transition-colors hover:bg-text-strong focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary/40"
             >
-              Back to News
+              {t("backToNews")}
             </Link>
           </div>
         </Container>

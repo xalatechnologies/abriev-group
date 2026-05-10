@@ -21,4 +21,6 @@ export { TestimonialStrip } from "./TestimonialStrip";
 export { UpcomingEvents } from "./UpcomingEvents";
 export { FinalCTA } from "./FinalCTA";
 export { SectionPlaceholder } from "./SectionPlaceholder";
-export { StubPage } from "./StubPage";
+export { StubPage, stubPageMeta } from "./StubPage";
+export { LegalPolicyPageView, legalPolicyPageMeta } from "./LegalPolicyPageView";
+export type { LegalPolicyPageKey } from "./LegalPolicyPageView";

@@ -338,8 +338,20 @@
     padding-block: clamp(40px, 5vw, 64px);
   }
 
+  /* Horizontal insets aligned with `SiteHeader` so main sections share the same width as the navbar row. */
   .edge-x {
-    padding-inline: clamp(24px, 6vw, 64px);
+    @apply px-3 sm:px-4 lg:pl-5 lg:pr-8 xl:pl-6 xl:pr-10 2xl:pr-11;
+  }
+
+  /*
+   * List-your-vehicle flow: `#listing-flow-shell` is the Container that wraps only
+   * `ListYourVehicleWizard`. A scoped `max-width`/center cap from an older cached JS
+   * chunk must not constrain the wizard; this rule loses to nothing except another
+   * `!important` and only applies inside this shell.
+   */
+  #listing-flow-shell > * {
+    width: 100% !important;
+    max-width: none !important;
   }
 
   /* Typography presets — bound 1:1 to design tokens ----------------------- */

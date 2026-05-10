@@ -6,6 +6,11 @@ export type AutoEvent = {
   title: string;
   category: EventCategory;
   excerpt: string;
+  /** Amharic override when locale is `am` */
+  titleAm?: string;
+  excerptAm?: string;
+  /** Amharic override for the full “city, country” line */
+  locationLineAm?: string;
   date: string;
   endDate?: string;
   location: { city: string; country: string };

@@ -33,7 +33,7 @@ export function HowItWorks() {
           eyebrow="How it works"
           title="Four quiet steps, from first look to delivery."
           lede="The ABRIEV process is deliberate. No noise, no pressure — just a considered pathway to the right vehicle."
-          className="mb-16 max-w-3xl"
+          className="mb-16 max-w-5xl"
         />
 
         <div className="grid gap-px overflow-hidden rounded-xl border border-card-border bg-card-divider md:grid-cols-2 lg:grid-cols-4">

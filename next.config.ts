@@ -7,7 +7,7 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   outputFileTracingRoot: path.resolve(__dirname),
-  /** Avoid stale/missing `./vendor-chunks/tailwind-merge@*.js` requires on Node (pnpm layouts). */
+  /** Prefer Node resolution where bundled vendor chunks 404/missing under pnpm (see tailwind-merge). */
   serverExternalPackages: ["tailwind-merge"],
   images: {
     remotePatterns: [
@@ -16,6 +16,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "plus.unsplash.com" },
       { protocol: "https", hostname: "lh3.googleusercontent.com" },
       { protocol: "https", hostname: "cdn.abriev.com" },
+      /** Wikimedia Commons (CC-licensed editorial, e.g. BYD Seal cover art). */
+      { protocol: "https", hostname: "upload.wikimedia.org" },
     ],
   },
   // Omit `experimental.optimizePackageImports` for lucide-react: it has caused webpack RSC runtime

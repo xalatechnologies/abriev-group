@@ -1,20 +1,15 @@
 import type { Metadata } from "next";
-import { StubPage } from "@/components/marketing";
+import { getTranslations } from "next-intl/server";
+import { ListYourVehicleSuccessView } from "@/features/list-your-vehicle/ListYourVehicleSuccessView";
 
-export const metadata: Metadata = {
-  title: "Listing submitted",
-  description: "Your vehicle listing has been submitted to ABRIEV.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("PageMeta");
+  return {
+    title: t("listingSubmitted.title"),
+    description: t("listingSubmitted.description"),
+  };
+}
 
-export default function ListingSuccessPage() {
-  return (
-    <StubPage
-      eyebrow="Flow"
-      title="Your listing is in review."
-      description="Editorial confirmation screen with next-steps guidance arrives in Phase 4."
-      phase={4}
-      backHref="/dashboard/listings"
-      backLabel="Go to your listings"
-    />
-  );
+export default function ListYourVehicleSuccessRoutePage() {
+  return <ListYourVehicleSuccessView />;
 }

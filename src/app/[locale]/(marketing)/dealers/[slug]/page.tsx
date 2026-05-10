@@ -1,34 +1,33 @@
 import type { Metadata } from "next";
-import { StubPage } from "@/components/marketing";
-
-type Params = { slug: string };
+import { stubPageMeta, StubPage } from "@/components/marketing";
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<Params>;
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  const base = await stubPageMeta("dealerDetail");
   return {
-    title: `Dealer — ${slug}`,
-    description: `Profile, inventory, and credibility markers for ${slug} on ABRIEV.`,
+    ...base,
+    title: slug.replace(/-/g, " "),
   };
 }
 
-export default async function DealerDetailPage({
+export default async function DealerSlugPage({
   params,
 }: {
-  params: Promise<Params>;
+  params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+  const title = slug.replace(/-/g, " ");
+
   return (
     <StubPage
-      eyebrow="Dealer"
-      title={slug.replace(/-/g, " ")}
-      description="Dealer hero, profile, contact, inventory feed, and credibility markers arrive in Phase 3."
+      route="dealerDetail"
+      title={title}
       phase={3}
       backHref="/dealers"
-      backLabel="All dealers"
     />
   );
 }

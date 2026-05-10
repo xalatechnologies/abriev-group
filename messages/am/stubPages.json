@@ -1,1 +1,167 @@
-{}
+{
+  "StubPage": {
+    "shell": {
+      "back": "ተመለስ",
+      "inDevelopment": "እየተገነባ ነው",
+      "phaseBlurb": "ይህ መንገድ ተዘጋጅቷል። ሙሉ የአርት ተሞክሮ በደረጃ {phase} ይመጣል።",
+      "returnHome": "ወደ መነሻ ተመለስ",
+      "defaultEyebrow": "መንገድ"
+    },
+    "about": {
+      "metaTitle": "ስለ እኛ",
+      "metaDescription": "አብሬቭ የተመረጠ የመኪና ገበያ — በታመንነት፣ ዲዛይን እና ግልጽነት የተሰራ።",
+      "eyebrow": "ኩባንያ",
+      "title": "ለመግዛት፣ ለመሸጥ እና ለመነዳት የተረጋጋ መንገድ።",
+      "description": "አብሬቭ ማከሻ ያላቸው አንድ የገበያ ቦታ እንዴት እንደሚነበብ እንጂ ምን እንደሚያዘርዝር ብቻ ሳይሆን የታሰበ ነው። ለመኪና ንግድ የአርት ቤት።"
+    },
+    "faqs": {
+      "metaTitle": "ተደጋጋሚ ጥያቄዎች",
+      "metaDescription": "ስለ ግዢ፣ ኪራይ፣ ማስታወቂያ እና የነጋዴ አገልግሎቶች መልሶች።",
+      "eyebrow": "ድጋፍ",
+      "title": "ተደጋጋሚ የሚጠየቁ ጥያቄዎች።",
+      "description": "ስለ መግዛት፣ ኪራይ፣ ማስታወቂያ እና የነጋዴ አገልግሎቶች ጥያቄዎች — በደረጃ 3 በግልጽ አቀራረብ።"
+    },
+    "privacy": {
+      "metaTitle": "የግለ መገለያ ፖሊሲ",
+      "metaDescription": "አብሬቭ የግል ውሂብ እና ኩኪዎች እንዴት እንደሚያስተዳድር።",
+      "eyebrow": "ህጋዊ",
+      "title": "የግለ መገለያ ፖሊሲ።",
+      "description": "የግል ውሂብ፣ ኩኪዎች እና ትንታኔ ግልጽ አያያዝ። ሙሉ ጽሁፍ በደረጃ 5።"
+    },
+    "terms": {
+      "metaTitle": "የአገልግሎት ውል",
+      "metaDescription": "የአብሬቭ ገበያ ህጋዊ ክፈል።",
+      "eyebrow": "ህጋዊ",
+      "title": "የአገልግሎት ውል።",
+      "description": "የአብሬቭ ገበያ አጠቃቀም የሚያቆይ ህጋዊ መሰረት። ሙሉ ጽሁፍ በደረጃ 5።"
+    },
+    "copyright": {
+      "metaTitle": "የቅጂ መብት",
+      "metaDescription": "የቅጂ መብት እና የለማ እቃ ማሳወቂያ።",
+      "eyebrow": "ህጋዊ",
+      "title": "የቅጂ መብት።",
+      "description": "DMCA፣ ማስወረጃ ሂደቶች እና የለማ ንብረት ማሳወቂያ። ሙሉ ጽሁፍ በደረጃ 5።"
+    },
+    "refundPolicy": {
+      "metaTitle": "የመመለስ ፖሊሲ",
+      "metaDescription": "ቀያሪ እና ገበያ አገልግሎት የመመለስ ደንብ።",
+      "eyebrow": "ህጋዊ",
+      "title": "የመመለስ ፖሊሲ።",
+      "description": "የቦታ ማስያዝ፣ ማስያዝ እና የገበያ አገልግሎት የመመለስ ደንብ። ሙሉ ጽሁፍ በደረጃ 5።"
+    },
+    "dealers": {
+      "metaTitle": "ነጋዴዎች",
+      "metaDescription": "የተረጋገጡ የአብሬቭ ነጋዴ ማውጫ።",
+      "eyebrow": "ማውጫ",
+      "title": "የተረጋገጠ ነጋዴ መረብ።",
+      "description": "በአብሬቭ ላይ ካለው ነጋዴ የክምችት ጥራት፣ የአገልግሎት ታማኝነት እና የአርት ተዛማጅነት ይመረመራል። በደረጃ 3 በክልል እና ልዩ ጥያቄ ይቃኙ።"
+    },
+    "dealerDetail": {
+      "metaTitle": "ነጋዴ",
+      "metaDescription": "የነጋዴ ቅጽበታዊ እና ክምችት በአብሬቭ።",
+      "eyebrow": "ነጋዴ",
+      "title": "ነጋዴ",
+      "description": "የነጋዴ ጀሮ፣ መገለጫ፣ እውቂያ፣ የክምችት ፍሰት እና የታመንነት ምልክቶች በደረጃ 3።",
+      "backLabel": "ሁሉም ነጋዴዎች"
+    },
+    "temporaryReplacement": {
+      "metaTitle": "የጊዜያዊ የመተካ አገልግሎት",
+      "metaDescription": "የጥገና ወይም ጥያቄ ወቅት የሚረዱ መኪናዎች።",
+      "eyebrow": "ተንቀሳቃሽነት",
+      "title": "የጊዜያዊ የመኪና መተካ።",
+      "description": "በጥገና ወይም ክለይ ጊዜ የሚረዱ የመንገድ መኪናዎች — ከአጋሮች ጋር። መርሀግብር እና ብቁነት በደረጃ 5።"
+    },
+    "carInsuranceAssistance": {
+      "metaTitle": "የመኪና ኢንሹራንስ ድጋፍ",
+      "metaDescription": "የኢንሹራንስ መመሪያ እና ድጋፍ።",
+      "eyebrow": "ድጋፍ",
+      "title": "የመኪና ኢንሹራንስ ድጋፍ።",
+      "description": "ከአጋሮች ጋር የተገናኘ መመሪያ፣ የወረቀት ቼክሊስት እና የይከሻ ማጓጓዣ። ሙሉ ፍሰቶች በደረጃ 5።"
+    },
+    "dashboard": {
+      "metaTitle": "ዳሽቦርድ",
+      "metaDescription": "የእርስዎ የአብሬቭ ስፍራ — ማስታወቂያዎች፣ ቦታ ማስያዞች።",
+      "eyebrow": "ዳሽቦርድ",
+      "title": "የእርስዎ ስራ ቦታ።",
+      "description": "የዳሽቦርድ ነክ እና ለማስታወቂያ፣ ቦታ ማስያዝ፣ ተወዳጆች እና መገለጫ ክፍሎች። በደረጃ 4።"
+    },
+    "dashboardFavorites": {
+      "metaTitle": "ተወዳጆች",
+      "metaDescription": "በአብሬቭ የተቀመጡ መኪናዎች።",
+      "eyebrow": "ዳሽቦርድ",
+      "title": "የእርስዎ ተወዳጆች።",
+      "description": "የተቀመጡ መኪና መጋ ትኩስ ድርጊቶች በደረጃ 4።",
+      "backLabel": "ዳሽቦርድ"
+    },
+    "dashboardListings": {
+      "metaTitle": "ማስታወቂያዎች",
+      "metaDescription": "በአብሬቭ የእርስዎ ማስታወቂያዎች።",
+      "eyebrow": "ዳሽቦርድ",
+      "title": "የእርስዎ ማስታወቂያዎች።",
+      "description": "የማስታወቂያ ሰንጠረዥ፣ ማጣሪያ እና ማስተካከያ በደረጃ 4።",
+      "backLabel": "ዳሽቦርድ"
+    },
+    "dashboardBookings": {
+      "metaTitle": "ቦታ ማስያዞች",
+      "metaDescription": "በአብሬቭ የእርስዎ ቦታ ማስያዞች።",
+      "eyebrow": "ዳሽቦርድ",
+      "title": "የእርስዎ ቦታ ማስያዞች።",
+      "description": "የቦታ ማስያዝ ጊዜ ቅደም እና ሁኔታ በደረጃ 4።",
+      "backLabel": "ዳሽቦርድ"
+    },
+    "dashboardProfile": {
+      "metaTitle": "መገለጫ",
+      "metaDescription": "የአብሬቭ መለያዎ።",
+      "eyebrow": "ዳሽቦርድ",
+      "title": "የእርስዎ መገለጫ።",
+      "description": "የመገለጫ ቅጽ፣ ምርጫዎች እና የመለያ ቁጥጫ በደረጃ 4።",
+      "backLabel": "ዳሽቦርድ"
+    },
+    "listYourVehicle": {
+      "metaTitle": "መኪናዎን ያስመዝግቡ",
+      "metaDescription": "በአብሬቭ ማስታወቂያ ይፍጠሩ።",
+      "eyebrow": "ፍሰት",
+      "title": "መኪናዎን ያስመዝግቡ።",
+      "description": "ደረጃ በደረጃ ማስታወቂያ — ፎቶ፣ ዝርዝር፣ ዋጋ፣ ማጣራት — በደረጃ 4።"
+    },
+    "listPricing": {
+      "metaTitle": "የማስታወቂያ ዋጋ",
+      "metaDescription": "በአብሬቭ ለማስታወቂያ ዕቅዶች።",
+      "eyebrow": "ፍሰት",
+      "title": "የማስታወቂያ ዋጋ።",
+      "description": "የዕቅድ ማነፃፀር እና ማሻሻያ መንገድ በደረጃ 4።",
+      "backLabel": "ወደ ማስታወቂያ ተመለስ"
+    },
+    "listSuccess": {
+      "metaTitle": "ማስታወቂያ ቀርቧል",
+      "metaDescription": "ማስታወቂያዎ እየተገመገመ ነው።",
+      "eyebrow": "ፍሰት",
+      "title": "ማስታወቂያዎ በግምገማ ላይ ነው።",
+      "description": "የአርት ማረጋገጫ ማያ ገፅ ከቀጣይ ማዕዘኖች መመሪያ በደረጃ 4።",
+      "backLabel": "ወደ ማስታወቂያዎች ይሂዱ"
+    },
+    "bookingAvailability": {
+      "metaTitle": "ባለስልጣን ይመልከቱ",
+      "metaDescription": "የአብሬቭ ቦታ ማስያዝ ጊዜ ይምረጡ።",
+      "eyebrow": "ቦታ ማስያዝ",
+      "title": "ባለስልጣን ይመልከቱ።",
+      "description": "የቀን ምርጫ፣ የጊዜ ክፍል እና የቦታ ማረጋገጫ በደረጃ 4።"
+    },
+    "bookingCheckout": {
+      "metaTitle": "ቦታ ማስያዝ ይገምግሙ",
+      "metaDescription": "የቦታ ማስያዝ ዝርዝሮችዎን ያረጋግጡ።",
+      "eyebrow": "ቦታ ማስያዝ",
+      "title": "ይገምግሙ እና ያረጋግጡ።",
+      "description": "የቦታ ማስያዝ ማጠቃለያ፣ የታመንነት መልዕክት እና የክፍያ ማስተላለፍ በደረጃ 4።",
+      "backLabel": "ወደ ባለስልጣን ተመለስ"
+    },
+    "bookingConfirmation": {
+      "metaTitle": "ቦታ ማስያዝ ተረጋገጠ",
+      "metaDescription": "ቦታ ማስያዝዎ ተረጋግጧል።",
+      "eyebrow": "ቦታ ማስያዝ",
+      "title": "ተረጋግጠዋል።",
+      "description": "የአርት ማረጋገጫ ከመርሀግብር፣ ፖሊሲ እና የነጋድ ኤል.ር በደረጃ 4።",
+      "backLabel": "ቦታ ማስያዞችን ይመልከቱ"
+    }
+  }
+}

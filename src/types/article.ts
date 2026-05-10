@@ -22,11 +22,14 @@ export type Article = {
   slug: string;
   title: string;
   excerpt: string;
+  /** Amharic override when locale is `am` */
+  titleAm?: string;
+  excerptAm?: string;
   category: ArticleCategory;
   author: { name: string; title?: string; avatar?: string };
   publishedAt: string;
   readingTime: number;
-  cover: { src: string; alt: string };
+  cover: { src: string; alt: string; altAm?: string };
   featured?: boolean;
   /** Estimated article views — display only */
   views?: number;

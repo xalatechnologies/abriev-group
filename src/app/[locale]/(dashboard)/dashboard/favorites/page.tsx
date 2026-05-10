@@ -1,20 +1,16 @@
 import type { Metadata } from "next";
-import { StubPage } from "@/components/marketing";
+import { stubPageMeta, StubPage } from "@/components/marketing";
 
-export const metadata: Metadata = {
-  title: "Your favorites",
-  description: "Your saved vehicles on ABRIEV.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return stubPageMeta("dashboardFavorites");
+}
 
-export default function DashboardFavoritesPage() {
+export default async function DashboardFavoritesPage() {
   return (
     <StubPage
-      eyebrow="Dashboard"
-      title="Your favorites."
-      description="Saved vehicle grid with quick actions arrives in Phase 4."
+      route="dashboardFavorites"
       phase={4}
       backHref="/dashboard"
-      backLabel="Dashboard"
     />
   );
 }

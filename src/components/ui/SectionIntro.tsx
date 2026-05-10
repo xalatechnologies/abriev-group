@@ -46,7 +46,7 @@ export function SectionIntro({
         variant={variant}
         id={titleId}
         className={cn(
-          align === "center" ? "max-w-3xl" : "max-w-4xl",
+          align === "center" ? "max-w-5xl" : "max-w-6xl",
           titleClassName,
         )}
       >
@@ -56,7 +56,7 @@ export function SectionIntro({
         <p
           className={cn(
             "font-body-lg text-body-lg text-on-surface-variant text-pretty",
-            align === "center" ? "max-w-2xl" : "max-w-2xl",
+            align === "center" ? "max-w-4xl" : "max-w-4xl",
           )}
         >
           {lede}

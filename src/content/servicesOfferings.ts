@@ -1,9 +1,11 @@
 /**
- * Copy, imagery, and anchor ids for `/services` and home ServicesGrid teasers.
+ * Copy and anchor ids for `/services`, including the listing-style hero; home ServicesGrid teasers.
  */
-export const SERVICES_HERO_IMAGE = {
-  src: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=2400&q=85&auto=format&fit=crop",
-  alt: "Premium vehicle interior dashboard and steering wheel in soft daylight",
+export const servicesPageHero = {
+  eyebrow: "Services",
+  title: "Buy, finance, care, and ship—with one standard.",
+  description:
+    "Explore below for vehicle sales, loans, maintenance, or cross-border moves. Each lane follows the same rigour—from enquiry to handover.",
 } as const;
 
 export type ServiceOfferingDetail = {

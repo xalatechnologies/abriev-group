@@ -1,6 +1,7 @@
+import { getTranslations } from "next-intl/server";
 import type { Vehicle } from "@/types/vehicle";
 import { Container } from "@/components/ui/Container";
-import { browseByType, browseTilesOrder } from "@/content/homePageReference";
+import { browseTilesOrder } from "@/content/homePageReference";
 import {
   BrowseTypeCarousel,
   type BrowseTile,
@@ -80,25 +81,31 @@ type BrowseByTypeProps = {
   vehicles: Vehicle[];
 };
 
-export function BrowseByType({ vehicles }: BrowseByTypeProps) {
-  const tiles: BrowseTile[] = ORDERED_TILES.map((t) => ({
-    key: t.key,
-    label: t.label,
-    href: t.href,
-    cover: t.cover,
-    description: t.description,
-    count: vehicles.filter(t.match).length,
-  }));
+export async function BrowseByType({ vehicles }: BrowseByTypeProps) {
+  const t = await getTranslations("HomeBrowseByType");
+  const tilesI18n = t.raw("tiles") as Record<string, { label: string; description: string }>;
+
+  const tiles: BrowseTile[] = ORDERED_TILES.map((tile) => {
+    const copy = tilesI18n[tile.key];
+    return {
+      key: tile.key,
+      label: copy?.label ?? tile.label,
+      href: tile.href,
+      cover: tile.cover,
+      description: copy?.description ?? tile.description,
+      count: vehicles.filter(tile.match).length,
+    };
+  });
 
   return (
     <section className="section-y bg-surface font-primary">
       <Container>
         <div className="mb-12 flex flex-col gap-3 text-center md:text-left">
           <h2 className="font-headline-lg text-headline-lg text-text-strong">
-            {browseByType.title}
+            {t("title")}
           </h2>
-          <p className="mx-auto max-w-2xl font-body-lg text-body-lg text-text-body md:mx-0">
-            {browseByType.lede}
+          <p className="mx-auto max-w-4xl font-body-lg text-body-lg text-text-body md:mx-0">
+            {t("lede")}
           </p>
         </div>
         <BrowseTypeCarousel tiles={tiles} />

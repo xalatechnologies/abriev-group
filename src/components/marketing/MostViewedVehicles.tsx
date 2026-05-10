@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Vehicle } from "@/types/vehicle";
 import { Container } from "@/components/ui/Container";
@@ -8,18 +9,20 @@ type MostViewedVehiclesProps = {
   vehicles: Vehicle[];
 };
 
-export function MostViewedVehicles({ vehicles }: MostViewedVehiclesProps) {
+export async function MostViewedVehicles({ vehicles }: MostViewedVehiclesProps) {
   if (vehicles.length === 0) return null;
+
+  const t = await getTranslations("HomeMostViewed");
 
   return (
     <section className="section-y bg-surface font-primary">
       <Container>
         <div className="mb-12 flex flex-col gap-3 text-center md:text-left">
           <h2 className="font-headline-lg text-headline-lg text-text-strong">
-            {mostViewed.title}
+            {t("title")}
           </h2>
-          <p className="mx-auto max-w-2xl font-body-lg text-body-lg text-text-body md:mx-0">
-            {mostViewed.lede}
+          <p className="mx-auto max-w-4xl font-body-lg text-body-lg text-text-body md:mx-0">
+            {t("lede")}
           </p>
         </div>
 
@@ -36,7 +39,7 @@ export function MostViewedVehicles({ vehicles }: MostViewedVehiclesProps) {
             href={mostViewed.viewAllHref}
             className="inline-flex min-h-[52px] items-center justify-center rounded-full bg-brand-primary px-12 font-label-caps text-sm font-bold uppercase tracking-[0.12em] text-white transition-colors hover:bg-text-strong"
           >
-            {mostViewed.viewAll}
+            {t("viewAll")}
           </Link>
         </div>
       </Container>

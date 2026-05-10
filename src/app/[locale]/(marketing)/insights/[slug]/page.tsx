@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { getLocale, getTranslations } from "next-intl/server";
 import { InsightArticleDetailView } from "@/components/marketing/InsightArticleDetailView";
+import { pickArticleExcerpt, pickArticleTitle, pickCoverAlt } from "@/lib/i18n/articleLocale";
 import { getArticleBySlug } from "@/server/queries/articles";
 
 type Params = { slug: string };
@@ -13,20 +15,25 @@ export async function generateMetadata({
   const { slug } = await params;
   const article = await getArticleBySlug(slug);
   if (!article) {
-    return { title: "Article — News" };
+    const tSite = await getTranslations("Site");
+    return { title: tSite("metaTitleDefault") };
   }
+  const locale = await getLocale();
+  const title = pickArticleTitle(article, locale) ?? article.title;
+  const description = pickArticleExcerpt(article, locale) ?? article.excerpt;
+  const coverAlt = pickCoverAlt(article, locale);
   return {
-    title: article.title,
-    description: article.excerpt,
+    title,
+    description,
     openGraph: {
-      title: article.title,
-      description: article.excerpt,
-      images: [{ url: article.cover.src, alt: article.cover.alt }],
+      title,
+      description,
+      images: [{ url: article.cover.src, alt: coverAlt }],
     },
     twitter: {
       card: "summary_large_image",
-      title: article.title,
-      description: article.excerpt,
+      title,
+      description,
       images: [article.cover.src],
     },
   };

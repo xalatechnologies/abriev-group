@@ -1,1 +1,104 @@
-{}
+{
+  "HomeMarketingHero": {
+    "eyebrow": "Find Your Perfect Car",
+    "line1": "Looking for a vehicle?",
+    "line2": "You're in the perfect spot.",
+    "checklist": [
+      "High quality at low cost",
+      "Premium services",
+      "24/7 roadside support"
+    ],
+    "primaryCta": "Find a Vehicle",
+    "secondaryCta": "View Cars",
+    "backgroundAlt": "Red coupe concept car shot from a rear three-quarter angle in a dark studio"
+  },
+  "HomeHeroSearch": {
+    "tabsAll": "All Cars",
+    "tabsNew": "New",
+    "tabsUsed": "Pre-owned",
+    "helper": "Search from thousands of available vehicles",
+    "makeModelLabel": "Make / Model",
+    "makeModelPlaceholder": "Type make or model",
+    "bodyStyleLabel": "Body Style",
+    "priceRangeLabel": "Price Range",
+    "searchCta": "Search Vehicles",
+    "popular": "Popular",
+    "reset": "Reset",
+    "listingTypeAria": "Listing type",
+    "bodyStyleLabels": [
+      "All Types",
+      "Sedan",
+      "SUV",
+      "Coupe",
+      "Convertible",
+      "Hatchback",
+      "Crossover",
+      "Pickup",
+      "Grand Tourer"
+    ],
+    "priceRangeLabels": [
+      "Any Price",
+      "Under $25k",
+      "$25k – $50k",
+      "$50k – $100k",
+      "$100k – $200k",
+      "$200k+"
+    ]
+  },
+  "HomeMostViewed": {
+    "title": "Most View Vehicles",
+    "lede": "Choose the best car for you",
+    "viewAll": "View All"
+  },
+  "HomeBrowseByType": {
+    "title": "Browse by Type",
+    "lede": "Find the perfect car for your lifestyle",
+    "browseCta": "Browse {label}",
+    "allVehicles": "All Vehicles",
+    "vehiclesCount": "{count} vehicles available",
+    "oneVehicle": "1 vehicle available",
+    "moreArriving": "More arriving soon",
+    "prevCategory": "Previous category",
+    "nextCategory": "Next category",
+    "categoryPages": "Category pages",
+    "goToCategory": "Go to {label}",
+    "categoryImageAlt": "{label} category",
+    "tiles": {
+      "coupe": {
+        "label": "Coupe",
+        "description": "Two-door expression."
+      },
+      "grand-tourer": {
+        "label": "Grand Tourer",
+        "description": "For the long drive."
+      },
+      "suv": {
+        "label": "SUV",
+        "description": "Considered presence."
+      },
+      "sedan": {
+        "label": "Sedan",
+        "description": "Executive composure."
+      },
+      "hatchback": {
+        "label": "Hatchback",
+        "description": "Urban versatility."
+      },
+      "convertible": {
+        "label": "Convertible",
+        "description": "An open season."
+      }
+    }
+  },
+  "HomeUpcomingEvents": {
+    "title": "Upcoming Cars & Events",
+    "lede": "Stay updated with the latest news and upcoming events",
+    "readMore": "Read more",
+    "categories": {
+      "auction": "Auction",
+      "reveal": "Private reveal",
+      "drive": "Private drive",
+      "exhibition": "Exhibition"
+    }
+  }
+}

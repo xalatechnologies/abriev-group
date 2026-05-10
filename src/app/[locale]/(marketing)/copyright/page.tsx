@@ -1,18 +1,10 @@
 import type { Metadata } from "next";
-import { StubPage } from "@/components/marketing";
+import { stubPageMeta, StubPage } from "@/components/marketing";
 
-export const metadata: Metadata = {
-  title: "Copyright",
-  description: "ABRIEV copyright policy.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return stubPageMeta("copyright");
+}
 
-export default function CopyrightPage() {
-  return (
-    <StubPage
-      eyebrow="Legal"
-      title="Copyright."
-      description="DMCA, takedown procedures, and intellectual property notice. Full copy arrives in Phase 5."
-      phase={5}
-    />
-  );
+export default async function CopyrightPage() {
+  return <StubPage route="copyright" phase={5} />;
 }

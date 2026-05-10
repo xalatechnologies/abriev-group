@@ -62,7 +62,7 @@ export function VehicleTitleStrip({ vehicle }: VehicleTitleStripProps) {
             ) : null}
           </h1>
           {vehicle.subtitle ? (
-            <p className="max-w-2xl font-body-lg text-body-lg text-on-surface-variant text-pretty">
+            <p className="max-w-4xl font-body-lg text-body-lg text-on-surface-variant text-pretty">
               {vehicle.subtitle}
             </p>
           ) : null}

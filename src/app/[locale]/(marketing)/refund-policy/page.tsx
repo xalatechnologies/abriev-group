@@ -1,18 +1,11 @@
 import type { Metadata } from "next";
-import { StubPage } from "@/components/marketing";
 
-export const metadata: Metadata = {
-  title: "Refund Policy",
-  description: "ABRIEV refund policy.",
-};
+import { LegalPolicyPageView, legalPolicyPageMeta } from "@/components/marketing";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return legalPolicyPageMeta("refundPolicy");
+}
 
 export default function RefundPolicyPage() {
-  return (
-    <StubPage
-      eyebrow="Legal"
-      title="Refund Policy."
-      description="Refund terms for bookings, reservations, and marketplace services. Full copy arrives in Phase 5."
-      phase={5}
-    />
-  );
+  return <LegalPolicyPageView pageKey="refundPolicy" />;
 }

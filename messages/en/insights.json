@@ -1,0 +1,62 @@
+{
+  "InsightsHub": {
+    "breadcrumbAria": "Breadcrumb",
+    "breadcrumbHome": "Home",
+    "breadcrumbNews": "News",
+    "eyebrow": "ABRI insights",
+    "title": "News",
+    "lede": "Dedicated coverage on BYD U8 and Yangwang-era capability, compact Seagull commuters, Yuan Up Smart crossover packaging, Denza Teng I family choreography, and the wider electric ownership journey.",
+    "categoriesSrOnly": "Categories",
+    "categoryLabel": "Category:",
+    "spotlightTitle": "Inside & trending",
+    "emptyFeaturedSearch": "No articles match this search — try another keyword.",
+    "emptyFeaturedLens": "No articles match this lens.",
+    "showEverything": "Show everything",
+    "trendingAria": "Trending headlines",
+    "minRead": "{minutes} min read",
+    "gridSrOnly": "All reporting",
+    "gridPartialNote": "You're seeing everything for this lens in the spotlight above — browse another category pill to uncover more grids.",
+    "resetFilters": "Reset filters & search",
+    "asideAria": "Article search",
+    "searchHeading": "Search",
+    "searchFieldLabel": "Search articles",
+    "searchPlaceholder": "Keyword or model name…",
+    "searchSubmit": "Search",
+    "keepReading": "Keep reading",
+    "viewsApprox": "{count} views",
+    "viewsK": "{count}K views",
+    "viewsM": "{count}M views",
+    "hubFilters": {
+      "all": "All",
+      "byd-u8": "BYD U8",
+      "byd-seagull": "BYD Seagull",
+      "byd-e2": "BYD E2",
+      "yuan-up-smart": "Yuan Up Smart",
+      "teng-i": "Teng I",
+      "electric-vehicles": "Electric vehicles",
+      "luxury-cars": "Luxury cars",
+      "car-maintenance": "Car maintenance",
+      "new-cars": "New cars",
+      "car-rentals": "Car rentals",
+      "road-trips": "Road trips"
+    }
+  },
+  "InsightsArticle": {
+    "breadcrumbAria": "Breadcrumb",
+    "breadcrumbHome": "Home",
+    "breadcrumbNews": "News",
+    "authorSr": "Author",
+    "publishedSr": "Published date",
+    "readingTimeSr": "Reading time",
+    "minRead": "{minutes} min read",
+    "backToNews": "Back to News"
+  },
+  "InsightsPreview": {
+    "eyebrow": "Editorial intelligence",
+    "title": "The visionary's log",
+    "lede": "Deep dives into engineering, ownership patterns, and collector behavior shaping elite mobility.",
+    "ctaTitle": "Quarterly Print Edition",
+    "ctaSubtitle": "Available for concierge members.",
+    "allInsights": "Browse all insights"
+  }
+}

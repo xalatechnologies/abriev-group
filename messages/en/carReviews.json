@@ -1,1 +1,17 @@
-{}
+{
+  "CarReviewsSection": {
+    "title": "Car Reviews",
+    "lede": "Everything you need to know about cars, choose the perfect car",
+    "viewAll": "View All",
+    "featuredBadge": "Featured",
+    "minRead": "{minutes} min read",
+    "readArticle": "Read article",
+    "fallbackFeaturedTitle": "What You Need to Know About Car Insurance Before Renting",
+    "fallbackImageAlt": "Desk with documents and a laptop, editorial planning",
+    "sideFallbackTitles": [
+      "The Ultimate Guide to Buying a Used Car",
+      "How Self-Driving Cars Are Changing the…",
+      "The Evolution of Electric Vehicles: A New Era"
+    ]
+  }
+}

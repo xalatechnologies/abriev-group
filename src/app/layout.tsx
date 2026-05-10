@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html
       suppressHydrationWarning
       lang={routing.defaultLocale}
-      className={`${manrope.variable} ${notoSansEthiopic.variable}`}
+      className={`${manrope.variable} ${notoSansEthiopic.variable} min-h-dvh`}
       style={htmlStyle}
     >
       <body className="min-h-dvh bg-background font-primary text-on-background antialiased">

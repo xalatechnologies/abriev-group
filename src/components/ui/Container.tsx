@@ -8,7 +8,7 @@ type ContainerProps = HTMLAttributes<HTMLDivElement> & {
 };
 
 const sizeMap: Record<NonNullable<ContainerProps["size"]>, string> = {
-  default: "max-w-container",
+  default: "max-w-none",
   narrow: "max-w-5xl",
   wide: "max-w-[1600px]",
   full: "max-w-none",

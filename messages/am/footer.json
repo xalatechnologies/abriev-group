@@ -9,17 +9,17 @@
         "title": "ይመልከቱ",
         "items": [
           { "label": "መኪናዎን ያስመዝግቡ", "href": "/list-your-vehicle" },
-          { "label": "ዜና", "href": "/insights" }
+          { "label": "ዜና", "href": "/insights" },
+          { "label": "ተደጋጋሞ የሚጠየቁ ጥያቄዎች", "href": "/faqs" },
+          { "label": "ስለ እኛ", "href": "/about" }
         ]
       },
       {
         "title": "እገዛ እና ፖሊሲ",
         "items": [
-          { "label": "ተደጋጋሞ የሚጠየቁ ጥያቄዎች", "href": "/faqs" },
           { "label": "የመኪና ኢንሹራንስ ድጋፍ", "href": "/car-insurance-assistance" },
           { "label": "የጊዜያዊ የመተካ አገልግሎት", "href": "/temporary-car-replacement" },
           { "label": "የመመለስ ፖሊሲ", "href": "/refund-policy" },
-          { "label": "ስለ እኛ", "href": "/about" },
           { "label": "የአገልግሎት ውል", "href": "/terms" },
           { "label": "የግለ መገለያ መመሪያ", "href": "/privacy" }
         ]

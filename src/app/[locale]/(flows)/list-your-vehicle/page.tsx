@@ -1,18 +1,15 @@
 import type { Metadata } from "next";
-import { StubPage } from "@/components/marketing";
+import { getTranslations } from "next-intl/server";
+import { ListYourVehiclePage } from "@/features/list-your-vehicle/ListYourVehiclePage";
 
-export const metadata: Metadata = {
-  title: "List your vehicle",
-  description: "List your vehicle on ABRIEV.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("PageMeta");
+  return {
+    title: t("listYourVehicle.title"),
+    description: t("listYourVehicle.description"),
+  };
+}
 
-export default function ListYourVehiclePage() {
-  return (
-    <StubPage
-      eyebrow="Flow"
-      title="List your vehicle."
-      description="Step-based listing flow — photos, details, pricing, review — arrives in Phase 4."
-      phase={4}
-    />
-  );
+export default function ListYourVehicleRoutePage() {
+  return <ListYourVehiclePage />;
 }

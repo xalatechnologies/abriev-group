@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useRouter } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
 import {
   ArrowRight,
@@ -30,16 +31,29 @@ export function HomeHeroSearchBar({
   presentation = "default",
 }: HomeHeroSearchBarProps) {
   const router = useRouter();
+  const t = useTranslations("HomeHeroSearch");
   const reduceMotion = useReducedMotion();
   const [tab, setTab] = useState<TabKey>("all");
   const [query, setQuery] = useState("");
   const [bodyStyle, setBodyStyle] = useState("");
   const [priceIndex, setPriceIndex] = useState(0);
 
+  const bodyStyleLabels = t.raw("bodyStyleLabels") as string[];
+  const priceRangeLabels = t.raw("priceRangeLabels") as string[];
+
+  const bodyStylesLocalized = homeHeroSearch.bodyStyles.map((b, i) => ({
+    ...b,
+    label: bodyStyleLabels[i] ?? b.label,
+  }));
+  const priceRangesLocalized = homeHeroSearch.priceRanges.map((p, i) => ({
+    ...p,
+    label: priceRangeLabels[i] ?? p.label,
+  }));
+
   const tabs = [
-    { key: "all" as const, ...homeHeroSearch.tabs.all },
-    { key: "new" as const, ...homeHeroSearch.tabs.new },
-    { key: "used" as const, ...homeHeroSearch.tabs.used },
+    { ...homeHeroSearch.tabs.all, key: "all" as const, label: t("tabsAll") },
+    { ...homeHeroSearch.tabs.new, key: "new" as const, label: t("tabsNew") },
+    { ...homeHeroSearch.tabs.used, key: "used" as const, label: t("tabsUsed") },
   ];
 
   const knownMakesLower = useMemo(
@@ -111,7 +125,7 @@ export function HomeHeroSearchBar({
     if (matched.q) params.append("q", matched.q);
     if (bodyStyle) params.append("body", bodyStyle);
 
-    const price = homeHeroSearch.priceRanges[priceIndex];
+    const price = priceRangesLocalized[priceIndex];
     if (price?.min !== undefined) params.append("priceMin", String(price.min));
     if (price?.max !== undefined) params.append("priceMax", String(price.max));
 
@@ -139,7 +153,7 @@ export function HomeHeroSearchBar({
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div
             role="tablist"
-            aria-label="Listing type"
+            aria-label={t("listingTypeAria")}
             className="relative flex items-center gap-1.5"
           >
             {tabs.map(({ key, label }) => {
@@ -180,7 +194,7 @@ export function HomeHeroSearchBar({
               strokeWidth={2.4}
               aria-hidden
             />
-            {homeHeroSearch.helper}
+            {t("helper")}
           </span>
         </div>
 
@@ -190,7 +204,7 @@ export function HomeHeroSearchBar({
         >
           {/* Make / Model search input */}
           <FieldShell
-            label={homeHeroSearch.makeModelLabel}
+            label={t("makeModelLabel")}
             className="md:col-span-4"
           >
             <div className="relative">
@@ -202,8 +216,8 @@ export function HomeHeroSearchBar({
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder={homeHeroSearch.makeModelPlaceholder}
-                aria-label={homeHeroSearch.makeModelLabel}
+                placeholder={t("makeModelPlaceholder")}
+                aria-label={t("makeModelLabel")}
                 className={cn(
                   "peer h-[52px] w-full rounded-xl border bg-surface-container-high pl-11 pr-4 font-body-md text-body-md font-semibold text-text-strong placeholder:font-medium placeholder:text-text-muted outline-none transition-all duration-200 focus:bg-surface focus:shadow-[0_0_0_4px_rgba(0,143,76,0.12)]",
                   query.trim()
@@ -231,17 +245,17 @@ export function HomeHeroSearchBar({
 
           {/* Body Style */}
           <FieldShell
-            label={homeHeroSearch.bodyStyleLabel}
+            label={t("bodyStyleLabel")}
             className="md:col-span-3"
           >
             <SelectControl
-              ariaLabel={homeHeroSearch.bodyStyleLabel}
+              ariaLabel={t("bodyStyleLabel")}
               value={bodyStyle}
               onChange={setBodyStyle}
               icon={<Car className="size-4" aria-hidden />}
               isDirty={Boolean(bodyStyle)}
             >
-              {homeHeroSearch.bodyStyles.map((b) => (
+              {bodyStylesLocalized.map((b) => (
                 <option key={b.value || "any"} value={b.value}>
                   {b.label}
                 </option>
@@ -251,17 +265,17 @@ export function HomeHeroSearchBar({
 
           {/* Price Range */}
           <FieldShell
-            label={homeHeroSearch.priceRangeLabel}
+            label={t("priceRangeLabel")}
             className="md:col-span-3"
           >
             <SelectControl
-              ariaLabel={homeHeroSearch.priceRangeLabel}
+              ariaLabel={t("priceRangeLabel")}
               value={String(priceIndex)}
               onChange={(v) => setPriceIndex(Number(v))}
               icon={<BadgeDollarSign className="size-4" aria-hidden />}
               isDirty={priceIndex !== 0}
             >
-              {homeHeroSearch.priceRanges.map((p, i) => (
+              {priceRangesLocalized.map((p, i) => (
                 <option key={p.label} value={i}>
                   {p.label}
                 </option>
@@ -275,7 +289,7 @@ export function HomeHeroSearchBar({
               type="submit"
               className="group/cta inline-flex h-[52px] w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-b from-brand-primary to-[#007a40] px-6 text-sm font-bold tracking-[0.12em] text-white shadow-[0_10px_24px_-10px_rgba(0,143,76,0.65)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_16px_30px_-12px_rgba(0,143,76,0.85)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary/40 active:translate-y-0"
             >
-              <span>{homeHeroSearch.searchCta}</span>
+              <span>{t("searchCta")}</span>
               <ArrowRight
                 className="size-4 transition-transform duration-200 group-hover/cta:translate-x-0.5"
                 aria-hidden
@@ -288,7 +302,7 @@ export function HomeHeroSearchBar({
         {popularMakes.length > 0 ? (
           <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-card-divider pt-4">
             <span className="font-label-caps text-sm font-bold uppercase tracking-[0.12em] text-text-strong">
-              Popular
+              {t("popular")}
             </span>
             <div className="flex flex-wrap items-center gap-1.5">
               {popularMakes.map((m) => {
@@ -322,7 +336,7 @@ export function HomeHeroSearchBar({
               )}
             >
               <RotateCcw className="size-3.5" aria-hidden strokeWidth={2.4} />
-              Reset
+              {t("reset")}
             </button>
           </div>
         ) : null}
@@ -341,7 +355,7 @@ export function HomeHeroSearchBar({
       <div className="flex flex-col gap-5">
         <div
           role="group"
-          aria-label="Listing type"
+          aria-label={t("listingTypeAria")}
           className="inline-flex w-full rounded-full bg-surface-container-high p-1 ring-1 ring-outline-variant sm:w-auto"
         >
           {tabs.map(({ key, label }) => (
@@ -366,7 +380,7 @@ export function HomeHeroSearchBar({
           className="grid grid-cols-1 gap-4 md:grid-cols-12 md:items-end"
         >
           <FieldShell
-            label={homeHeroSearch.makeModelLabel}
+            label={t("makeModelLabel")}
             className="md:col-span-5"
           >
             <div className="relative">
@@ -378,22 +392,22 @@ export function HomeHeroSearchBar({
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder={homeHeroSearch.makeModelPlaceholder}
-                aria-label={homeHeroSearch.makeModelLabel}
+                placeholder={t("makeModelPlaceholder")}
+                aria-label={t("makeModelLabel")}
                 className="h-[52px] w-full rounded-xl border border-outline-variant bg-surface-container-high pl-11 pr-4 font-body-md text-body-md font-semibold text-text-strong placeholder:font-medium placeholder:text-text-muted outline-none ring-1 ring-transparent transition-all focus:border-brand-primary focus:bg-surface focus:ring-2 focus:ring-brand-primary/20"
               />
             </div>
           </FieldShell>
           <FieldShell
-            label={homeHeroSearch.bodyStyleLabel}
+            label={t("bodyStyleLabel")}
             className="md:col-span-3"
           >
             <SelectControl
-              ariaLabel={homeHeroSearch.bodyStyleLabel}
+              ariaLabel={t("bodyStyleLabel")}
               value={bodyStyle}
               onChange={setBodyStyle}
             >
-              {homeHeroSearch.bodyStyles.map((b) => (
+              {bodyStylesLocalized.map((b) => (
                 <option key={b.value || "any"} value={b.value}>
                   {b.label}
                 </option>
@@ -401,15 +415,15 @@ export function HomeHeroSearchBar({
             </SelectControl>
           </FieldShell>
           <FieldShell
-            label={homeHeroSearch.priceRangeLabel}
+            label={t("priceRangeLabel")}
             className="md:col-span-2"
           >
             <SelectControl
-              ariaLabel={homeHeroSearch.priceRangeLabel}
+              ariaLabel={t("priceRangeLabel")}
               value={String(priceIndex)}
               onChange={(v) => setPriceIndex(Number(v))}
             >
-              {homeHeroSearch.priceRanges.map((p, i) => (
+              {priceRangesLocalized.map((p, i) => (
                 <option key={p.label} value={i}>
                   {p.label}
                 </option>
@@ -421,7 +435,7 @@ export function HomeHeroSearchBar({
               type="submit"
               className="inline-flex h-[52px] w-full items-center justify-center gap-2 rounded-xl bg-brand-primary px-6 text-sm font-bold tracking-[0.12em] text-white shadow-[0_10px_24px_-10px_rgba(0,143,76,0.65)] transition-all hover:-translate-y-0.5 hover:bg-[#00a056] active:translate-y-0"
             >
-              {homeHeroSearch.searchCta}
+              {t("searchCta")}
             </button>
           </div>
         </form>

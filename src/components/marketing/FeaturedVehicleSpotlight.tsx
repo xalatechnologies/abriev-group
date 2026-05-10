@@ -17,7 +17,7 @@ export function FeaturedVehicleSpotlight({
     <section className="section-y bg-surface-container-low font-primary">
       <Container>
         <div className="mb-12 flex flex-col gap-7 md:flex-row md:items-end md:justify-between">
-          <div className="max-w-2xl">
+          <div className="max-w-4xl">
             <span className="font-label-caps text-label-caps uppercase text-text-muted">
               The collection
             </span>

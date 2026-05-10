@@ -1,1 +1,17 @@
-{}
+{
+  "CarReviewsSection": {
+    "title": "የመኪና ግምገማዎች",
+    "lede": "ስለ መኪናዎች የሚያስፈልግዎ በሙሉ — ፍጹም የሆነውን ይምረጡ",
+    "viewAll": "ሁሉንም ይመልከቱ",
+    "featuredBadge": "የተመረጠ",
+    "minRead": "{minutes} ደቂቃ ንባብ",
+    "readArticle": "ጽሁፉን ያንብቡ",
+    "fallbackFeaturedTitle": "ከኪራይ በፊት ስለ መኪና ኢንሹራንስ ማወቅ ያለብዎት",
+    "fallbackImageAlt": "ስራ ላይ ሰነዶች እና ላፕቶፕ፣ የአርት ዕቅድ",
+    "sideFallbackTitles": [
+      "ያለፉ መኪና መግዛት የሚያስፈልግዎ መመሪያ",
+      "ራስ ሰር መኪናዎች እንዴት እንደሚቀይሩ…",
+      "የኤሌክትሪክ ተሽከርካሪዎች ዕድገት፣ አዲስ ዘመን"
+    ]
+  }
+}

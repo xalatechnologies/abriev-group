@@ -25,39 +25,51 @@
     "services": {
       "title": "አገልግሎቶች",
       "description": "የመኪና ግዜና ሽያጭ፣ የፋይናንስ እና ብድር፣ ጥገና፣ እና ከድንበር አቋራ እንቅስታሔ።"
+    },
+    "contact": {
+      "title": "እውቂያ",
+      "description": "ከ {brand} ኮንስየር ሽያጭ ({email}) ይነጋገሩ — ወይም ከተረጋገጡ አጋራ ነጋዴዎች ጋር ይገናኙ።"
+    },
+    "listYourVehicle": {
+      "title": "መኪናዎን ያስመዝግቡ",
+      "description": "ለአብሬቭ አርትዖታዊ ምርመራ በሚመራ የአራት ደረጃ ፍሰት፣ ፎቶዎች፣ ዝርዝሮች እና ዋጋ ያስገቡ።"
+    },
+    "listingSubmitted": {
+      "title": "ማስመዝገቢያ ተላከ",
+      "description": "የመኪና ማስመዝገቢያዎ ለምርመራ በአብሬቭ አርትዖታዊ ቡድን ዘንድ ነው።"
     }
   },
   "VehicleCategories": {
     "ariaLabel": "የመኪና ምድቦች",
     "all": "ሁሉም",
     "new": "አዲስ",
-    "used": "የመንቀለ",
+    "used": "ያስተናገዱ",
     "forRent": "ለኪራይ"
   },
   "VehicleCard": {
-    "editorsPick": "የአርታ ",
-    "deliveryMileage": "የላክ ክል",
-    "statMiles": "ክ.መ",
+    "editorsPick": "የአርታዊ ምርጫ",
+    "deliveryMileage": "የማድረሻ ክልትጥ",
+    "statMiles": "ክልትጥ",
     "statFuel": "ነዳጅ",
-    "statTransmission": "ትራንስ።",
-    "viewDetail": "ይመልከት",
+    "statTransmission": "ትራንስ.",
+    "viewDetail": "ይመልከቱ",
     "conditionNew": "አዲስ",
-    "conditionPreOwned": "የመንቀለ",
-    "conditionCertified": "ተረጋግ አል",
+    "conditionPreOwned": "የተጠቀሙ",
+    "conditionCertified": "የተረጋገጠ",
     "statusReserved": "የተያዘ",
-    "statusSold": "ይሸተ",
+    "statusSold": "ተሸጧል",
     "fuelPetrol": "ቤንዚን",
     "fuelDiesel": "ዲዞል",
-    "fuelHybrid": "ሕብረ",
-    "fuelPlugIn": "ፕላግ እን",
-    "fuelElectric": "ኤለክትሪክ",
-    "transAutomatic": "አውቶ",
-    "transManual": "መልቲ",
+    "fuelHybrid": "ሀይብሪድ",
+    "fuelPlugIn": "ፕላግ-ኢን",
+    "fuelElectric": "ኤሌክትሪክ",
+    "transAutomatic": "አውቶማቲክ",
+    "transManual": "ማንዋል",
     "transDct": "DCT",
     "transCvt": "CVT",
     "priceFrom": "ከ",
-    "priceStarting": "ጀመሩ",
-    "priceAsking": "ይጠያ"
+    "priceStarting": "ጀምሮ",
+    "priceAsking": "መጠየቂያ"
   },
   "VehicleGrid": {
     "emptyTitle": "ፊልተሮች አይዛመንም።",

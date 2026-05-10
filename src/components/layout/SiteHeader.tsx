@@ -156,7 +156,7 @@ export function SiteHeader() {
             size="md"
             aria-label={tHeader("postCarAria")}
             iconRight={<ArrowUpRight className="size-4 shrink-0" aria-hidden />}
-            className="min-w-0 max-w-[12rem] !shrink overflow-hidden bg-brand-primary text-sm font-extrabold tracking-[0.12em] text-white hover:bg-text-strong sm:max-w-[16rem] [&>span]:min-w-0 [&>span]:flex-1 [&>span]:truncate"
+            className="bg-brand-primary text-sm font-extrabold tracking-[0.12em] text-white hover:bg-text-strong"
           >
             {tHeader("listVehicle")}
           </CTAButton>
@@ -186,7 +186,7 @@ export function SiteHeader() {
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
             className="glass-card-strong absolute left-0 right-0 top-full border-b border-outline-variant lg:hidden"
           >
-            <div className="mx-auto flex max-w-container-max flex-col px-6 py-6 md:px-margin-edge">
+            <div className="mx-auto flex w-full flex-col edge-x py-6">
               <nav
                 aria-label={tNav("mobileAria")}
                 className="flex flex-col divide-y divide-outline-variant"

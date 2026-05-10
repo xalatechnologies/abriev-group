@@ -1,0 +1,63 @@
+{
+  "InsightsHub": {
+    "breadcrumbAria": "የማስመሪያ መንገድ",
+    "breadcrumbHome": "መነሻ",
+    "breadcrumbNews": "ዜና",
+    "eyebrow": "አብሬ ኢንሳይትስ",
+    "title": "ዜና",
+    "lede": "በ BYD U8 እና የያንግዋንግ ዘመን ችሎታ፣ በኮምፓክት ሲጋል መንገደኞች፣ በ Yuan Up Smart የክሮስኦቨር ስሌት፣ በ Denza ቴንግ I የቤተሰብ አቋም፣ እና በሰፊው በኤሌክትሪክ ባለቤትነት ጉዞ ላይ የተሰጠ ሽፋን።",
+    "categoriesSrOnly": "ምድቦች",
+    "categoryLabel": "ምድብ፦",
+    "spotlightTitle": "የውስጥ እና ትራንድ",
+    "emptyFeaturedSearch": "ለዚህ ፍለጋ ምንም ፅሁፍ አልተገኘም — ሌላ ቃል ይሞክሩ።",
+    "emptyFeaturedLens": "ለዚህ ማጣሪያ ምንም ፅሁፍ አልተገኘም።",
+    "emptyFeaturedJoin": " ",
+    "showEverything": "ሁሉንም አሳይ",
+    "trendingAria": "የትራንድ ርዕሶች",
+    "minRead": "{minutes} ደቂቃ ንባብ",
+    "gridSrOnly": "ሁሉም ሪፖርት",
+    "gridPartialNote": "ለዚህ ማጣሪያ በላይኛው አካባቢ ሁሉን ያዩታል — ተጨማሪ ጭፍጫ ለማየት ሌላ የምድብ ቁልፍ ይምረጡ።",
+    "resetFilters": "ማጣሪያ እና ፍለጋ ዳግም አስጀምር",
+    "asideAria": "የፅሁፍ ፍለጋ",
+    "searchHeading": "ፍለጋ",
+    "searchFieldLabel": "ፅሁፎች ፍለጋ",
+    "searchPlaceholder": "ቁልፍ ቃል ወይም የሞዴል ስም…",
+    "searchSubmit": "ፍለጋ",
+    "keepReading": "አንብቡ ማለት ይቀጥሉ",
+    "viewsApprox": "{count} እይታ",
+    "viewsK": "{count}ሽ እይታ",
+    "viewsM": "{count}መ እይታ",
+    "hubFilters": {
+      "all": "ሁሉም",
+      "byd-u8": "BYD U8",
+      "byd-seagull": "BYD ሲጋል",
+      "byd-e2": "BYD E2",
+      "yuan-up-smart": "ዩአን አፕ ስማርት",
+      "teng-i": "ቴንግ I",
+      "electric-vehicles": "ኤሌክትሪክ ተሽከርካሪዎች",
+      "luxury-cars": "ፕሪሚየም መኪኖች",
+      "car-maintenance": "መኪና ጥገና",
+      "new-cars": "አዲስ መኪኖች",
+      "car-rentals": "የመኪና ኪራይ",
+      "road-trips": "የመንገድ ጉዞዎች"
+    }
+  },
+  "InsightsArticle": {
+    "breadcrumbAria": "የማስመሪያ መንገድ",
+    "breadcrumbHome": "መነሻ",
+    "breadcrumbNews": "ዜና",
+    "authorSr": "ደራሲ",
+    "publishedSr": "የታተመበት ቀን",
+    "readingTimeSr": "የንባብ ጊዜ",
+    "minRead": "{minutes} ደቂቃ ንባብ",
+    "backToNews": "ወደ ዜና ተመለስ"
+  },
+  "InsightsPreview": {
+    "eyebrow": "የአርት ብልህነት",
+    "title": "የራዕይ ባለቤት ምዕራፍ",
+    "lede": "የመሃንዲስነት፣ የባለቤትነት ቅርጸት፣ እና የሰብሰካ ባህሪ በፕሪሚየም ላይ እንዴት እንደሚያትር ወይቦች ጥልቅ ትንታኔ።",
+    "ctaTitle": "ባለሦስት ወር ህትመት",
+    "ctaSubtitle": "ለኮንስየር አባላት ይቀርባል።",
+    "allInsights": "ሁሉንም ግንዛቤዎች ይመልከቱ"
+  }
+}

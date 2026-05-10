@@ -41,10 +41,36 @@ export function formatYear(year: number): string {
   return String(year);
 }
 
-export function formatDate(iso: string): string {
-  return new Date(iso).toLocaleDateString("en-US", {
+export function formatDate(iso: string, localeTag?: string | null): string {
+  const tag = localeTag === "am" ? "am-ET" : "en-US";
+  return new Date(iso).toLocaleDateString(tag, {
     month: "short",
     day: "numeric",
     year: "numeric",
+  });
+}
+
+/** View counts on article cards; pass `templates.translate` from `InsightsHub` messages. */
+export function formatApproxViewsI18n(
+  n: number,
+  translate: (
+    key: "viewsM" | "viewsK" | "viewsApprox",
+    values: { count: string },
+  ) => string,
+): string {
+  if (!Number.isFinite(n) || n < 0) return "—";
+  if (n >= 1_000_000) {
+    return translate("viewsM", { count: (n / 1_000_000).toFixed(1) });
+  }
+  if (n >= 100_000) {
+    return translate("viewsK", {
+      count: Math.round(n / 1000).toLocaleString("en-US"),
+    });
+  }
+  if (n >= 1000) {
+    return translate("viewsK", { count: (n / 1000).toFixed(1) });
+  }
+  return translate("viewsApprox", {
+    count: n.toLocaleString("en-US"),
   });
 }
