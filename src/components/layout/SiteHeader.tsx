@@ -55,6 +55,17 @@ export function SiteHeader() {
     };
   }, [open]);
 
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
+
+  const tLocale = useTranslations("LocaleSwitcher");
+
   return (
     <motion.header
       initial={false}
@@ -141,7 +152,7 @@ export function SiteHeader() {
             Amharic copy widens Auth/CTA—those shrink left instead of swallowing trailing margin */}
         <div
           className={cn(
-            "relative z-10 col-start-3 row-start-1 hidden min-w-0 w-full flex flex-row-reverse items-center justify-start gap-2 justify-self-end lg:flex xl:gap-3",
+            "relative z-10 col-start-3 row-start-1 hidden min-w-0 w-full flex-row-reverse items-center justify-start gap-2 justify-self-end lg:flex xl:gap-3",
           )}
         >
           <div
@@ -165,60 +176,126 @@ export function SiteHeader() {
           <AuthModeSwitch className="min-w-0 max-w-[152px] shrink sm:max-w-[168px]" />
         </div>
 
-        <div className="relative z-10 col-start-2 row-start-1 flex items-center gap-2 justify-self-end lg:hidden">
-          <LocaleSwitcher compact />
-          <ThemeToggle className="size-9 border-outline-variant/60" />
+        <div className="relative z-10 col-start-2 row-start-1 flex items-center justify-end justify-self-end lg:hidden">
           <IconButton
+            type="button"
+            size="lg"
             aria-label={open ? tNav("closeMenu") : tNav("openMenu")}
+            aria-expanded={open}
+            aria-controls="site-mobile-menu"
             onClick={() => setOpen((v) => !v)}
             variant="ghost"
+            className="shrink-0"
           >
-            {open ? <X className="size-5" /> : <Menu className="size-5" />}
+            {open ? <X className="size-6" aria-hidden /> : <Menu className="size-6" aria-hidden />}
           </IconButton>
         </div>
       </div>
 
       <AnimatePresence>
         {open ? (
-          <motion.div
-            key="mobile-nav"
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="glass-card-strong absolute left-0 right-0 top-full border-b border-outline-variant lg:hidden"
-          >
-            <div className="mx-auto flex w-full flex-col edge-x py-6">
-              <nav
-                aria-label={tNav("mobileAria")}
-                className="flex flex-col divide-y divide-outline-variant"
-              >
-                {PRIMARY_NAV_ROUTES.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className="flex items-center justify-between py-4 font-label-caps text-sm font-bold uppercase tracking-[0.12em] text-text-strong transition-colors hover:text-brand-primary"
+          <>
+            <motion.button
+              key="mobile-backdrop"
+              type="button"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              aria-label={tHeader("closeOverlayAria")}
+              className="fixed inset-0 top-[72px] z-[45] bg-[rgba(0,0,0,0.58)] backdrop-blur-sm lg:hidden"
+              onClick={() => setOpen(false)}
+            />
+            <motion.div
+              key="mobile-nav"
+              id="site-mobile-menu"
+              role="dialog"
+              aria-modal="true"
+              aria-label={tNav("mobileAria")}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+              className={cn(
+                "absolute left-0 right-0 top-full z-50 flex min-h-[calc(100dvh-72px)] flex-col overflow-y-auto overscroll-contain border-b border-outline-variant lg:hidden",
+                /* Opaque surface — avoids hero body copy showing through glass */
+                "bg-background text-on-background shadow-[0_18px_48px_-12px_rgba(0,0,0,0.18)] dark:bg-[#0a0a0a] dark:shadow-[0_24px_56px_-16px_rgba(0,0,0,0.65)]",
+              )}
+            >
+              <div className="mx-auto flex w-full max-w-lg flex-1 flex-col gap-8 edge-x py-6">
+                <section aria-labelledby="mobile-menu-browse-heading" className="flex flex-col gap-3">
+                  <h2
+                    id="mobile-menu-browse-heading"
+                    className="font-label-caps text-[11px] font-bold uppercase tracking-[0.18em] text-text-muted"
                   >
-                    <span>{tNav(item.key)}</span>
-                    <ArrowUpRight className="size-4 text-text-muted" aria-hidden />
-                  </Link>
-                ))}
-              </nav>
-              <div className="mt-6 flex flex-col gap-3">
-                <AuthModeSwitch density="comfortable" />
-                <CTAButton
-                  href="/list-your-vehicle"
-                  variant="primary"
-                  size="md"
-                  fullWidth
-                  aria-label={tHeader("postCarAria")}
-                  className="bg-brand-primary text-sm font-extrabold tracking-[0.12em] text-white hover:bg-text-strong"
+                    {tNav("mobileMenuBrowse")}
+                  </h2>
+                  <nav aria-label={tNav("primaryAria")}>
+                    <ul role="list" className="flex flex-col divide-y divide-outline-variant rounded-xl border border-card-border bg-white dark:bg-surface-container-lowest">
+                      {PRIMARY_NAV_ROUTES.map((item) => (
+                        <li key={item.href}>
+                          <Link
+                            href={item.href}
+                            className="flex min-h-[52px] items-center justify-between gap-3 px-4 py-3.5 font-label-caps text-sm font-bold uppercase tracking-[0.12em] text-text-strong transition-colors first:rounded-t-[0.625rem] last:rounded-b-[0.625rem] hover:bg-surface-container-low hover:text-brand-primary dark:hover:bg-surface-container-high"
+                          >
+                            <span>{tNav(item.key)}</span>
+                            <ArrowUpRight className="size-4 shrink-0 text-text-muted" aria-hidden />
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </nav>
+                </section>
+
+                <section aria-labelledby="mobile-menu-prefs-heading" className="flex flex-col gap-3">
+                  <h2
+                    id="mobile-menu-prefs-heading"
+                    className="font-label-caps text-[11px] font-bold uppercase tracking-[0.18em] text-text-muted"
+                  >
+                    {tNav("mobileMenuPreferences")}
+                  </h2>
+                  <div className="rounded-xl border border-card-border bg-white p-4 transition-colors duration-300 dark:bg-surface-container-low">
+                    <p className="mb-3 font-label-caps text-[11px] font-bold uppercase tracking-[0.14em] text-text-muted">
+                      {tLocale("hint")}
+                    </p>
+                    <div className="flex justify-center">
+                      <LocaleSwitcher className="w-full max-w-[280px] justify-center" />
+                    </div>
+                    <div className="mt-4 flex items-center justify-between gap-3 border-t border-card-divider pt-4 transition-colors duration-300">
+                      <span className="text-sm font-semibold text-text-strong">{tHeader("appearance")}</span>
+                      <ThemeToggle className="size-9 shrink-0 border-outline-variant/60" />
+                    </div>
+                  </div>
+                </section>
+
+                <section
+                  aria-labelledby="mobile-menu-actions-heading"
+                  className="mt-auto flex flex-col gap-3 border-t border-outline-variant pt-6"
                 >
-                  {tHeader("listVehicle")}
-                </CTAButton>
+                  <h2
+                    id="mobile-menu-actions-heading"
+                    className="font-label-caps text-[11px] font-bold uppercase tracking-[0.18em] text-text-muted"
+                  >
+                    {tNav("mobileMenuActions")}
+                  </h2>
+                  <div className="flex flex-col gap-3 pb-[max(1.25rem,env(safe-area-inset-bottom))]">
+                    <CTAButton
+                      href="/list-your-vehicle"
+                      variant="primary"
+                      size="md"
+                      fullWidth
+                      aria-label={tHeader("postCarAria")}
+                      iconRight={<ArrowUpRight className="size-4 shrink-0" aria-hidden />}
+                      className="bg-brand-primary text-sm font-extrabold tracking-[0.12em] text-white hover:bg-text-strong"
+                    >
+                      {tHeader("listVehicle")}
+                    </CTAButton>
+                    <AuthModeSwitch density="comfortable" />
+                  </div>
+                </section>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </>
         ) : null}
       </AnimatePresence>
     </motion.header>

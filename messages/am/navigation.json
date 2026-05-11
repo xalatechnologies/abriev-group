@@ -5,6 +5,9 @@
     "footerAria": "ግርጌ",
     "openMenu": "ምናሌ ክፈት",
     "closeMenu": "ምናሌ አዝም",
+    "mobileMenuBrowse": "አሰስ",
+    "mobileMenuPreferences": "ምርጫዎች",
+    "mobileMenuActions": "ጀምር",
     "brandHomeAria": "{name} — መነሻ",
     "home": "መነሻ",
     "vehicles": "መኪኖች",
@@ -19,6 +22,8 @@
   "Header": {
     "signIn": "መግቢያ",
     "listVehicle": "መኪና አስመዝግብ",
-    "postCarAria": "ማስታወቂያ ለጥፍ"
+    "postCarAria": "ማስታወቂያ ለጥፍ",
+    "appearance": "ገጽታ",
+    "closeOverlayAria": "ምናሌ ዝጋ"
   }
 }

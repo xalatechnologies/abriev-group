@@ -5,6 +5,9 @@
     "footerAria": "Footer",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
+    "mobileMenuBrowse": "Browse",
+    "mobileMenuPreferences": "Preferences",
+    "mobileMenuActions": "Get started",
     "brandHomeAria": "{name} — home",
     "home": "Home",
     "vehicles": "Vehicles",
@@ -19,6 +22,8 @@
   "Header": {
     "signIn": "Sign in",
     "listVehicle": "List a Car",
-    "postCarAria": "Post listing"
+    "postCarAria": "Post listing",
+    "appearance": "Appearance",
+    "closeOverlayAria": "Close menu"
   }
 }
